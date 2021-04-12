@@ -1,8 +1,9 @@
 @import "../styles/colors";
+@import "../styles/fontSizes";
 
 .FooterButton {
     font-family: Roboto, "SegoeUI", "Verdana";
-    font-size: 14px;
-    font-weight: 800;
+    font-size: $footer-text-size;
+    font-weight: 400;
     text-decoration: none;
 }

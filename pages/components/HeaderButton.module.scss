@@ -1,12 +1,13 @@
 @import "../styles/colors";
+@import "../styles/fontSizes";
 
 .HeaderButton {
-  font-size: 28px;
+  font-size: $header-text-size;
   font-weight: 300;
   text-decoration: none;
 }
 
-.HeaderButton:hover{
+.HeaderButton:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
 }

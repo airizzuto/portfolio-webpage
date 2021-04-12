@@ -11,7 +11,7 @@ const Footer = () => {
                 <FooterButton text={"LinkedIn"} icon={FaLinkedin} urlPath={"/"}/>
                 <FooterButton text={"Contact"} urlPath={"/"}/>
             </nav>
-            <p className="Copyright">COPYRIGHT 2021 - AGUSTÍN IGNACIO RIZZUTO</p>
+            <p className={styles.Copyright}>COPYRIGHT 2021 - AGUSTÍN IGNACIO RIZZUTO</p>
         </footer>
     )
 }

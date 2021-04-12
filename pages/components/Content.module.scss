@@ -6,11 +6,11 @@
     grid-template-columns: auto;
     grid-template-rows: 1fr 5fr;
     grid-template-areas: "title" "info";
-    padding: 40px;
+    padding: 4rem;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: auto;
+    height: 100%;
     max-height: 100%;
     overflow: auto;
 }
@@ -18,18 +18,20 @@
 .Title {
     display: grid;
     grid-area: title;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 120px;
-    margin-left: 40px;
+    grid-template-columns: 1fr;
+    margin-top: 12rem;
+    margin-left: 12rem;
     font-size: $title-size;
     font-weight: 300;
 }
 
 .Info p{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-area: info;
     font-size: $content-text-size;
     font-weight: 300;
     text-align: left;
+    margin-left: 8rem;
+    width: 60%;
 }
