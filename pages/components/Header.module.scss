@@ -1,0 +1,30 @@
+@import "../styles/colors";
+
+.Header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    display: grid;
+    grid-template-areas: "logo nav";
+    grid-template-columns: 1fr 5fr;
+}
+
+.HeaderLogo {
+    display: grid;
+    grid-area: logo;
+    align-self: center;
+    justify-self: center;
+    height: 65%;
+    width: 65%;
+}
+
+.HeaderNav {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    justify-items: center;
+}

@@ -1,0 +1,35 @@
+@import "../styles/colors";
+@import "../styles/fontSizes";
+
+.Content {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: "title" "info";
+    padding: 40px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: auto;
+    max-height: 100%;
+    overflow: auto;
+}
+
+.Title {
+    display: grid;
+    grid-area: title;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 120px;
+    margin-left: 40px;
+    font-size: $title-size;
+    font-weight: 300;
+}
+
+.Info p{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: info;
+    font-size: $content-text-size;
+    font-weight: 300;
+    text-align: left;
+}

@@ -1,0 +1,12 @@
+@import "../styles/colors";
+
+.HeaderButton {
+  font-size: 28px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.HeaderButton:hover{
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
