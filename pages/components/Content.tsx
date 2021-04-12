@@ -14,7 +14,7 @@ const Content = ({title, text, imageSrc}: Props) => {
             <style jsx>
                 {`
                     .Content {
-                        background-image: url(${imageSrc});
+                        background-image: require(url(${imageSrc}));
                     }
                 `}
             </style>
