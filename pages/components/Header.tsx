@@ -5,7 +5,7 @@ import styles from './Header.module.scss'
 const Header = () => {
     return (
         <header className={styles.Header}>
-            <img className={styles.HeaderLogo} src={"/pages/assets/proto-logo-dark2.svg"} alt="logo" />
+            <Image className={styles.HeaderLogo} src={"/static/proto-logo-dark2.svg"} alt="logo" width="8rem" height="8rem" />
             
             <nav className={styles.HeaderNav}>
                 <NavButton text={"HOME"} urlPath={"/"}/>
