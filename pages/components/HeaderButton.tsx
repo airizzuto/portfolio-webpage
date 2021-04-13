@@ -1,4 +1,4 @@
-import React from "react"
+import Link from "next/link"
 import styles from "./HeaderButton.module.scss"
 
 interface Props {
@@ -8,9 +8,11 @@ interface Props {
 
 const HeaderButton = ({text, urlPath} : Props) => {
     return (
-        <a className={styles.HeaderButton} href={urlPath}>
-            {text}
-        </a>
+        <>
+            <Link href={urlPath}>
+                <a className={styles.HeaderButton}>{text}</a>
+            </Link>
+        </>
     )
 }
 

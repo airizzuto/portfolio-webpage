@@ -9,7 +9,7 @@ const Footer = () => {
             <nav className={styles.FooterNav}>
                 <FooterButton text={`Github`} icon={FaGithub} urlPath={"https://github.com/airizzuto"}/>
                 <FooterButton text={"LinkedIn"} icon={FaLinkedin} urlPath={"/"}/>
-                <FooterButton text={"Contact"} urlPath={"/"}/>
+                <FooterButton text={"Contact"} urlPath={"/contact"}/>
             </nav>
             <p className={styles.Copyright}>COPYRIGHT 2021 - AGUSTÍN IGNACIO RIZZUTO</p>
         </footer>
