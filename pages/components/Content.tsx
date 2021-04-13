@@ -6,8 +6,7 @@ interface Props {
     imageSrc: string;
 }
 
-const Content = ({title, text, imageSrc}: Props) => {
-
+export default function Content({title, text, imageSrc}: Props) {
     return (
         <div className={styles.Content}>
             <style jsx>
@@ -27,5 +26,3 @@ const Content = ({title, text, imageSrc}: Props) => {
         </div>
     )
 }
-
-export default Content;

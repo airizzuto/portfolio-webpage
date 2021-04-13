@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa"
 
 import styles from "./Footer.module.scss"
 
-const Footer = () => {
+export default function Footer() {
     return (
         <footer className={styles.Footer}>
             <nav className={styles.FooterNav}>
@@ -15,5 +15,3 @@ const Footer = () => {
         </footer>
     )
 }
-
-export default Footer;

@@ -3,7 +3,7 @@ import Image from "next/image"
 import styles from './Header.module.scss'
 import Link from "next/link"
 
-const Header = () => {
+export default function Header() {
     return (
         <header className={styles.Header}>
             <Link href="/">
@@ -21,5 +21,3 @@ const Header = () => {
         </header>
     )
 }
-
-export default Header;
