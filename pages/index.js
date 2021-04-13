@@ -1,21 +1,17 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.scss'
-import Header from "./components/Header"
-import Main from "./components/Main"
-import Footer from "./components/Footer"
+import styles from '../styles/Layout.module.scss'
+import Content from "./components/Content"
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Personal Porfolio</title>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="shortcut icon" href="/static/favicon/favicon.ico"/>
-      </Head>
-      <Header />
-      <Main />
-      <Footer />
+      <Content
+                title={"PLACEHOLDER TITLE"} 
+                text={
+                    ["At ullam porro adipisci. Quis est nostrum autem. Voluptas eos doloribus voluptatem recusandae esse modi repellat enim. Vel velit impedit suscipit cumque sapiente odit magni. Nulla aut eaque perferendis accusamus inventore qui voluptatibus et.",
+                    "Ducimus autem pariatur soluta sunt atque qui repellat. Dolores debitis illo vitae quas. Accusantium quaerat aspernatur odio aut. Magnam quis accusantium rerum at eum. Veritatis dolorum deleniti asperiores adipisci deleniti minus impedit ducimus.",
+                    "Facere aliquid sunt maxime ad atque perferendis enim. Quam voluptas molestiae aut consequatur aut officiis. Est sit modi placeat quidem nemo et quod est. Praesentium enim et itaque quisquam minima numquam."]
+                }
+                imageSrc={"/static/christian-wiediger-WkfDrhxDMC8-unsplash.jpg"}/>
     </div>
   )
 }
