@@ -1,4 +1,3 @@
-import Image from "next/image"
 import styles from "./Content.module.scss"
 
 interface Props {
@@ -14,7 +13,7 @@ const Content = ({title, text, imageSrc}: Props) => {
             <style jsx>
                 {`
                     .Content {
-                        background-image: require(url(${imageSrc}));
+                        background-image: url(${imageSrc});
                     }
                 `}
             </style>
