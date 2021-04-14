@@ -18,7 +18,9 @@ export const Layout = ({ children }: Props) => {
                     {children}
 
                     {/*TODO: Slide down arrow */}
-                    
+
+                    {/*TODO: Go to top */}
+
                     <Footer />
                 </main>
             </div>
