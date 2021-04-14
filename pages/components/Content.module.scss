@@ -2,11 +2,10 @@
 @import "../styles/fontSizes";
 
 .Content {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 5fr;
-    grid-template-areas: "title" "info";
-    padding: 4rem;
+    display: flexbox;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10rem;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -17,8 +16,6 @@
 
 .Title {
     display: grid;
-    grid-area: title;
-    grid-template-columns: 1fr;
     margin-top: 12rem;
     margin-left: 12rem;
     font-size: $title-size;
@@ -27,8 +24,6 @@
 
 .Info p{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-area: info;
     font-size: $content-text-size;
     font-weight: 300;
     text-align: left;

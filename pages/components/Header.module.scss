@@ -8,23 +8,27 @@
     height: 100px;
     background-color: transparent;
     display: grid;
-    grid-template-areas: "logo nav";
-    grid-template-columns: 1fr 5fr;
+    grid-template-areas: "logo nav menu";
+    grid-template-columns: 1fr 5fr 1fr;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .HeaderLogo {
-    display: grid;
     grid-area: logo;
     align-self: center;
     justify-self: center;
-    height: 65%;
-    width: 65%;
 }
 
 .HeaderNav {
     grid-area: nav;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    align-items: center;
-    justify-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.HeaderMenu {
+    position: fixed;
+    grid-area: menu;
 }

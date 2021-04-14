@@ -1,15 +1,21 @@
 .container {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "content"
+    "footer"
+  ;
 }
 
-.main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.Header {
+  grid-area: header;
+}
+
+.Content {
+  grid-area: content;
+}
+
+.Footer {
+  grid-area: footer;
 }
