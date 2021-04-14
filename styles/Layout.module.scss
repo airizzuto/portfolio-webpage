@@ -18,8 +18,7 @@
 }
 
 .Footer {
-  position: static;
+  grid-area: footer;
   width: 100%;
   bottom: 0px;
-  grid-area: footer;
 }
