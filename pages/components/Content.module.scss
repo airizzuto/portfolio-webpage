@@ -10,12 +10,13 @@
     padding-top: 12rem;
     padding-left: 12vw;
     padding-right: 12vw;
+    padding-bottom: 14rem;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     height: 100vh;
-    max-height: 100%;
-    overflow: auto;
+    min-height: fit-content;
+    overflow:auto;
 }
 
 .Title {
