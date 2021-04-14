@@ -12,7 +12,7 @@ export const Layout = ({ children }: Props) => {
         <>
             <Meta />
             <div className={styles.container}>
-                <main className={styles.main}>
+                <main >
                     <Header />
                     {children}
                     <Footer />
