@@ -1,8 +1,9 @@
+import Content from "../components/Content"
 
 export default function Projects() {
     return (
         <div>
-            <h1>PLACEHOLDER</h1>
+            <Content title={"Contact"} text={["FORM PLACEHOLDER"]} imageSrc={"static/tianyi-ma.jpg"}/>
         </div>
     )
 }

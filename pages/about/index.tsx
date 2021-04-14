@@ -1,8 +1,9 @@
+import Content from "../components/Content";
 
 export default function About() {
     return (
-        <div>
-            <h1>PLACEHOLDER</h1>
-        </div>
+        <>
+            <Content title={"About Me"} text={["PLACEHOLDER"]} imageSrc={"static/nihon-graphy.jpg"}/>
+        </>
     )
 }

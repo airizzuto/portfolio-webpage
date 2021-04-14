@@ -1,8 +1,10 @@
+import Content from "../components/Content"
 
 export default function Contact() {
     return (
-        <div>
-            <h1>PLACEHOLDER</h1>
-        </div>
+        <>
+            {/* TODO: Style and form content component? */}
+            <Content title={"Contact"} text={["FORM PLACEHOLDER"]} imageSrc={"static/nasa2.jpg"}/>
+        </>
     )
 }

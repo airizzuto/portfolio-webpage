@@ -10,18 +10,16 @@ interface Props {
 export const Layout = ({ children }: Props) => {
     return (
         <>
-            <Meta />
+            <Meta />  {/*TODO: Additional meta */}
             <div>
                 <main className={styles.container}>
-                    <div className={styles.Header}>
-                        <Header/>
-                    </div>
-                    <div className={styles.Content}>
-                        {children}
-                    </div>
-                    <div className={styles.Footer}>
-                        <Footer />
-                    </div>
+                    <Header/>
+
+                    {children}
+
+                    {/*TODO: Slide down arrow */}
+                    
+                    <Footer />
                 </main>
             </div>
         </>
