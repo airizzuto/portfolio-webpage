@@ -7,7 +7,7 @@ interface Props {
     children: JSX.Element
 }
 
-export const Layout = ({ children }: Props) => {
+const Layout = ({ children }: Props) => {
     return (
         <>
             <Meta />  {/*TODO: Additional meta */}
@@ -27,3 +27,5 @@ export const Layout = ({ children }: Props) => {
         </>
     )
 }
+
+export default Layout
