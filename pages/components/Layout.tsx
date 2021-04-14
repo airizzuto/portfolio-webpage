@@ -11,11 +11,17 @@ export const Layout = ({ children }: Props) => {
     return (
         <>
             <Meta />
-            <div className={styles.container}>
-                <main >
-                    <Header />
-                    {children}
-                    <Footer />
+            <div>
+                <main className={styles.container}>
+                    <div className={styles.Header}>
+                        <Header/>
+                    </div>
+                    <div className={styles.Content}>
+                        {children}
+                    </div>
+                    <div className={styles.Footer}>
+                        <Footer />
+                    </div>
                 </main>
             </div>
         </>

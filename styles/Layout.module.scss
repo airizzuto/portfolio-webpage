@@ -1,5 +1,6 @@
 .container {
   display: grid;
+  min-height: 100vh;
   grid-template-areas: 
     "header"
     "content"
@@ -13,8 +14,12 @@
 
 .Content {
   grid-area: content;
+  align-self: center;
 }
 
 .Footer {
+  position: static;
+  width: 100%;
+  bottom: 0px;
   grid-area: footer;
 }
