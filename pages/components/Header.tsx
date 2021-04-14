@@ -8,7 +8,7 @@ export default function Header() {
         <header className={styles.Header}>
             <Link href="/">
                 <a className={styles.HeaderLogo}>
-                    <Image src={"/static/proto-logo-dark2.svg"} alt="logo" width="8rem" height="8rem" />
+                    <Image src={"/static/logo.svg"} alt="logo" width="80px" height="80px" />
                 </a>
             </Link>
 
