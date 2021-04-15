@@ -8,7 +8,7 @@ interface Props {
 
 const FooterButton = ({text, href}: Props) => {
     return (
-        <Link href={`url(${href})`} passHref>
+        <Link href={`${href}`} passHref>
             <a className={styles.FooterButton} >
                 {text} {/* TODO: Icon */}
             </a>

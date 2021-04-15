@@ -8,7 +8,7 @@ interface Props {
 
 const HeaderButton = ({text, href} : Props) => {
     return (
-        <Link href={`url(${href})`} passHref>
+        <Link href={`${href}`} passHref>
             <a className={styles.HeaderButton}>{text}</a>
         </Link>
     )
