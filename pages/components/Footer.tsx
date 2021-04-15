@@ -9,7 +9,7 @@ import styles from "../../styles/Footer.module.scss"
                 <FooterButton text={"LinkedIn"} href={"/"}/>
                 <FooterButton text={"Contact"} href={"/contact"}/>
             </nav>
-            <p className={styles.Copyright}>COPYRIGHT 2021 - AGUSTÍN IGNACIO RIZZUTO</p>
+            <p className={styles.Copyright}>AIRIZZUTO © 2021</p>
         </footer>
     )
 }
