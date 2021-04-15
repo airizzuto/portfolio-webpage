@@ -1,21 +1,19 @@
 import Link from "next/link";
-import styles from "./FooterButton.module.scss"
+import styles from "../../styles/FooterButton.module.scss"
 
 interface Props {
-    text: String;
-    urlPath: string; 
+    text: String
+    href: string
 }
 
-const FooterButton = ({text, urlPath}: Props) => {
+const FooterButton = ({text, href}: Props) => {
     return (
-        <>
-            <Link href={urlPath}>
-                <a className={styles.FooterButton} >
-                    {text} {/* TODO: Icon */}
-                </a>
-            </Link>
-        </>
+        <Link href={`url(${href})`} passHref>
+            <a className={styles.FooterButton} >
+                {text} {/* TODO: Icon */}
+            </a>
+        </Link>
     )
 }
 
-export default FooterButton;
+export default FooterButton

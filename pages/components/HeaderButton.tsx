@@ -1,19 +1,17 @@
 import Link from "next/link"
-import styles from "./HeaderButton.module.scss"
+import styles from "../../styles/HeaderButton.module.scss"
 
 interface Props {
     text: String
-    urlPath: string
+    href: string
 }
 
-const HeaderButton = ({text, urlPath} : Props) => {
+const HeaderButton = ({text, href} : Props) => {
     return (
-        <>
-            <Link href={urlPath}>
-                <a className={styles.HeaderButton}>{text}</a>
-            </Link>
-        </>
+        <Link href={`url(${href})`} passHref>
+            <a className={styles.HeaderButton}>{text}</a>
+        </Link>
     )
 }
 
-export default HeaderButton;
+export default HeaderButton

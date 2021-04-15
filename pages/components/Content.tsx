@@ -1,8 +1,8 @@
-import styles from "./Content.module.scss"
+import styles from "../../styles/Content.module.scss"
 
 interface Props {
     title: String;
-    text: Array<string>;
+    text: string[];
     imageSrc: string;
 }
 
@@ -14,7 +14,7 @@ const Content = ({title, text, imageSrc}: Props) => {
             }}>
             <h3 className={styles.Title}>{title}</h3>
             <div className={styles.Info}>
-                {text.map((paragraph) => {
+                {text && text.map(paragraph => {
                     return <p>{paragraph}</p>
                 })}
             </div>

@@ -4,7 +4,7 @@ import Header from "./Header"
 import Meta from "./Meta"
 
 interface Props {
-    children: JSX.Element
+    children: any;
 }
 
 const Layout = ({ children }: Props) => {
@@ -13,7 +13,7 @@ const Layout = ({ children }: Props) => {
             <Meta />  {/*TODO: Additional meta */}
             <div>
                 <main className={styles.container}>
-                    <Header/>
+                    <Header />
 
                     {children}
 

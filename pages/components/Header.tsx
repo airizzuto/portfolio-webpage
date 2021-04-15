@@ -1,6 +1,6 @@
 import HeaderButton from "./HeaderButton"
 import Image from "next/image"
-import styles from './Header.module.scss'
+import styles from '../../styles/Header.module.scss'
 import Link from "next/link"
 
 const Header = () => {
@@ -13,10 +13,10 @@ const Header = () => {
             </Link>
 
             <nav className={styles.HeaderNav}>
-                <HeaderButton text={"HOME"} urlPath={"/"}/>
-                <HeaderButton text={"PROJECTS"} urlPath={"/projects"}/>
-                <HeaderButton text={"ABOUT"} urlPath={"/about"}/>
-                <HeaderButton text={"CONTACT"} urlPath={"/contact"}/>
+                <HeaderButton text={"HOME"} href={"/"}/>
+                <HeaderButton text={"PROJECTS"} href={"/projects"}/>
+                <HeaderButton text={"ABOUT"} href={"/about"}/>
+                <HeaderButton text={"CONTACT"} href={"/contact"}/>
             </nav>
         </header>
     )
