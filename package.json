@@ -1,6 +1,6 @@
 {
-  "name": "next-portfolio-webpage",
-  "version": "0.1.0",
+  "name": "portfolio-webpage-template",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
