@@ -15,7 +15,7 @@
     justify-items: center;
 }
 
-.FooterNav {
+.Nav {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 2;
@@ -27,7 +27,12 @@
     justify-self: stretch;
     justify-content: space-evenly;
     align-content: center;
-    
+
+    ul {
+        display: contents;
+        list-style-type: none;
+    }
+
     a {
         font-family: Roboto, "SegoeUI", "Verdana";
         font-size: $footer-text-size;
