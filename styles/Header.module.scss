@@ -33,3 +33,9 @@
 .HeaderMenu {
     grid-area: menu;
 }
+
+@media screen and (max-width: 720px){
+    .HeaderNav {
+        display: none;
+    }
+}
