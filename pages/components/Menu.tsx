@@ -1,12 +1,12 @@
 import NavButton from "./NavButton"
 const Menu = () => {
     return (
-        <nav>
-            <NavButton text={"HOME"} href={"/"}/>
-            <NavButton text={"PROJECTS"} href={"/projects"}/>
-            <NavButton text={"ABOUT"} href={"/about"}/>
-            <NavButton text={"CONTACT"} href={"/contact"}/>
-        </nav>
+        <menu>
+            <menuitem><NavButton text={"HOME"} href={"/"}/></menuitem>
+            <menuitem><NavButton text={"PROJECTS"} href={"/projects"}/></menuitem>
+            <menuitem><NavButton text={"ABOUT"} href={"/about"}/></menuitem>
+            <menuitem><NavButton text={"CONTACT"} href={"/contact"}/></menuitem>
+        </menu>
     )
 }
 
