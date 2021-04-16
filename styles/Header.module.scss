@@ -1,4 +1,5 @@
 @import "./colors";
+@import "./fontSizes.scss";
 
 .Header {
     position: absolute;
@@ -28,6 +29,17 @@
     flex-flow: row wrap;
     align-content: center;
     justify-content: space-around;
+
+    a {
+        font-size: $header-text-size;
+        font-weight: 300;
+        text-decoration: none;
+      }
+      
+    a:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+    }
 }
 
 .HeaderMenu {

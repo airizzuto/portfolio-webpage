@@ -1,7 +1,7 @@
-import HeaderButton from "./HeaderButton"
 import Image from "next/image"
 import styles from '../../styles/Header.module.scss'
 import Link from "next/link"
+import NavButton from "./NavButton"
 
 const Header = () => {
     return (
@@ -13,10 +13,10 @@ const Header = () => {
             </Link>
 
             <nav className={styles.HeaderNav}>
-                <HeaderButton text={"HOME"} href={"/"}/>
-                <HeaderButton text={"PROJECTS"} href={"/projects"}/>
-                <HeaderButton text={"ABOUT"} href={"/about"}/>
-                <HeaderButton text={"CONTACT"} href={"/contact"}/>
+                <NavButton text={"HOME"} href={"/"}/>
+                <NavButton text={"PROJECTS"} href={"/projects"}/>
+                <NavButton text={"ABOUT"} href={"/about"}/>
+                <NavButton text={"CONTACT"} href={"/contact"}/>
             </nav>
         </header>
     )
