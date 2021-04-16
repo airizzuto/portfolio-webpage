@@ -5,6 +5,23 @@
     
 }
 
-a {
+li a {
+    display: block;
+    color: $primary-color-dark;
+    padding: 8px 16px;
+  }
+  
+li a:hover {
+  color: $secondary-color-dark;
+}
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.active {
+    background-color: $secondary-color-dark;
+    color: $background-color-dark;
 }
