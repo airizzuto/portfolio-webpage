@@ -1,7 +1,10 @@
 import Image from "next/image"
-import styles from '../../styles/Header.module.scss'
 import Link from "next/link"
+import Menu from "./Menu"
 import NavButton from "./NavButton"
+
+import styles from '../../styles/Header.module.scss'
+import { FaBars } from "react-icons/fa"
 
 const Header = () => {
     return (
@@ -11,6 +14,14 @@ const Header = () => {
                     <Image src={"/static/logo.svg"} alt="logo" width="80px" height="80px" />
                 </a>
             </Link>
+            
+            <menu>
+                <Menu />
+            </menu>
+            {/* TODO: Menu button 
+            <i><FaBars/></i>
+            */}
+            
 
             <nav className={styles.HeaderNav}>
                 {/* UL LI STYLE AS FOOTER */}
