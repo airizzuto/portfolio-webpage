@@ -7,11 +7,11 @@
     top: 0;
     left: 0;
     width: 100%;
-    max-height: 100px;
+    max-height: 10rem;
     background-color: transparent;
     display: grid;
-    grid-template-areas: "logo nav menu";
     grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: "logo nav menu";
     align-items: center;
     justify-content: space-around;
 }
