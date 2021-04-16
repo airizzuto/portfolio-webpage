@@ -13,6 +13,7 @@ const Header = () => {
             </Link>
 
             <nav className={styles.HeaderNav}>
+                {/* UL LI STYLE AS FOOTER */}
                 <NavButton text={"HOME"} href={"/"}/>
                 <NavButton text={"PROJECTS"} href={"/projects"}/>
                 <NavButton text={"ABOUT"} href={"/about"}/>
