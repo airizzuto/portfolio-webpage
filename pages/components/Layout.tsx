@@ -1,3 +1,4 @@
+import React, { useState } from "react"
 import styles from "../../styles/Layout.module.scss"
 import Footer from "./Footer"
 import Header from "./Header"
@@ -8,12 +9,14 @@ interface Props {
 }
 
 const Layout = ({ children }: Props) => {
+    const [isMenuOpen, setMenuOpen] = useState(false)
+
     return (
         <>
             <Meta />  {/*TODO: Additional meta */}
             <main className={styles.container}>
                 <div className={styles.Header}>
-                    <Header />
+                    <Header isMenuOpen={isMenuOpen}/>
                 </div>
 
                 <div className={styles.Content}>

@@ -22,6 +22,8 @@ const Content = ({title, text, imageSrc}: Props) => {
                     : <p>{text}</p>
                 }
             </div>
+
+            {/* TODO: slide down arrow */}
         </div>
     )
 }

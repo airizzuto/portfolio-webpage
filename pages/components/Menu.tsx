@@ -1,7 +1,11 @@
 import NavButton from "./NavButton"
 import styles from "../../styles/Menu.module.scss"
 
-const Menu = () => {
+interface Props {
+  isOpen: Boolean,
+}
+
+const Menu = ({isOpen}: Props) => {
     return (
       <menu className={styles.Menu}>
         <ul>
