@@ -1,13 +1,25 @@
 import NavButton from "./NavButton"
+import styles from "../../styles/Menu.module.scss"
+
 const Menu = () => {
     return (
-        <menu>
-            <menuitem><NavButton text={"HOME"} href={"/"}/></menuitem>
-            <menuitem><NavButton text={"PROJECTS"} href={"/projects"}/></menuitem>
-            <menuitem><NavButton text={"ABOUT"} href={"/about"}/></menuitem>
-            <menuitem><NavButton text={"CONTACT"} href={"/contact"}/></menuitem>
-        </menu>
-    )
+      <menu className={styles.Menu}>
+        <ul>
+          <li>
+            <NavButton text={"HOME"} href={"/"} />
+          </li>
+          <li>
+            <NavButton text={"PROJECTS"} href={"/projects"} />
+          </li>
+          <li>
+            <NavButton text={"ABOUT"} href={"/about"} />
+          </li>
+          <li>
+            <NavButton text={"CONTACT"} href={"/contact"} />
+          </li>
+        </ul>
+      </menu>
+    );
 }
 
 export default Menu

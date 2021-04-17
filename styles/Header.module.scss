@@ -42,12 +42,29 @@
     }
 }
 
-.HeaderMenu {
+
+.MenuButton {
+    display: none;
     grid-area: menu;
-}
+    align-self: center;
+    justify-self: center;
+  
+    button {
+        color: $primary-color-dark;
+        background-color: transparent;
+        border-color: transparent;
+        border: 0px;
+    }
+    button:hover {
+      color: $secondary-color-dark;
+    }
+}  
 
 @media screen and (max-width: 720px){
     .HeaderNav {
         display: none;
+    }
+    .MenuButton {
+        display: block;
     }
 }

@@ -5,22 +5,21 @@ import NavButton from "./NavButton"
 
 import styles from '../../styles/Header.module.scss'
 import { FaBars } from "react-icons/fa"
+import React from "react"
 
 const Header = () => {
     return (
         <header className={styles.Header}>
             <Link href="/">
                 <a className={styles.HeaderLogo}>
-                    <Image src={"/static/logo.svg"} alt="logo" width="80px" height="80px" />
+                    <Image src={"/static/logo.svg"} alt="logo" width="70em" height="80px" />
                 </a>
             </Link>
             
-            <menu>
+            <div className={styles.MenuButton}>
+                <button onClick={() => {/* TODO */}}><FaBars size="3em"/></button>
                 <Menu />
-            </menu>
-            {/* TODO: Menu button 
-            <i><FaBars/></i>
-            */}
+            </div>
             
 
             <nav className={styles.HeaderNav}>
