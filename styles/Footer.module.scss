@@ -33,6 +33,18 @@
         list-style-type: none;
     }
 
+    li {
+        color: $primary-color-dark;
+    }
+
+    li:hover {
+        color: $secondary-color-dark;
+
+        .Icon {
+            color: $secondary-color-dark;
+        }
+    }
+
     a {
         font-family: Roboto, "SegoeUI", "Verdana";
         font-size: $footer-text-size;
