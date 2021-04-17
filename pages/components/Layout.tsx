@@ -11,19 +11,21 @@ const Layout = ({ children }: Props) => {
     return (
         <>
             <Meta />  {/*TODO: Additional meta */}
-            <div>
-                <main className={styles.container}>
+            <main className={styles.container}>
+                <div className={styles.Header}>
                     <Header />
+                </div>
 
+                <div className={styles.Content}>
                     {children}
+                </div>
+                {/*TODO: Slide down arrow */}
 
-                    {/*TODO: Slide down arrow */}
-
-                    {/*TODO: Go to top */}
-
+                {/*TODO: Go to top */}
+                <div className={styles.Footer}>
                     <Footer />
-                </main>
-            </div>
+                </div>
+            </main>
         </>
     )
 }

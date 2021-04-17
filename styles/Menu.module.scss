@@ -1,0 +1,28 @@
+@import "./colors";
+@import "./fontSizes";
+
+.Menu {
+    display: none;
+}
+
+.Menu li {
+  a {
+    display: block;
+    color: $primary-color-dark;
+    padding: 8px 16px;
+  }
+  a:hover {
+    color: $secondary-color-dark;
+  }
+}
+
+.Menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.active {
+    background-color: $secondary-color-dark;
+    color: $background-color-dark;
+}
