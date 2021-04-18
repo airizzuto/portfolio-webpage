@@ -6,9 +6,11 @@ interface Props {
     imageSrc: string;
 }
 
-const Content = ({title, text, imageSrc}: Props) => {
-    
+// TODO: Content object
 
+const Content = ({title, text, imageSrc}: Props) => {
+
+    
     return (
         <div className={styles.Content} 
             style={{
