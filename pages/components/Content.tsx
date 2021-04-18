@@ -10,7 +10,6 @@ interface Props {
 
 const Content = ({title, text, imageSrc}: Props) => {
 
-    
     return (
         <div className={styles.Content} 
             style={{
