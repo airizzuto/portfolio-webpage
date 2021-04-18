@@ -35,13 +35,25 @@
         font-weight: 300;
         text-decoration: none;
       }
-      
-    a:hover {
+    
+    a:active {  // TODO: underline should stay on active current page
       text-decoration: underline;
       text-decoration-thickness: 2px;
     }
-}
 
+    ul {
+        display: contents;
+        list-style-type: none;
+    }
+
+    li {
+        color: $primary-color-dark;
+    }
+
+    li:hover {
+        color: $secondary-color-dark;
+    }
+}
 
 .MenuButton {
     display: none;
