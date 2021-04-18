@@ -23,11 +23,12 @@ const Header = () => {
             
 
             <nav className={styles.HeaderNav}>
-                {/* UL LI STYLE AS FOOTER */}
-                <NavButton text={"HOME"} href={"/"}/>
-                <NavButton text={"PROJECTS"} href={"/projects"}/>
-                <NavButton text={"ABOUT"} href={"/about"}/>
-                <NavButton text={"CONTACT"} href={"/contact"}/>
+                <ul> 
+                    <li><NavButton text={"HOME"} href={"/"}/></li>
+                    <li><NavButton text={"PROJECTS"} href={"/projects"}/></li>
+                    <li><NavButton text={"ABOUT"} href={"/about"}/></li>
+                    <li><NavButton text={"CONTACT"} href={"/contact"}/></li>
+                </ul>
             </nav>
         </header>
     )
