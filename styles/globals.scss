@@ -13,6 +13,9 @@ body {
 	overflow: overlay;
   -moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
+
+  animation: bugfix infinite 1s;
+  -webkit-animation: bugfix infinite 1s;
 }
 
 a {

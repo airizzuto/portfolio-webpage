@@ -4,7 +4,6 @@ import Menu from "./Menu"
 import NavButton from "./NavButton"
 
 import styles from '../../styles/Header.module.scss'
-import { FaBars } from "react-icons/fa"
 import React from "react"
 
 const Header = () => {
@@ -17,7 +16,6 @@ const Header = () => {
             </Link>
             
             <div className={styles.MenuButton}>
-                <button onClick={() => {/* TODO */}}><FaBars size="3em"/></button>
                 <Menu />
             </div>
             
