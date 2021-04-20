@@ -1,28 +1,220 @@
 @import "./colors";
 @import "./fontSizes";
 
-.Menu {
-    display: none;
+/* Reference code: https://codepen.io/danhearn/pen/XprGrJ
+body {
+  background: #87cc77;
+  margin: 0;
+  font-family: arial;
+  width: 100vw;
+  height: 100vh;
+  animation: bugfix infinite 1s;
+  -webkit-animation: bugfix infinite 1s;
 }
 
-.Menu li {
-  a {
-    display: block;
-    color: $primary-color-dark;
-    padding: 8px 16px;
+@keyframes bugfix { from {padding:0;} to {padding:0;}}
+@-webkit-keyframes bugfix { from {padding:0;} to {padding:0;}}
+
+#overlay-button {
+  position: absolute;
+  right: 2em;
+  top: 3em;
+  padding: 26px 11px;
+  z-index: 5;
+  cursor: pointer;
+  user-select: none;
+  span {
+      height: 4px;
+      width: 35px;
+      border-radius: 2px;
+      background-color: white;
+      position: relative;
+      display: block;
+      transition: all .2s ease-in-out;
+      &:before {
+        top: -10px;
+        visibility: visible;
+      }
+      &:after {
+        top: 10px;
+      }
+      &:before, &:after {
+          height: 4px;
+          width: 35px;
+          border-radius: 2px;
+          background-color: white;
+          position: absolute;
+          content: "";
+          transition: all .2s ease-in-out;
+      }
+    }
+    &:hover span, &:hover span:before, &:hover span:after {
+      background: #333332;
+    }
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ #overlay {
+  visibility: visible;
+}
+
+input[type=checkbox]:checked ~ #overlay-button {
+  &:hover span, span{
+    background: transparent;
   }
-  a:hover {
-    color: $secondary-color-dark;
+  span {
+    &:before {
+      transform: rotate(45deg) translate(7px, 7px);
+      opacity: 1;
+    }
+    &:after {
+      transform: rotate(-45deg) translate(7px, -7px);
+    }
   }
 }
 
-.Menu ul {
+#overlay {
+  height: 100vh;
+  width: 100vw;
+  background: #ec6451;
+  z-index: 2;
+  visibility: hidden;
+  position: fixed;
+  &.active {
+    visibility: visible;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    padding-left: 0;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    li {
+      padding: 1em;
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+        &:hover {
+          color: #333332;
+        }
+      }
+    }
+  }
 }
 
-.active {
-    background-color: $secondary-color-dark;
-    color: $background-color-dark;
+*/
+// TODO: Close menu on click
+
+@keyframes bugfix { from {padding:0;} to {padding:0;}}
+@-webkit-keyframes bugfix { from {padding:0;} to {padding:0;}}
+
+.MenuButton {
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+  padding: 2.5rem;
+  z-index: 100;
+  cursor: pointer;
+  user-select: none;
+  span {
+      height: 4px;
+      width: 35px;
+      border-radius: 2px;
+      background-color: $primary-color-dark;
+      position: relative;
+      display: block;
+      transition: all .2s ease-in-out;
+      &:before {
+        top: -10px;
+        visibility: visible;
+      }
+      &:after {
+        top: 10px;
+      }
+      &:before, &:after {
+          height: 4px;
+          width: 35px;
+          border-radius: 2px;
+          background-color: $primary-color-dark;
+          position: absolute;
+          content: "";
+          transition: all .2s ease-in-out;
+      }
+    }
+    &:hover span, &:hover span:before, &:hover span:after {
+      background: $secondary-color-dark;
+    }
+}
+
+.MenuInput {
+  display: none;
+}
+
+.MenuInput:checked ~ .Menu {
+  visibility: visible;
+}
+
+.MenuInput:checked ~ .MenuButton {
+  &:hover span, span{
+    background: transparent;
+  }
+  span {
+    &:before {
+      transform: rotate(45deg) translate(7px, 7px);
+      opacity: 1;
+    }
+    &:after {
+      transform: rotate(-45deg) translate(7px, -7px);
+    }
+  }
+}
+
+.Menu {
+  position: fixed;
+  visibility: hidden;
+  margin-top: 0;
+  padding-left: 0;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  background: $background-color-dark;
+  z-index: 99;
+  &.active {
+    visibility: visible;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+    height: 100vh;
+    list-style-type: none;
+    li {
+      grid-column: 2 / 3;
+      align-self: center;
+      width: 100%;
+      padding: 5em 0em;
+      &:hover {
+        background-color: $secondary-color-dark;
+      }
+      a {
+        color: $primary-color-dark;
+        text-decoration: none;
+        font-size: $header-text-size;
+        &:hover {
+          color: $background-color-dark;
+        }
+      }
+    }
+  }
 }

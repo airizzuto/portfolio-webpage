@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 interface Props {
     text: String
     href: string

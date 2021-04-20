@@ -4,7 +4,6 @@ import Menu from "./Menu"
 import NavButton from "./NavButton"
 
 import styles from '../../styles/Header.module.scss'
-import { FaBars } from "react-icons/fa"
 import React from "react"
 
 interface Props {
@@ -21,17 +20,17 @@ const Header = ({isMenuOpen}: Props) => {
             </Link>
             
             <div className={styles.MenuButton}>
-                <button onClick={() => {/* TODO */}}><FaBars size="3em"/></button>
-                <Menu isOpen={isMenuOpen}/>
+                <Menu />
             </div>
             
 
             <nav className={styles.HeaderNav}>
-                {/* TODO: ul li same as footer */}
-                <NavButton text={"HOME"} href={"/"}/>
-                <NavButton text={"PROJECTS"} href={"/projects"}/>
-                <NavButton text={"ABOUT"} href={"/about"}/>
-                <NavButton text={"CONTACT"} href={"/contact"}/>
+                <ul> 
+                    <li><NavButton text={"HOME"} href={"/"}/></li>
+                    <li><NavButton text={"PROJECTS"} href={"/projects"}/></li>
+                    <li><NavButton text={"ABOUT"} href={"/about"}/></li>
+                    <li><NavButton text={"CONTACT"} href={"/contact"}/></li>
+                </ul>
             </nav>
         </header>
     )

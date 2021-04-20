@@ -6,8 +6,9 @@ interface Props {
     imageSrc: string;
 }
 
+// TODO: Content object
+
 const Content = ({title, text, imageSrc}: Props) => {
-    
 
     return (
         <div className={styles.Content} 

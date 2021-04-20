@@ -11,9 +11,19 @@
     padding-left: 12vw;
     padding-right: 12vw;
     padding-bottom: 14rem;
+
+    /* FIXED BACKGROUND
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    */
+
+    // PARALLAX BACKGROUND
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     height: 100vh;
     min-height: fit-content;
     overflow:auto;
@@ -29,4 +39,11 @@
     font-size: $content-text-size;
     font-weight: 100;
     text-align: left;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .Content {
+      background-attachment: scroll;
+      background-position: center center;
+    }
 }
