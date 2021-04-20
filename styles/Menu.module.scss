@@ -1,17 +1,17 @@
 @import "./colors";
 @import "./fontSizes";
 
-// Reference https://codepen.io/danhearn/pen/XprGrJ
+// TODO: Reference https://codepen.io/danhearn/pen/XprGrJ
 
 @keyframes bugfix { from {padding:0;} to {padding:0;}}
 @-webkit-keyframes bugfix { from {padding:0;} to {padding:0;}}
 
 .MenuButton {
-  position: absolute;
-  right: 2em;
-  top: 3em;
-  padding: 26px 11px;
-  z-index: 5;
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+  padding: 2.5rem;
+  z-index: 100;
   cursor: pointer;
   user-select: none;
   span {
@@ -68,25 +68,31 @@
 }
 
 .Menu {
+  position: fixed;
+  visibility: hidden;
+  margin-top: 0;
+  padding-left: 0;
+  top: 0px;
+  left: 0px;
   height: 100vh;
   width: 100vw;
   background: $background-color-dark;
-  z-index: 9999;
-  visibility: hidden;
-  position: fixed;
+  z-index: 99;
   &.active {
     visibility: visible;
   }
   ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    padding-left: 0;
+    justify-content: center;
+    align-items: stretch;
     text-align: center;
     height: 100vh;
-    padding-left: 0;
     list-style-type: none;
     li {
+      grid-column: 2 / 3;
+      align-self: center;
       padding: 5em;
       a {
         color: $primary-color-dark;
