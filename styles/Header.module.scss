@@ -8,23 +8,22 @@
     top: 0;
     left: 0;
     width: 100%;
-    max-height: 10rem;
+    height: 10rem;
     background-color: transparent;
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
-    grid-template-areas: "logo nav menu";
     align-items: center;
     justify-content: space-around;
 }
 
 .HeaderLogo {
-    grid-area: logo;
-    align-self: center;
-    justify-self: center;
+    position: fixed;
+    top: 1rem;
+    left: 3rem;
 }
 
 .HeaderNav {
-    grid-area: nav;
+    grid-area: 1 / 2 / 2 / 3;
     display: flex;
     flex-flow: row wrap;
     align-content: center;
