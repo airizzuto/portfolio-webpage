@@ -94,13 +94,17 @@
     li {
       grid-column: 2 / 3;
       align-self: center;
-      padding: 5em;
+      width: 100%;
+      padding: 5em 0em;
+      &:hover {
+        background-color: $secondary-color-dark;
+      }
       a {
         color: $primary-color-dark;
         text-decoration: none;
         font-size: $header-text-size;
         &:hover {
-          color: $secondary-color-dark;
+          color: $background-color-dark;
         }
       }
     }
