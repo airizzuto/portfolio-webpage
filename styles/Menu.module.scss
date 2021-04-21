@@ -112,9 +112,6 @@ input[type=checkbox]:checked ~ #overlay-button {
 */
 // TODO: Close menu on click
 
-@keyframes bugfix { from {padding:0;} to {padding:0;}}
-@-webkit-keyframes bugfix { from {padding:0;} to {padding:0;}}
-
 .MenuButton {
   position: fixed;
   right: 2rem;

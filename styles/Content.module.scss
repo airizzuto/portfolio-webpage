@@ -2,7 +2,7 @@
 @import "./fontSizes";
 
 .Content {
-    display: flexbox;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -39,6 +39,10 @@
     font-size: $content-text-size;
     font-weight: 100;
     text-align: left;
+}
+
+.Arrow {
+    position: absolute;
 }
 
 @media only screen and (max-device-width: 1366px) {

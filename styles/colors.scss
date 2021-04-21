@@ -1,6 +1,7 @@
-$primary-color-dark: white;
-$secondary-color-dark: #FFBE18;
-$background-color-dark: black;
-$primary-color-light: black;
-$secondary-color-light: #ff3318;
-$background-color-light: white;
+$primary-color-dark: hsl(0, 0%, 100%);
+$secondary-color-dark: hsl(43, 100%, 55%);
+$secondary-color-dark-shaded: hsl(43, 100%, 40%);
+$background-color-dark: hsl(0, 0%, 0%);
+$primary-color-light: hsl(0, 0%, 0%);
+$secondary-color-light: hsl(7, 100%, 55%);
+$background-color-light: hsl(0, 0%, 100%);

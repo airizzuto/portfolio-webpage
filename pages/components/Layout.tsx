@@ -1,7 +1,8 @@
 import styles from "../../styles/Layout.module.scss"
-import Footer from "./Footer"
 import Header from "./Header"
+import Footer from "./Footer"
 import Meta from "./Meta"
+import ScrollArrow from "./ScrollArrow"
 
 interface Props {
     children: any;
@@ -19,9 +20,11 @@ const Layout = ({ children }: Props) => {
                 <div className={styles.Content}>
                     {children}
                 </div>
-                {/*TODO: Slide down arrow */}
+
+                <ScrollArrow />
 
                 {/*TODO: Go to top */}
+                
                 <div className={styles.Footer}>
                     <Footer />
                 </div>
