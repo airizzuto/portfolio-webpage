@@ -14,6 +14,7 @@
     grid-template-columns: 1fr 5fr 1fr;
     align-items: center;
     justify-content: space-around;
+    z-index: 8;
 }
 
 .HeaderLogo {
@@ -54,15 +55,9 @@
     }
 }
 
-.MenuButton {
-    display: none;
-}  
 
 @media screen and (max-width: 720px){
     .HeaderNav {
         display: none;
-    }
-    .MenuButton {
-        display: block;
     }
 }

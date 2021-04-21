@@ -39,16 +39,16 @@
 
     li:hover {
         color: $secondary-color-dark;
+    }
 
-        .Icon {
-            color: $secondary-color-dark;
-        }
+    .Icon:hover { // FIXME: Temporary fix
+        color: $primary-color-dark;
     }
 
     a {
         font-family: Roboto, "SegoeUI", "Verdana";
         font-size: $footer-text-size;
-        font-weight: 400;
+        font-weight: 500;
         text-decoration: none;
     }
 }
