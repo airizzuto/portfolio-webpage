@@ -112,15 +112,12 @@ input[type=checkbox]:checked ~ #overlay-button {
 */
 // TODO: Close menu on click
 
-@keyframes bugfix { from {padding:0;} to {padding:0;}}
-@-webkit-keyframes bugfix { from {padding:0;} to {padding:0;}}
-
 .MenuButton {
   position: fixed;
   right: 2rem;
-  top: 2rem;
+  top: 2.5rem;
   padding: 2.5rem;
-  z-index: 100;
+  z-index: 10;
   cursor: pointer;
   user-select: none;
   span {
@@ -186,7 +183,7 @@ input[type=checkbox]:checked ~ #overlay-button {
   height: 100vh;
   width: 100vw;
   background: $background-color-dark;
-  z-index: 99;
+  z-index: 9;
   &.active {
     visibility: visible;
   }
@@ -211,8 +208,14 @@ input[type=checkbox]:checked ~ #overlay-button {
         color: $primary-color-dark;
         text-decoration: none;
         font-size: $header-text-size;
+        font-weight: 300;
         &:hover {
           color: $background-color-dark;
+        }
+        &:active {
+          .Menu {
+            display: none;
+          }
         }
       }
     }

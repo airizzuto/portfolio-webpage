@@ -2,22 +2,23 @@
 @import "./fontSizes";
 
 .Content {
-    display: flexbox;
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-content: flex-start;
     justify-content: flex-start;
     padding-top: 12rem;
     padding-left: 12vw;
     padding-right: 12vw;
     padding-bottom: 14rem;
+    z-index: 1;
 
     /* FIXED BACKGROUND
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     */
 
+    // TODO: parallax all ref: https://codepen.io/hexagoncircle/pen/PXVEVZ
     // PARALLAX BACKGROUND
     background-attachment: fixed;
     background-position: center;
@@ -25,8 +26,7 @@
     background-size: cover;
 
     height: 100vh;
-    min-height: fit-content;
-    overflow:auto;
+    overflow: auto;
 }
 
 .Title {
@@ -36,9 +36,15 @@
 }
 
 .Info {
+    overflow: auto; // TODO: Better overflow design
     font-size: $content-text-size;
     font-weight: 100;
     text-align: left;
+    z-index: 5;
+}
+
+.Arrow {
+    position: absolute;
 }
 
 @media only screen and (max-device-width: 1366px) {
