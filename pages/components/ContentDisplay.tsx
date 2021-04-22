@@ -5,7 +5,7 @@ interface Props {
     content: Content;
 }
 const ContentDisplay = ({content}: Props) => {
-
+    // TODO: create separate components with html structures for different contents types
     return (
         <div className={styles.Content} 
             style={{
