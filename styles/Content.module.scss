@@ -55,7 +55,7 @@
     }
 }
 
-@media only screen and (max-device-width: 720px) {
+@media screen and (max-width: 720px) {
     .Content {
       background-attachment: scroll;
       background-position: center center;
