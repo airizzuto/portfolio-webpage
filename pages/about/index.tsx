@@ -1,9 +1,17 @@
 import Content from "../components/Content";
+import ContentDisplay from "../components/ContentDisplay";
+
+const about: Content = {
+    title: "About Me",
+    info: ["ABOUT INFO PLACEHOLDER"],
+    imagePath: "static/nihon-graphy.jpg",
+}
+
 
 export default function About() {
     return (
         <>
-            <Content title={"About Me"} text={["PLACEHOLDER"]} imageSrc={"static/nihon-graphy.jpg"}/>
+            <ContentDisplay content={about} />
         </>
     )
 }

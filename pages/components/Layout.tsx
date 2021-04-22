@@ -17,7 +17,7 @@ const Layout = ({ children }: Props) => {
                     <Header />
                 </div>
 
-                <div className={styles.Content}>
+                <div className={styles.ContentDisplay}>
                     {children}
                 </div>
 

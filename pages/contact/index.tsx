@@ -1,10 +1,16 @@
 import Content from "../components/Content"
+import ContentDisplay from "../components/ContentDisplay"
+
+const contact: Content = { // TODO: move to a separate file
+    title: "Contact",
+    info: "FORM PLACEHOLDER",
+    imagePath: "static/nasa2.jpg",
+}
 
 export default function Contact() {
     return (
         <>
-            {/* TODO: Style and form content component? */}
-            <Content title={"Contact"} text={["FORM PLACEHOLDER"]} imageSrc={"static/nasa2.jpg"}/>
+            <ContentDisplay content={contact}/>
         </>
     )
 }
