@@ -11,7 +11,7 @@ const Header = () => {
         <header className={styles.Header}>
             <Link href="/">
                 <a className={styles.HeaderLogo}>
-                    <Image src={"/static/logo.svg"} alt="logo" width="70em" height="80px" />
+                    <Image src={"/static/proto-logo-dark4.svg"} alt="logo" width="70em" height="80px" />
                 </a>
             </Link>
             
