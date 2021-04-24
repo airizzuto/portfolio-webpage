@@ -1,7 +1,6 @@
 .container {
   display: grid;
-  grid-row: auto;
-  grid-template-columns: auto;
+  grid-template-rows: auto;
   grid-template-areas: 
     "header"
     "content"
@@ -12,7 +11,7 @@
   grid-area: header;
 }
 
-.Content {
+.ContentDisplay {
   grid-area: content;
   min-height: 100vh;
   align-self: center;

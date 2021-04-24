@@ -20,7 +20,7 @@ const Layout = ({ children }: Props) => {
                     <Header isMenuOpen={isMenuOpen}/>
                 </div>
 
-                <div className={styles.Content}>
+                <div className={styles.ContentDisplay}>
                     {children}
                 </div>
 
