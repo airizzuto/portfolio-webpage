@@ -1,7 +1,7 @@
 type Content = {
-    title: String;
-    info: String[] | String;
-    imagePath: String;
+  title: String;
+  text: String[] | String;
+  image?: String
 }
 
 export default Content

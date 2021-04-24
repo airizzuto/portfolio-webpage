@@ -1,25 +1,19 @@
-import styles from "../../styles/ContentDisplay.module.scss"
+import React from "react"
 import Content from "./Content"
+import ProjectContent from "./ProjectContent"
 
-interface Props {
-    content: Content;
+interface IContent {
+  contents: Content[]
 }
-const ContentDisplay = ({content}: Props) => {
-    // TODO: create separate components with html structures for different contents types
+
+const ContentDisplay = ({contents}: IContent) => {
     return (
-        <div className={styles.Content} 
-            style={{
-                backgroundImage: `url(${content.imagePath})`
-            }}>
-            <h3 className={styles.Title}>{content.title}</h3>
-            <div className={styles.Info}>
-                {Array.isArray(content.info) 
-                    ? content.info.map(paragraph => {
-                        return <p>{paragraph}</p>})
-                    : <p>{content.info}</p>
-                }
-            </div>
-        </div>
+      <>
+        {contents.map(content => {
+            return <ProjectContent title={content.title} text={content.text} image={content.image} />  // TODO: content key
+          }) 
+        }
+      </>
     )
 }
 

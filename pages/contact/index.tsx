@@ -1,16 +1,15 @@
-import Content from "../components/Content"
 import ContentDisplay from "../components/ContentDisplay"
 
-const contact: Content = { // TODO: move to a separate file
+const contact = [
+  { // TODO: move to a separate file
     title: "Contact",
-    info: "FORM PLACEHOLDER",
-    imagePath: "static/nasa2.jpg",
-}
+    text: "FORM PLACEHOLDER",
+    image: "static/nasa2.jpg",
+  },
+]
 
 export default function Contact() {
     return (
-        <>
-            <ContentDisplay content={contact}/>
-        </>
+      <ContentDisplay contents={contact}/>
     )
 }
