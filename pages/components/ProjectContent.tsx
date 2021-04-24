@@ -1,4 +1,4 @@
-import Content from "./Content"
+import Content from "../../models/Content"
 import styles from "../../styles/ContentDisplay.module.scss"
 
 const ProjectContent = ({title, text, image}: Content) => {

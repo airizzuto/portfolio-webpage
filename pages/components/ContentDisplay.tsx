@@ -1,20 +1,19 @@
-import React from "react"
-import Content from "./Content"
+import Content from "../../models/Content"
 import ProjectContent from "./ProjectContent"
 
-interface IContent {
+interface Props {
   contents: Content[]
 }
 
-const ContentDisplay = ({contents}: IContent) => {
-    return (
-      <>
-        {contents.map(content => {
-            return <ProjectContent title={content.title} text={content.text} image={content.image} />  // TODO: content key
-          }) 
-        }
-      </>
-    )
+const ContentDisplay = ({contents}: Props) => {
+  return (
+    <>
+      {contents?.map(content => {
+          return <ProjectContent title={content.title} text={content.text} image={content.image} />  // TODO: content key
+        }) 
+      }
+    </>
+  )
 }
 
 export default ContentDisplay

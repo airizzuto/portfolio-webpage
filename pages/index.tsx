@@ -8,8 +8,8 @@ const main = [{
 
 export default function Home() {
   return (
-    <>
+    <div>
       <ContentDisplay contents={main} />
-    </>
+    </div>
   )
 }

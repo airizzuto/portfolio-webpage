@@ -10,6 +10,8 @@ const contact = [
 
 export default function Contact() {
     return (
-      <ContentDisplay contents={contact}/>
+      <div>
+        <ContentDisplay contents={contact}/>
+      </div>
     )
 }

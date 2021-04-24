@@ -1,4 +1,3 @@
-import Content from "../components/Content"
 import ContentDisplay from "../components/ContentDisplay"
 
 const projects = [
@@ -21,9 +20,9 @@ const projects = [
 
 export default function Projects() {
     return (
-        <>
+        <div>
             {/* TODO: replace Content component with a new grid component */}
             <ContentDisplay contents={projects} />
-        </>
+        </div>
     )
 }

@@ -8,9 +8,10 @@ const about = [
   },
 ]
 
-
 export default function About() {
     return (
-      <ContentDisplay contents={about} />
+      <div>
+        <ContentDisplay contents={about} />
+      </div>
     )
 }
