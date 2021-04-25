@@ -4,8 +4,7 @@ const projects = [
   { // TODO: move to a separate file
     title: "Project 1",
     text: [
-        "At ullam porro adipisci. Quis est nostrum autem. Voluptas eos doloribus voluptatem recusandae esse modi repellat enim. Vel velit impedit suscipit       cumque    sapiente odit magni. Nulla aut eaque perferendis accusamus inventore qui voluptatibus et.",
-        "Facere aliquid sunt maxime ad atque perferendis enim. Quam voluptas molestiae aut consequatur aut officiis. Est sit modi placeat quidem nemo et quod est. Praesentium enim et itaque quisquam minima numquam."
+        "At ullam porro adipisci. Quis est nostrum autem. Voluptas eos doloribus voluptatem recusandae esse modi repellat enim. Vel velit impedit suscipit       cumque    sapiente odit magni. Nulla aut eaque perferendis accusamus inventore qui voluptatibus et."
     ],
     image: "static/tianyi-ma.jpg",
   },

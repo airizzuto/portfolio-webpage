@@ -48,7 +48,7 @@
     a {
         font-family: Roboto, "SegoeUI", "Verdana";
         font-size: $footer-text-size;
-        font-weight: 500;
+        font-weight: $footer-font-weight;
         text-decoration: none;
     }
 }

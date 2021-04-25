@@ -18,7 +18,7 @@
 }
 
 .HeaderLogo {
-    position: relative;
+    grid-area: 1 / 1 / 2 / 2;
     align-self: center;
     justify-self: center;
 }
@@ -32,7 +32,7 @@
 
     a {
         font-size: $header-text-size;
-        font-weight: 300;
+        font-weight: $navbutton-font-weight;
         text-decoration: none;
       }
     
@@ -58,6 +58,12 @@
 
 @media screen and (max-width: 720px){
     .HeaderNav {
-        display: none;
+      display: none;
     }
+    .HeaderLogo {
+      position: fixed;
+      top: 1rem;
+      left: 3.0rem;
+      scale: 0.75;
+  }
 }
