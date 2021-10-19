@@ -15,7 +15,7 @@ import {FaGithub, FaLinkedin} from "react-icons/fa"
               <FaGithub className={styles.Icon} size={"2.5em"} />
             </li>
             <li>
-              <NavButton text={"LinkedIn"} href={"/"} />
+              <NavButton text={"LinkedIn"} href={"https://www.linkedin.com/in/airizzuto/"} />
               <FaLinkedin className={styles.Icon} size={"2.5em"} />
             </li>
             <li>
