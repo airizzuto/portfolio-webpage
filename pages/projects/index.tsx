@@ -2,18 +2,23 @@ import ContentDisplay from "../components/ContentDisplay"
 
 const projects = [
   { // TODO: move to a separate file
-    title: "Project 1",
+    key: "PersonalPortfolioContent",
+    title: "Personal Portfolio Website",
     text: [
-        "At ullam porro adipisci. Quis est nostrum autem. Voluptas eos doloribus voluptatem recusandae esse modi repellat enim. Vel velit impedit suscipit       cumque    sapiente odit magni. Nulla aut eaque perferendis accusamus inventore qui voluptatibus et."
+        "Personal website made with Next, Typescript and Sass."
     ],
-    image: "static/tianyi-ma.jpg",
+    image: "static/tianyi-ma.jpg", // TODO: replace image
   },
   {
-      title: "Project 2",
+      key: "AirRangingContent",
+      title: "Air Ranging App",
       text: [
-          "Ducimus autem pariatur soluta sunt atque qui repellat. Dolores debitis illo vitae quas. Accusantium quaerat aspernatur odio aut. Magnam quis accusantium rerum at eum. Veritatis dolorum deleniti asperiores adipisci deleniti minus impedit ducimus."
+          "Web application for flight fuel planning, with aircraft management and user account.",
+          "WebAPI created using .NET and Entity Framework.",
+          "Database using PostgreSQL.",
+          "Frontend developed with React, Typescript and Sass."
       ],
-      image: "static/christian-wiediger-WkfDrhxDMC8-unsplash.jpg",
+      image: "static/AirRangingMap.png",
   },
 ]
 
