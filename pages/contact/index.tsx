@@ -1,17 +1,16 @@
-import ContentDisplay from "../components/ContentDisplay"
+import React from "react";
+import ContactForm from "./ContactForm";
 
-const contact = [
-  { // TODO: move to a separate file
-    title: "Contact",
-    text: "FORM PLACEHOLDER",
-    image: "static/nasa2.jpg",
-  },
-]
+import Style from "./ContactForm.module.scss"
 
 export default function Contact() {
     return (
-      <div>
-        <ContentDisplay contents={contact}/>
+      <div className={Style.Container}
+        style={{
+          backgroundImage:`url(${"static/nasa2.jpg"})`
+        }}
+      >
+        <ContactForm />
       </div>
     )
 }

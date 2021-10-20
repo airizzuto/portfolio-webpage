@@ -1,5 +1,5 @@
+@use "./fontSizes.scss" as font;
 @import "./colors";
-@import "./fontSizes";
 
 
 .Container {
@@ -37,16 +37,20 @@
     }
 
     .Title {
+        @include font.header-1;
         margin-left: 16rem;
-        font-size: $title-size;
-        font-weight: $title-font-weight;
         color: $secondary-color-dark;
     }
 
+    .SubTitle {
+        @include font.header-2;
+        margin-left: 16rem;
+        color: primary-color-dark;
+    }
+
     .Text {
+        @include font.normal;
         overflow: auto; // TODO: Better overflow design
-        font-size: $content-text-size;
-        font-weight: $text-font-weight;
         margin-left: 12rem;
         max-width: 80vw;
         text-align: left;
