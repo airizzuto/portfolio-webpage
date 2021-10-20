@@ -19,6 +19,9 @@ export default function Home() {
         <p className={Style.Text}>
           Welcome to my personal website.
         </p>
+        <p className={Style.Text}>
+          You can see my projects showcase, get to know a bit about myself and in case you are interested you can contact me.
+        </p>
       </div>
     </div>
   )
