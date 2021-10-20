@@ -10,7 +10,7 @@ const ProjectContent = ({title, text, image}: Content) => {
         }}
       >
         <div className={styles.Content}>
-          <h3 className={styles.Title}>{title}</h3>
+          <h1 className={styles.Title}>{title}</h1>
           <div className={styles.Text}>
             {Array.isArray(text) 
                 ? text.map(paragraph => {
