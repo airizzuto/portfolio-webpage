@@ -1,5 +1,5 @@
+@use "./fonts" as font;
 @import "./colors";
-@import "./fontSizes.scss";
 
 .Header {
     position: absolute;
@@ -31,8 +31,7 @@
     justify-content: space-around;
 
     a {
-        font-size: $header-text-size;
-        font-weight: $navbutton-font-weight;
+        @include font.nav;
         text-decoration: none;
       }
     

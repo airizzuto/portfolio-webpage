@@ -1,0 +1,45 @@
+$title-size: 2.441em;
+$large-text-size: 1.953em;
+$normal-text-size: 1.563em;
+$small-text-size: 1.25em;
+$copyright-text-size: 1em;
+
+$title-font-weight: 300;
+$text-font-weight: 300;
+$navbutton-font-weight: 300;
+$footer-font-weight: 500;
+
+@mixin header-1 {
+  font-size: $title-size;
+  font-weight: $title-font-weight;
+}
+
+@mixin header-2 {
+  font-size: $large-text-size;
+  font-weight: $title-font-weight;
+}
+
+@mixin nav {
+  font-size: $large-text-size;
+  font-weight: $navbutton-font-weight;
+}
+
+@mixin normal {
+  font-size: $normal-text-size;
+  font-weight: $text-font-weight;
+}
+
+@mixin small {
+  font-size: $small-text-size;
+  font-weight: $text-font-weight;
+}
+
+@mixin button {
+  font-size: $normal-text-size;
+  font-weight: $navbutton-font-weight;
+}
+
+@mixin footer {
+  font-size: $small-text-size;
+  font-weight: $footer-font-weight;
+}

@@ -1,5 +1,5 @@
-@use "./fontSizes.scss" as font;
-@import "./colors";
+@use "./fonts" as font;
+@use "./colors" as color;
 
 
 .Container {
@@ -41,13 +41,13 @@
     .Title {
         @include font.header-1;
         margin: 0 15vw;
-        color: $secondary-color-dark;
+        color: color.$secondary-color-dark;
     }
 
     .SubTitle {
         @include font.header-2;
         margin: 2rem 15vw;
-        color: primary-color-dark;
+        color: color.$primary-color-dark;
     }
 
     .Text {
@@ -56,14 +56,36 @@
         flex-direction: column;
         overflow: auto;
         
-        margin: 1rem 15vw;
-        max-width: 80vw;
+        margin: 2rem 15vw;
         text-align: left;
         z-index: 5;
     }
 
     .Arrow {
         position: absolute;
+    }
+
+    .Links {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        margin: 1rem 15vw;
+        justify-items: center;
+
+        label {
+            @include font.small;
+            color: color.$secondary-color-dark;
+            display: flex;
+            flex-direction: row;
+
+            column-gap: 1rem;
+
+            a {
+                @include font.normal;
+                flex: 1 1 0;
+            }
+        }
+
     }
 }
 
