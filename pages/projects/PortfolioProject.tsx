@@ -11,13 +11,17 @@ const PortfolioProject = () => {
         Personal Portfolio Webpage
       </h1>
       <div className={Style.Text}>
-        <p>Personal website made to showcase other projects and information about myself.</p>
+        <p>Small portfolio website made to showcase personal projects and information about myself.</p>
         <p>Tools used for FE: Next, Typescript and Sass</p>
       </div>
-      <div>
-        <Link href={"https://github.com/airizzuto/portfolio-webpage-template"}>
-          Go to Github
-        </Link>
+      <div className={Style.Links}>
+        <label>
+          Github:
+          <Link href={"https://github.com/airizzuto/portfolio-webpage-template"}>
+            https://github.com/airizzuto/portfolio-webpage-template
+          </Link>
+        </label>
+
       </div>
     </ProjectContent>
   )

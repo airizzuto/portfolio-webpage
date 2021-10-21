@@ -16,13 +16,21 @@ const AirRangingProject = () => {
         <p>Database using PostgreSQL.</p>
         <p>Frontend developed with React, Typescript and Sass.</p>
       </div>
-      <div>
-        <Link href={"#"}>
-          Web Page
-        </Link>
-        <Link href={"https://github.com/airizzuto/AirRanging/"}>
-          Github
-        </Link>
+
+      {/* TODO: abstract */}
+      <div className={Style.Links}>
+        <label>
+          Web Page:
+          <Link href={"#"}>
+            WIP
+          </Link>
+        </label>
+        <label>
+          Github:
+          <Link href={"https://github.com/airizzuto/AirRanging/"}>
+            https://github.com/airizzuto/AirRanging/
+          </Link>
+        </label>
       </div>
     </ProjectContent>
   )
