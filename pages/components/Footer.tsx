@@ -12,11 +12,11 @@ import {FaGithub, FaLinkedin} from "react-icons/fa"
                 text={`Github`}
                 href={"https://github.com/airizzuto"}
               />
-              <FaGithub className={styles.Icon} size={"2.5em"} />
+              <FaGithub className={styles.Icon} size={"1rem"} />
             </li>
             <li>
               <NavButton text={"LinkedIn"} href={"https://www.linkedin.com/in/airizzuto/"} />
-              <FaLinkedin className={styles.Icon} size={"2.5em"} />
+              <FaLinkedin className={styles.Icon} size={"1rem"} />
             </li>
             <li>
               <NavButton text={"Contact"} href={"/contact"} />
