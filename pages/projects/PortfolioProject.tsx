@@ -12,7 +12,7 @@ const PortfolioProject = () => {
       </h1>
       <div className={Style.Text}>
         <p>Small portfolio website made to showcase personal projects and information about myself.</p>
-        <p>Tools used for FE: Next, Typescript and Sass</p>
+        <p>Tools used for FE: Next, React, Typescript and Sass</p>
       </div>
       <div className={Style.Links}>
         <label>
