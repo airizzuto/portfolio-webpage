@@ -15,15 +15,6 @@ const ProjectContent: React.FC<Content> = ({image, children}) => {
         }}
       >
         <div className={Style.Background}>
-          {/* <h1 className={styles.Title}>{title}</h1>
-          <div className={styles.Text}>
-            {Array.isArray(text) 
-                ? text.map(paragraph => {
-                    return <p>{paragraph}</p>
-                  })
-                : <p>{text}</p>
-            }
-          </div> */}
           <div className={Style.Content}>
             {children}
           </div>
