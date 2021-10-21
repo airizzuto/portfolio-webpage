@@ -1,5 +1,5 @@
+@use "./fonts" as font;
 @import "./colors";
-@import "./fontSizes";
 
 .Footer {
     position: relative;
@@ -46,9 +46,8 @@
     }
 
     a {
+        @include font.footer;
         font-family: Roboto, "SegoeUI", "Verdana";
-        font-size: $footer-text-size;
-        font-weight: $footer-font-weight;
         text-decoration: none;
     }
 }
@@ -61,6 +60,6 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    font-size: $copyright-text-size;
+    font-size: font.$copyright-text-size;
 }
 

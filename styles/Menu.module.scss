@@ -1,5 +1,5 @@
+@use "./fonts" as font;
 @import "./colors";
-@import "./fontSizes";
 
 /* Reference code: https://codepen.io/danhearn/pen/XprGrJ
 body {
@@ -206,10 +206,9 @@ input[type=checkbox]:checked ~ #overlay-button {
         background-color: $neutral-color-dark;
       }
       a {
+        @include font.nav;
         color: $primary-color-dark;
         text-decoration: none;
-        font-size: $header-text-size;
-        font-weight: $navbutton-font-weight;
         &:hover {
           color: $secondary-color-dark;
         }
