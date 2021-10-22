@@ -1,8 +1,8 @@
 import React from 'react'
-import ContentWrapper from '../components/ContentWrapper';
+import ContentWrapper from '../components/Content/ContentWrapper';
+import ContentLink from '../components/Content/ContentLinks';
 
 import Style from "../../styles/ContentDisplay.module.scss";
-import Link from 'next/link';
 
 const AirRangingProject = () => {
   return (
@@ -19,18 +19,8 @@ const AirRangingProject = () => {
 
       {/* TODO: abstract */}
       <div className={Style.Links}>
-        <label>
-          Web Page:
-          <Link href={"#"}>
-            WIP
-          </Link>
-        </label>
-        <label>
-          Github:
-          <Link href={"https://github.com/airizzuto/AirRanging/"}>
-            https://github.com/airizzuto/AirRanging/
-          </Link>
-        </label>
+        <ContentLink label={"Web Page"} href={"https://airizzutodeveloper.vercel.app/"} />
+        <ContentLink label={"Github"} href={"https://github.com/airizzuto/AirRanging/"} />
       </div>
     </ContentWrapper>
   )

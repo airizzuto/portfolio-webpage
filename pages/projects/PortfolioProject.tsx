@@ -1,8 +1,8 @@
 import React from 'react'
-import ContentWrapper from '../components/ContentWrapper';
+import ContentWrapper from '../components/Content/ContentWrapper';
+import ContentLink from '../components/Content/ContentLinks';
 
 import Style from "../../styles/ContentDisplay.module.scss";
-import Link from 'next/link';
 
 const PortfolioProject = () => {
   return (
@@ -15,13 +15,10 @@ const PortfolioProject = () => {
         <p>Tools used for FE: Next, React, Typescript and Sass</p>
       </div>
       <div className={Style.Links}>
-        <label>
-          Github:
-          <Link href={"https://github.com/airizzuto/portfolio-webpage-template"}>
-            https://github.com/airizzuto/portfolio-webpage-template
-          </Link>
-        </label>
-
+        <ContentLink 
+          label={"Github"}
+          href={"https://github.com/airizzuto/portfolio-webpage-template"}
+        />
       </div>
     </ContentWrapper>
   )
