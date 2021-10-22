@@ -1,0 +1,20 @@
+@use "../../../styles/fonts" as font;
+@use "../../../styles/colors" as color;
+
+.Container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  column-gap: 1rem;
+
+  label {
+    @include font.small;
+
+    color: color.$secondary-color-dark;
+    width: 20%;
+  }
+
+  a {
+    @include font.small;
+  }
+}
