@@ -15,7 +15,7 @@ const Layout = ({ children }: Props) => {
     return (
         <>
             <Meta />  {/*TODO: Additional meta */}
-            <main className={styles.container}>
+            <main className={styles.Container}>
                 <div className={styles.Header}>
                     <Header isMenuOpen={isMenuOpen}/>
                 </div>

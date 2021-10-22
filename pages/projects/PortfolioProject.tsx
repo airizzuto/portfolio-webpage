@@ -1,12 +1,12 @@
 import React from 'react'
-import ProjectContent from './ProjectContent';
+import ContentWrapper from '../components/Content/ContentWrapper';
+import ContentLink from '../components/Content/ContentLinks';
 
 import Style from "../../styles/ContentDisplay.module.scss";
-import Link from 'next/link';
 
 const PortfolioProject = () => {
   return (
-    <ProjectContent image={"static/tianyi-ma.jpg"}>
+    <ContentWrapper image={"static/tianyi-ma.jpg"}>
       <h1 className={Style.Title}>
         Personal Portfolio Webpage
       </h1>
@@ -15,15 +15,12 @@ const PortfolioProject = () => {
         <p>Tools used for FE: Next, React, Typescript and Sass</p>
       </div>
       <div className={Style.Links}>
-        <label>
-          Github:
-          <Link href={"https://github.com/airizzuto/portfolio-webpage-template"}>
-            https://github.com/airizzuto/portfolio-webpage-template
-          </Link>
-        </label>
-
+        <ContentLink 
+          label={"Github"}
+          href={"https://github.com/airizzuto/portfolio-webpage-template"}
+        />
       </div>
-    </ProjectContent>
+    </ContentWrapper>
   )
 }
 
