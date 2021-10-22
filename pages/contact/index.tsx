@@ -1,7 +1,7 @@
 import React from "react";
 import ContactForm from "./ContactForm";
 
-import Style from "./ContactForm.module.scss"
+import Style from "../../styles/ContactForm.module.scss"
 
 export default function Contact() {
     return (

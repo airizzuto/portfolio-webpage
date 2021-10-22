@@ -1,12 +1,12 @@
 import React from 'react'
-import ProjectContent from './ProjectContent';
+import ContentWrapper from '../components/ContentWrapper';
 
 import Style from "../../styles/ContentDisplay.module.scss";
 import Link from 'next/link';
 
 const AirRangingProject = () => {
   return (
-    <ProjectContent image={'static/AirRangingMap.png'}>
+    <ContentWrapper image={'static/AirRangingMap.png'}>
       <h1 className={Style.Title}>
         Air Ranging Web Application
       </h1>
@@ -32,7 +32,7 @@ const AirRangingProject = () => {
           </Link>
         </label>
       </div>
-    </ProjectContent>
+    </ContentWrapper>
   )
 }
 

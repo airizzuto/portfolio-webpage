@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import Style from "./ContactForm.module.scss" 
+import Style from "../../styles/ContactForm.module.scss" 
 
 // TODO: backend
 // https://w3collective.com/react-contact-form/

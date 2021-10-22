@@ -1,12 +1,12 @@
 import React from 'react'
-import ProjectContent from './ProjectContent';
+import ContentWrapper from '../components/ContentWrapper';
 
 import Style from "../../styles/ContentDisplay.module.scss";
 import Link from 'next/link';
 
 const PortfolioProject = () => {
   return (
-    <ProjectContent image={"static/tianyi-ma.jpg"}>
+    <ContentWrapper image={"static/tianyi-ma.jpg"}>
       <h1 className={Style.Title}>
         Personal Portfolio Webpage
       </h1>
@@ -23,7 +23,7 @@ const PortfolioProject = () => {
         </label>
 
       </div>
-    </ProjectContent>
+    </ContentWrapper>
   )
 }
 
