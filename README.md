@@ -1,3 +1,9 @@
+# Personal Webpage
+
+Personal portfolio webpage made in Typescript and Next.js used to showcase my projects and learn a bit about the stack during its development.
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
