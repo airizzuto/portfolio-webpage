@@ -1,30 +1,50 @@
 @use "./fonts" as font;
-@import "./colors";
+@use "./colors" as color;
 
 .Header {
-    position: absolute;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10rem;
-    background-color: transparent;
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    align-items: center;
-    justify-content: space-around;
-    z-index: 8;
+  position: absolute;
+  padding: 1rem 3vw;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-areas: "logo nav menu";
+  column-gap: 2rem;
+  align-items: center;
+
+  background-color: transparent;
+  z-index: 8;
 }
 
 .HeaderLogo {
-    grid-area: 1 / 1 / 2 / 2;
-    align-self: center;
-    justify-self: center;
+    grid-area: logo;
+    place-content: center;
+    text-align: center;
+
+    font-family: Roboto;
+    font-style: oblique;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+
+    label {
+      color: color.$primary-color-dark;
+  
+      &:hover{
+        cursor: pointer;
+      }
+    }
+
+    span {
+      color: color.$secondary-color-dark;
+    }
 }
 
 .HeaderNav {
-    grid-area: 1 / 2 / 2 / 3;
+    grid-area: nav;
     display: flex;
     flex-flow: row wrap;
     align-content: center;
@@ -46,23 +66,30 @@
     }
 
     li {
-        color: $primary-color-dark;
+        color: color.$primary-color-dark;
     }
 
     li:hover {
-        color: $secondary-color-dark;
+        color: color.$secondary-color-dark;
     }
 }
 
+.MenuButton {
+  grid-area: menu;
+  display: flex;
+  flex-direction: row-reverse;
+  align-self: center;
+}
 
-@media screen and (max-width: 720px){
-    .HeaderNav {
-      display: none;
-    }
-    .HeaderLogo {
-      position: fixed;
-      top: 1rem;
-      left: 3.0rem;
-      scale: 0.75;
+
+@media screen and (max-width: 720px) {
+  .Header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo menu";
+  }
+
+  .HeaderNav {
+    display: none;
   }
 }
