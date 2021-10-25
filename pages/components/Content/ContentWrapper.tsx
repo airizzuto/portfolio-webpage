@@ -6,6 +6,7 @@ export type Content = {
   children: ReactElement[] | undefined;
 }
 
+// TODO - Content alternate style (text aligned right || contrasting theme)
 const ContentWrapper: React.FC<Content> = ({image, children}) => {
   return (
       <div 
