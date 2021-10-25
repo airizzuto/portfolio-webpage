@@ -1,6 +1,6 @@
 import Style from "../styles/ContentDisplay.module.scss";
 import ContentWrapper from "./components/Content/ContentWrapper";
-//`url(${"static/christian-wiediger-WkfDrhxDMC8-unsplash.jpg"})`
+
 export default function Home() {
   return (
     <ContentWrapper image={"static/christian-wiediger-WkfDrhxDMC8-unsplash.jpg"}>
