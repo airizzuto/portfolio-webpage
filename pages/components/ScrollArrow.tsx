@@ -5,7 +5,6 @@ const ScrollArrow = () => {
         <div className={styles.arrow}>
             <span></span>
             <span></span>
-            <span></span>
         </div>
     )
 }
