@@ -1,8 +1,9 @@
-import styles from "../../styles/Layout.module.scss"
-import Header from "./Header"
+import Header from "./Header/Header"
 import Footer from "./Footer"
 import Meta from "./Meta"
 import ScrollArrow from "./ScrollArrow"
+
+import styles from "../styles/Layout.module.scss"
 
 interface Props {
     children: any;

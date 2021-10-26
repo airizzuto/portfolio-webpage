@@ -1,5 +1,5 @@
 import Style from "../styles/ContentDisplay.module.scss";
-import ContentWrapper from "./components/Content/ContentWrapper";
+import ContentWrapper from "../components/Content/ContentWrapper";
 
 export default function Home() {
   return (

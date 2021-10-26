@@ -1,6 +1,6 @@
 import React from 'react'
-import ContentWrapper from '../components/Content/ContentWrapper';
-import ContentLink from '../components/Content/ContentLinks';
+import ContentWrapper from '../../components/Content/ContentWrapper';
+import ContentLink from '../../components/Content/ContentLinks';
 
 import Style from "../../styles/ContentDisplay.module.scss";
 

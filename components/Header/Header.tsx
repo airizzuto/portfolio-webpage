@@ -1,10 +1,9 @@
-import Image from "next/image"
+import React from "react"
 import Link from "next/link"
 import Menu from "./Menu"
 import NavButton from "./NavButton"
 
 import styles from '../../styles/Header.module.scss'
-import React from "react"
 
 const Header = () => {
     return (

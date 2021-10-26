@@ -1,6 +1,7 @@
-import NavButton from "./NavButton"
-import styles from "../../styles/Footer.module.scss"
+import NavButton from "./Header/NavButton"
 import {FaGithub, FaLinkedin} from "react-icons/fa"
+
+import styles from "../styles/Footer.module.scss"
 
  const Footer = () => {
     return (

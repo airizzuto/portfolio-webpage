@@ -1,4 +1,5 @@
 import NavButton from "./NavButton"
+
 import styles from "../../styles/Menu.module.scss"
 
 const Menu = () => {

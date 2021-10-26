@@ -1,4 +1,4 @@
-import styles from "../../styles/ScrollArrow.module.scss"
+import styles from "../styles/ScrollArrow.module.scss"
 
 const ScrollArrow = () => {
     return (
