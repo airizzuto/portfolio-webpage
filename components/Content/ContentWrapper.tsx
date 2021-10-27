@@ -24,4 +24,4 @@ const ContentWrapper: React.FC<Content> = ({image, children}) => {
   )
 }
 
-export default ContentWrapper
+export default ContentWrapper;
