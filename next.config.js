@@ -1,4 +1,5 @@
 const path = require('path')
+const nextTranslate = require("next-translate")
 
 module.exports = {
   sassOptions: {
@@ -8,7 +9,11 @@ module.exports = {
     webpack5: true,
   },
   i18n: {
-    locales: ['en-US', 'es'],
-    defaultLocale: 'en-US',
+    locales: ['en', 'es'],
+    defaultLocale: 'en',
+    pages: {
+      "*": ["common"]
+    }
   },
+  nextTranslate
 }
