@@ -1,6 +1,6 @@
 {
-  "home": "Inicio",
-  "projects": "Proyectos",
-  "about": "Acerca",
-  "contact": "Contacto"
+  "nav_home": "Inicio",
+  "nav_projects": "Proyectos",
+  "nav_about": "Acerca",
+  "nav_contact": "Contacto"
 }

@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 import '../styles/globals.scss'
 
 
-const MyApp = ({ Component, pageProps, router }: AppPropsType ) => {
+const App = ({ Component, pageProps, router }: AppPropsType ) => {
   return (
     <>
       <Layout>
@@ -14,4 +14,4 @@ const MyApp = ({ Component, pageProps, router }: AppPropsType ) => {
   )
 }
 
-export default MyApp;
+export default App;
