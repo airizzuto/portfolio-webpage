@@ -1,21 +1,32 @@
-import Link from 'next/link';
 import React from 'react'
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import Style from '../../styles/Header/LanguageSwitch.module.scss'
 
 const LanguageSwitch = () => {
-  // TODO: get current locale
+  const router = useRouter();
+  const { locale } = router;
+
+  const selectedStyle = {
+    color: "#ffbe1a"
+  }
+
   return (
     <div className={Style.LanguageSwitch}>
       <Link href="/" locale="en">
-        <a>EN</a>
+        <a style={(locale === "en") ? selectedStyle : undefined}>
+          EN
+        </a>
       </Link>
       /
       <Link href="/" locale="es">
-        <a>ES</a>
+        <a style={(locale === "es") ? selectedStyle : undefined}>
+          ES
+        </a>
       </Link>
     </div>
   )
 }
 
-export default LanguageSwitch
+export default LanguageSwitch;
