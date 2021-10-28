@@ -1,0 +1,9 @@
+@use "../fonts" as font;
+@use "../colors" as color;
+
+.LanguageSwitch {
+  place-self: center;
+  a {
+    @include font.nav;
+  }
+}

@@ -1,10 +1,11 @@
 import React from "react"
 import Link from "next/link"
 
+import LanguageSwitch from "./LanguageSwitch";
 import NavSections from "./NavSections";
 import Menu from "./Menu"
 
-import Style from '../../styles/Header.module.scss'
+import Style from '../../styles/Header/Header.module.scss'
 
 const Header = () => {
 
@@ -22,7 +23,8 @@ const Header = () => {
                 </ul>
             </nav>
 
-            <div className={Style.MenuButton}>
+            <div className={Style.RightOptions}>
+                <LanguageSwitch />
                 <Menu />
             </div>
 

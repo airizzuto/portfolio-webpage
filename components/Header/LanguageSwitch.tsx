@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react'
 
-import Style from '../../styles/Header.module.scss'
+import Style from '../../styles/Header/LanguageSwitch.module.scss'
 
 const LanguageSwitch = () => {
   // TODO: get current locale
@@ -10,6 +10,7 @@ const LanguageSwitch = () => {
       <Link href="/" locale="en">
         <a>EN</a>
       </Link>
+      /
       <Link href="/" locale="es">
         <a>ES</a>
       </Link>
