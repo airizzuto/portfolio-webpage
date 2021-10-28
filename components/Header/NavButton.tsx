@@ -8,7 +8,7 @@ const NavButton = ({text, href}: Props) => {
     return (
         <Link href={`${href}`} passHref>
             <a>
-                {text} {/* TODO: Icon here */}
+                {text}
             </a>
         </Link>
     )

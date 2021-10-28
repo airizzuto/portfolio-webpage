@@ -1,5 +1,5 @@
-@use "./fonts" as font;
-@use "./colors" as color;
+@use "../fonts" as font;
+@use "../colors" as color;
 
 .Header {
   position: absolute;
@@ -74,11 +74,13 @@
     }
 }
 
-.MenuButton {
+.RightOptions {
   grid-area: menu;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  column-gap: 2rem;
   align-self: center;
+  justify-self: right;
 }
 
 

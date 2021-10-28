@@ -9,12 +9,12 @@ const NavSections = () => {
 
   return (
     <>
-      <li><NavButton text={t("home")} href={"/"}/></li>
-      <li><NavButton text={t("projects")} href={"/projects"}/></li>
-      <li><NavButton text={t("about")} href={"/about"}/></li>
-      <li><NavButton text={t("contact")} href={"/contact"}/></li>
+      <li><NavButton text={t("nav_home")} href={"/"}/></li>
+      <li><NavButton text={t("nav_projects")} href={"/projects"}/></li>
+      <li><NavButton text={t("nav_about")} href={"/about"}/></li>
+      <li><NavButton text={t("nav_contact")} href={"/contact"}/></li>
     </>
   )
 }
 
-export default NavSections
+export default NavSections;
