@@ -2,8 +2,6 @@
 @use "../colors" as color;
 
 .LanguageSwitch {
+  @include font.button;
   place-self: center;
-  a {
-    @include font.nav;
-  }
 }
