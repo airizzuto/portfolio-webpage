@@ -11,14 +11,12 @@ interface Props {
 }
 
 const Layout = ({ children }: Props) => {
-    const [isMenuOpen, setMenuOpen] = useState(false)
-
     return (
         <>
             <Meta />  {/*TODO: Additional meta */}
             <main className={Style.Container}>
                 <div className={Style.Header}>
-                    <Header isMenuOpen={isMenuOpen}/>
+                    <Header />
                 </div>
 
                 <div className={Style.ContentDisplay}>
