@@ -2,10 +2,6 @@ import ContentWrapper from "../components/Content/ContentWrapper";
 
 import Style from "../styles/ContentDisplay.module.scss";
 
-/*
-  TODO: i18n
-    ref: https://mariestarck.com/how-to-localize-your-next-js-application-with-next-translate/
-*/
 export default function Home() {
 
   return (

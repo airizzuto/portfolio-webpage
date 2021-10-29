@@ -13,4 +13,5 @@ module.exports = {
   },
 }
 
+// ref: https://mariestarck.com/how-to-localize-your-next-js-application-with-next-translate/
 module.exports = nextTranslate({});
