@@ -1,5 +1,5 @@
 const path = require('path')
-const nextTranslate = require("next-translate")
+const nextTranslate = require("next-translate");
 
 module.exports = {
   sassOptions: {
@@ -11,5 +11,6 @@ module.exports = {
   future: {
     webpack5: true,
   },
-  nextTranslate
 }
+
+module.exports = nextTranslate({});
