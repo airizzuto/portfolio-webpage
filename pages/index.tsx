@@ -1,7 +1,13 @@
+import ContentWrapper from "../components/Content/ContentWrapper";
+
 import Style from "../styles/ContentDisplay.module.scss";
-import ContentWrapper from "./components/Content/ContentWrapper";
-//`url(${"static/christian-wiediger-WkfDrhxDMC8-unsplash.jpg"})`
+
+/*
+  TODO: i18n
+    ref: https://mariestarck.com/how-to-localize-your-next-js-application-with-next-translate/
+*/
 export default function Home() {
+
   return (
     <ContentWrapper image={"static/christian-wiediger-WkfDrhxDMC8-unsplash.jpg"}>
       <h1 className={Style.Title}>Agustín Ignacio Rizzuto</h1>

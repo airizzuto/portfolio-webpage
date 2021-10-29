@@ -1,10 +1,16 @@
 const path = require('path')
+const nextTranslate = require("next-translate");
 
 module.exports = {
   sassOptions: {
-    includePaths: [path.join(__dirname, 'styles'), path.join(__dirname, "./pages/components")]
+    includePaths: [
+      path.join(__dirname, 'styles'),
+      path.join(__dirname, "./pages/components")
+    ]
   },
   future: {
     webpack5: true,
   },
 }
+
+module.exports = nextTranslate({});

@@ -1,9 +1,10 @@
 import React, { useState } from "react"
-import styles from "../../styles/Layout.module.scss"
-import Header from "./Header"
+import Header from "./Header/Header"
 import Footer from "./Footer"
 import Meta from "./Meta"
 import ScrollArrow from "./ScrollArrow"
+
+import Style from "../styles/Layout.module.scss"
 
 interface Props {
     children: any;
@@ -15,12 +16,12 @@ const Layout = ({ children }: Props) => {
     return (
         <>
             <Meta />  {/*TODO: Additional meta */}
-            <main className={styles.Container}>
-                <div className={styles.Header}>
+            <main className={Style.Container}>
+                <div className={Style.Header}>
                     <Header isMenuOpen={isMenuOpen}/>
                 </div>
 
-                <div className={styles.ContentDisplay}>
+                <div className={Style.ContentDisplay}>
                     {children}
                 </div>
 
@@ -28,7 +29,7 @@ const Layout = ({ children }: Props) => {
 
                 {/*TODO: Go to top */}
                 
-                <div className={styles.Footer}>
+                <div className={Style.Footer}>
                     <Footer />
                 </div>
             </main>

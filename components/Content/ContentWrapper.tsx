@@ -1,11 +1,12 @@
 import React, { ReactElement } from "react";
-import Style from "../../../styles/ContentDisplay.module.scss"
+import Style from "../../styles/ContentDisplay.module.scss"
 
 export type Content = {
   image: string;
   children: ReactElement[] | undefined;
 }
 
+// TODO - Content alternate style (text aligned right || contrasting theme)
 const ContentWrapper: React.FC<Content> = ({image, children}) => {
   return (
       <div 
@@ -23,4 +24,4 @@ const ContentWrapper: React.FC<Content> = ({image, children}) => {
   )
 }
 
-export default ContentWrapper
+export default ContentWrapper;

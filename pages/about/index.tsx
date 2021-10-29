@@ -12,13 +12,13 @@ export default function About() {
         <h1 className={Style.Title}>About Me</h1>
         <div className={Style.Text}>
           <p>
-            I am Full Stack software developer using the .NET, PostgreSQL, React and Typescript.
+            I am Full Stack software developer using .NET, PostgreSQL, React and Typescript.
           </p>
           <p>
-            Before I used to work as a CAD designer and analyst of CFD/FEM simulations in the aerospace industry.
+            Before I used to work as a CAD designer and analyst of CFD/FEM thermal/structural simulations in the aerospace industry.
           </p>
           <p>
-            Programming always had my interest and started to study it to further improve my productivity and quality of work. Focused on scripting and data analysis at first, and switching to development after falling in love with coding and the challenges that it provided.
+            Programming always had my interest and started to study it to further improve my productivity and quality of work. Focused on scripting and data analysis at first, and switching to development after realizing the potential it has for creating the future technologies and the challenges that it provided.
           </p>
           <p>
             I am also a pilot of airplane, and coursed the commercial pilot training.
