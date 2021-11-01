@@ -6,7 +6,7 @@ import Style from "../../styles/ContentDisplay.module.scss";
 export default function About() {
   const { t, lang } = useTranslation('about');
   const title = t("content_title");
-  const text = t("content_text", {}, {returnObjects: true} );
+  const content: string[] = t("content_text", {}, {returnObjects: true} );
 
   return (
     <div className={Style.Container}
@@ -17,18 +17,9 @@ export default function About() {
     <div className={Style.Background}>
       <h1 className={Style.Title}>{title}</h1>
       <div className={Style.Text}>
-        <p>
-          {text[0]}
-        </p>
-        <p>
-          {text[1]}
-        </p>
-        <p>
-          {text[2]}
-        </p>
-        <p>
-          {text[3]}
-        </p>
+        {content.map((text, idx) => {
+          return <p key={`about-text-${idx}`}>{text}</p>
+        })}
       </div>
     </div>
   </div>

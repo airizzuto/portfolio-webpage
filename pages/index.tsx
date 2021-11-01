@@ -8,18 +8,17 @@ export default function Home() {
   const { t, lang } = useTranslation('home');
   const title = t("content_title");
   const subtitle = t("content_subtitle");
-  const text = t("content_text", {}, {returnObjects: true} );
+  const content: string[] = t("content_text", {}, {returnObjects: true} );
 
   return (
     <ContentWrapper image={"static/christian-wiediger-WkfDrhxDMC8-unsplash.jpg"}>
       <h1 className={Style.Title}>{title}</h1>
       <h2 className={Style.SubTitle}>{subtitle}</h2>
-      <p className={Style.Text}>
-        {text[0]}
-      </p>
-      <p className={Style.Text}>
-        {text[1]}
-      </p>
+      <div className={Style.Text}>
+        {content.map((text, idx) => {
+          return <p key={`home--text-${idx}`}>{text}</p>
+        })}
+      </div>
     </ContentWrapper>
   )
 }
