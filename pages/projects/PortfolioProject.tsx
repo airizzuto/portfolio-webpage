@@ -1,10 +1,17 @@
 import React from 'react'
+import useTranslation from 'next-translate/useTranslation';
+
 import ContentWrapper from '../../components/Content/ContentWrapper';
 import ContentLink from '../../components/Content/ContentLinks';
 
 import Style from "../../styles/ContentDisplay.module.scss";
 
 const PortfolioProject = () => {
+  const { t, lang } = useTranslation('projects:portfolio');
+  const title = t("title");
+  const content: string[] = t("content", {}, {returnObjects: true} );
+  const webLabel = t("links.web");
+
   return (
     <ContentWrapper image={"static/tianyi-ma.jpg"}>
       <h1 className={Style.Title}>

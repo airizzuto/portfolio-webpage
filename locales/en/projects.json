@@ -1,4 +1,14 @@
 {
+  "portfolio": {
+    "title": "Personal Portfolio Webpage",
+    "content": [
+      "Small portfolio website made to showcase personal projects and information about myself.",
+      "Front End made using Next.JS, Typescript and Sass"
+    ],
+    "links": {
+      "web": "Web Page"
+    }
+  },
   "air-ranging": {
     "title": "Air Ranging Web Application",
     "content": [
