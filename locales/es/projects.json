@@ -1,3 +1,14 @@
 {
-  
+  "air-ranging": {
+    "title": "Air Ranging Aplicación Web",
+    "content": [
+      "Aplicación web para la planifiación de vuelo, cálculo de rangos y combustible, manejo y base de datos de aeronaves, cuenta de usuarios para la creación, edición, votación y guardado de aeronaves y puntos de interés.",
+      "API creada en .NET y Entity Framework.",
+      "Base de datos en PostgreSQL.",
+      "Frontend desarrollado con React, Typescript y Sass."
+    ],
+    "links": {
+      "web": "Página web"
+    }
+  }
 }
