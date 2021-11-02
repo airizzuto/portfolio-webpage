@@ -2,10 +2,10 @@
   "locales": ["en", "es"],
   "defaultLocale": "en",
   "pages": {
-    "*": ["common"],
+    "*": ["common", "footer"],
     "/": ["home"],
     "/projects": ["projects"],
     "/about": ["about"],
-    "/contact": ["about"]
+    "/contact": ["contact"]
   }
 }
