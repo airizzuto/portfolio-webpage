@@ -8,7 +8,7 @@ export default function Home() {
   const { t, lang } = useTranslation('home');
   const title = t("content_title");
   const subtitle = t("content_subtitle");
-  const content: string[] = t("content_text", {}, {returnObjects: true} );
+  const content = [...t("content_text", {}, {returnObjects: true})];
 
   return (
     <ContentWrapper image={"static/christian-wiediger-WkfDrhxDMC8-unsplash.jpg"}>

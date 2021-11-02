@@ -9,7 +9,7 @@ import Style from "../../styles/ContentDisplay.module.scss";
 const PortfolioProject = () => {
   const { t, lang } = useTranslation('projects');
   const title = t("portfolio.title");
-  const content: string[] = t("portfolio.content", {}, {returnObjects: true} );
+  const content = [...t("portfolio.content", {}, {returnObjects: true})];
   const webLabel = t("links.web");
 
   return (

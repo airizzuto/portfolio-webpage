@@ -9,7 +9,7 @@ import Style from "../../styles/ContentDisplay.module.scss";
 const AirRangingProject = () => {
   const { t, lang } = useTranslation('projects');
   const title = t("air-ranging.title");
-  const content: string[] = t("air-ranging.content", {}, {returnObjects: true} );
+  const content = [...t("air-ranging.content", {}, {returnObjects: true})];
   const webLabel = t("links.web");
 
   return (

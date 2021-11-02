@@ -6,7 +6,7 @@ import Style from "../../styles/ContentDisplay.module.scss";
 export default function About() {
   const { t, lang } = useTranslation('about');
   const title = t("content_title");
-  const content: string[] = t("content_text", {}, {returnObjects: true} );
+  const content = [...t("content_text", {}, {returnObjects: true})];
 
   return (
     <div className={Style.Container}
