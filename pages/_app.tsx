@@ -6,11 +6,9 @@ import '../styles/globals.scss'
 
 const App = ({ Component, pageProps, router }: AppPropsType ) => {
   return (
-    <>
-      <Layout>
-        <Component {...pageProps} key={router.route} />
-      </Layout>
-    </>
+    <Layout>
+      <Component {...pageProps} key={router.route} />
+    </Layout>
   )
 }
 

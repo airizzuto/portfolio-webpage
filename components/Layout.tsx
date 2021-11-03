@@ -11,28 +11,28 @@ interface Props {
 }
 
 const Layout = ({ children }: Props) => {
-    return (
-        <>
-            <Meta />  {/*TODO: Additional meta */}
-            <main className={Style.Container}>
-                <div className={Style.Header}>
-                    <Header />
-                </div>
+  const [showMenu, setShowMenu] = useState(false);
 
-                <div className={Style.ContentDisplay}>
-                    {children}
-                </div>
+  return (
+    <div>
+      <Meta /> {/*TODO: Additional meta */}
+      <main className={Style.Container}>
+        <div className={Style.Header}>
+          <Header />
+        </div>
 
-                <ScrollArrow />
+        <div className={Style.ContentDisplay}>{children}</div>
 
-                {/*TODO: Go to top */}
-                
-                <div className={Style.Footer}>
-                    <Footer />
-                </div>
-            </main>
-        </>
-    )
-}
+        <ScrollArrow />
+
+        {/*TODO: Go to top */}
+
+        <div className={Style.Footer}>
+          <Footer />
+        </div>
+      </main>
+    </div>
+  );
+};
 
 export default Layout

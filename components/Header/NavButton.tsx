@@ -7,9 +7,7 @@ interface Props {
 const NavButton = ({text, href}: Props) => {
     return (
         <Link href={`${href}`} passHref>
-            <a>
-                {text}
-            </a>
+            <a>{text}</a>
         </Link>
     )
 }
