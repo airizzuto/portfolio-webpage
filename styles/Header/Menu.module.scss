@@ -1,116 +1,5 @@
 @use "../fonts" as font;
-@import "../colors";
-
-/* Reference code: https://codepen.io/danhearn/pen/XprGrJ
-body {
-  background: #87cc77;
-  margin: 0;
-  font-family: arial;
-  width: 100vw;
-  height: 100vh;
-  animation: bugfix infinite 1s;
-  -webkit-animation: bugfix infinite 1s;
-}
-
-@keyframes bugfix { from {padding:0;} to {padding:0;}}
-@-webkit-keyframes bugfix { from {padding:0;} to {padding:0;}}
-
-#overlay-button {
-  position: absolute;
-  right: 2em;
-  top: 3em;
-  padding: 26px 11px;
-  z-index: 5;
-  cursor: pointer;
-  user-select: none;
-  span {
-      height: 4px;
-      width: 35px;
-      border-radius: 2px;
-      background-color: white;
-      position: relative;
-      display: block;
-      transition: all .2s ease-in-out;
-      &:before {
-        top: -10px;
-        visibility: visible;
-      }
-      &:after {
-        top: 10px;
-      }
-      &:before, &:after {
-          height: 4px;
-          width: 35px;
-          border-radius: 2px;
-          background-color: white;
-          position: absolute;
-          content: "";
-          transition: all .2s ease-in-out;
-      }
-    }
-    &:hover span, &:hover span:before, &:hover span:after {
-      background: #333332;
-    }
-}
-
-input[type=checkbox] {
-  display: none;
-}
-
-input[type=checkbox]:checked ~ #overlay {
-  visibility: visible;
-}
-
-input[type=checkbox]:checked ~ #overlay-button {
-  &:hover span, span{
-    background: transparent;
-  }
-  span {
-    &:before {
-      transform: rotate(45deg) translate(7px, 7px);
-      opacity: 1;
-    }
-    &:after {
-      transform: rotate(-45deg) translate(7px, -7px);
-    }
-  }
-}
-
-#overlay {
-  height: 100vh;
-  width: 100vw;
-  background: #ec6451;
-  z-index: 2;
-  visibility: hidden;
-  position: fixed;
-  &.active {
-    visibility: visible;
-  }
-  ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    height: 100vh;
-    padding-left: 0;
-    list-style-type: none;
-    li {
-      padding: 1em;
-      a {
-        color: white;
-        text-decoration: none;
-        font-size: 1.5em;
-        &:hover {
-          color: #333332;
-        }
-      }
-    }
-  }
-}
-
-*/
-// TODO: Close menu on click
+@use "../colors" as color;
 
 .MenuButton {
   place-self: center;
@@ -121,7 +10,7 @@ input[type=checkbox]:checked ~ #overlay-button {
       height: 4px;
       width: 35px;
       border-radius: 2px;
-      background-color: $primary-color-dark;
+      background-color: color.$primary-color-dark;
       position: relative;
       display: block;
       transition: all .2s ease-in-out;
@@ -136,14 +25,14 @@ input[type=checkbox]:checked ~ #overlay-button {
           height: 4px;
           width: 35px;
           border-radius: 2px;
-          background-color: $primary-color-dark;
+          background-color: color.$primary-color-dark;
           position: absolute;
           content: "";
           transition: all .2s ease-in-out;
       }
     }
     &:hover span, &:hover span:before, &:hover span:after {
-      background: $secondary-color-dark;
+      background: color.$secondary-color-dark;
     }
 }
 
@@ -176,12 +65,13 @@ input[type=checkbox]:checked ~ #overlay-button {
   margin-top: 0;
   padding-left: 0;
   top: 0px;
-  left: 0px;
-  height: 100vh;
-  width: 100vw;
-  background: $background-color-dark;
-  opacity: 0.8;
+  right: 0px;
+  height: 100%;
+  width: 20vw;
+  background: color.$background-color-dark;
+  opacity: 1;
   z-index: 9;
+  border-left: 1px solid hsl(0, 0%, 20%);
   &.active {
     visibility: visible;
   }
@@ -190,24 +80,26 @@ input[type=checkbox]:checked ~ #overlay-button {
     flex-direction: column;
     padding-left: 0;
     justify-content: center;
-    align-items: stretch;
-    text-align: center;
-    height: 100vh;
+    align-items: center;
+    height: 100%;
     list-style-type: none;
+    
     li {
-      grid-column: 2 / 3;
       align-self: center;
+      text-align: center;
       width: 100%;
-      padding: 5em 0em;
+      padding: 1em 1em;
+      border-top: 1px solid color.$primary-color-dark;
+      border-bottom: 1px solid color.$primary-color-dark;
       &:hover {
-        background-color: $neutral-color-dark;
+        background-color: color.$neutral-color-dark;
       }
       a {
         @include font.nav;
-        color: $primary-color-dark;
+        color: color.$primary-color-dark;
         text-decoration: none;
         &:hover {
-          color: $secondary-color-dark;
+          color: color.$secondary-color-dark;
         }
         &:active {
           .Menu {

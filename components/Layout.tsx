@@ -11,7 +11,7 @@ interface Props {
 }
 
 const Layout = ({ children }: Props) => {
-  const [showMenu, setShowMenu] = useState(false);
+
 
   return (
     <div>
