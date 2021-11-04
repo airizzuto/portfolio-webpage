@@ -20,27 +20,28 @@
 }
 
 .HeaderLogo {
-    grid-area: logo;
-    place-content: center;
-    text-align: center;
 
-    font-family: Roboto;
-    font-style: oblique;
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 56px;
+  // TODO: insert logo mixin
+  grid-area: logo;
+  place-content: center;
+  text-align: center;
 
-    label {
-      color: color.$primary-color-dark;
-  
-      &:hover{
-        cursor: pointer;
-      }
+  font-size: font.$title-size;
+  font-weight: 900;
+  font-style: oblique;
+  line-height: 56px;
+
+  label {
+    color: color.$primary-color-dark;
+
+    &:hover{
+      cursor: pointer;
     }
+  }
 
-    span {
-      color: color.$secondary-color-dark;
-    }
+  span {
+    color: color.$secondary-color-dark;
+  }
 }
 
 .HeaderNav {
