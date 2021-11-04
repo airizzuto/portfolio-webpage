@@ -2,12 +2,15 @@ import Link from "next/link";
 interface Props {
     text: String
     href: string
+    handleClick: () => void;
 }
 
-const NavButton = ({text, href}: Props) => {
+const NavButton: React.FC<Props> = ({text, href, handleClick}) => {
     return (
         <Link href={`${href}`} passHref>
-            <a>{text}</a>
+            <li>
+                <a onClick={() => handleClick}>{text}</a>
+            </li>
         </Link>
     )
 }

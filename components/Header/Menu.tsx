@@ -18,14 +18,14 @@ const Menu = () => {
 
   useOnClickOutside(ref, handleMenuClose);
 
+  const style: React.CSSProperties = showMenu ? { visibility: "visible" } : { visibility: "hidden" };
+
   return (
     <>
-      <input type="checkbox" id="menu-input" className={Style.MenuInput} onClick={() => handleMenuDisplay}></input>
+      <input type="checkbox" id="menu-input" className={Style.MenuInput} onClick={handleMenuDisplay}></input>
       <label htmlFor="menu-input" className={Style.MenuButton}><span></span></label>
-      <menu className={Style.Menu}>
-        <ul>
-          <NavSections />
-        </ul>
+      <menu className={Style.Menu} style={style}>
+        <NavSections handleClick={handleMenuClose}/>
       </menu>
     </>
   );
