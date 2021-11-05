@@ -9,9 +9,11 @@ interface Props {
 
 const NavButton: React.FC<Props> = ({text, href, handleClick, icon}) => {
     return (
-        <Link href={`${href}`} passHref>
-            <a onClick={() => handleClick}>{text} {icon}</a>
-        </Link>
+        <li>
+            <Link href={`${href}`} passHref>
+                <a onClick={handleClick}>{text} {icon}</a>
+            </Link>
+        </li>
     )
 }
 

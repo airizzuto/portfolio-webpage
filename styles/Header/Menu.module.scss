@@ -6,6 +6,7 @@
   place-self: center;
   cursor: pointer;
   user-select: none;
+
   span {
       height: 4px;
       width: 35px;
@@ -31,6 +32,7 @@
           transition: all .2s ease-in-out;
       }
     }
+
     &:hover span, &:hover span:before, &:hover span:after {
       background: color.$secondary-color-dark;
     }
@@ -48,11 +50,13 @@
   &:hover span, span{
     background: transparent;
   }
+
   span {
     &:before {
       transform: rotate(45deg) translate(7px, 7px);
       opacity: 1;
     }
+
     &:after {
       transform: rotate(-45deg) translate(7px, -7px);
     }
@@ -76,12 +80,12 @@
   ul {
     display: flex;
     flex-direction: column;
+    place-items: baseline;
     padding: 0;
     height: 100%;
-    align-content: center;
-    list-style-type: none;
     border-top: 1px solid color.$primary-color-dark;
     border-bottom: 1px solid color.$primary-color-dark;
+    list-style-type: none;
     
     li {
       height: 100%;
@@ -89,29 +93,26 @@
       border-top: 1px solid color.$primary-color-dark;
       border-bottom: 1px solid color.$primary-color-dark;
       background: color.$background-color-dark;
-      text-align: center;
-      text-justify: center;
-      flex: 1 1 0;
       
-      &:hover {
-        cursor: pointer;
-        background-color: color.$neutral-color-dark;
-        opacity: 0.75;
-        a {
-          color: color.$secondary-color-dark;
-          opacity: 1;
-        }
-      }
       &:active {
         .Menu {
           display: none;
         }
       }
+      
       a {
         @include font.nav;
-        display: inline;
-        color: color.$primary-color-dark;
-        text-decoration: none;
+        text-align: center;
+        justify-items: center;
+      }
+    }
+
+    li:hover {
+      cursor: pointer;
+      background-color: color.$neutral-color-dark;
+      opacity: 0.90;
+      a {
+        color: color.$secondary-color-dark;
       }
     }
   }

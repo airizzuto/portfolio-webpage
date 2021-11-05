@@ -17,9 +17,7 @@ const Header = () => {
             </Link>
 
             <nav className={Style.HeaderNav}>
-                <ul> 
-                    <NavSections />
-                </ul>
+                <NavSections />
             </nav>
 
             <div className={Style.RightOptions}>
