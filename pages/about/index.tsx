@@ -1,5 +1,6 @@
 
 import useTranslation from "next-translate/useTranslation";
+import ContentWrapper from "../../components/Content/ContentWrapper";
 
 import Style from "../../styles/ContentDisplay.module.scss";
 
@@ -9,19 +10,14 @@ export default function About() {
   const content = [...t("content_text", {}, {returnObjects: true})];
 
   return (
-    <div className={Style.Container}
-    style={{
-      backgroundImage: `url(${"static/nihon-graphy.jpg"})`
-    }}
-  >
-    <div className={Style.Background}>
+    <ContentWrapper image={"static/nihon-graphy.jpg"}>
       <h1 className={Style.Title}>{title}</h1>
+
       <div className={Style.Text}>
         {content.map((text, idx) => {
           return <p key={`about-text-${idx}`}>{text}</p>
         })}
       </div>
-    </div>
-  </div>
+    </ContentWrapper>
   )
 }
