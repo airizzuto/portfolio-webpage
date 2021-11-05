@@ -4,7 +4,7 @@ import NavButton from './NavButton';
 import useTranslation from 'next-translate/useTranslation'
 
 interface Props {
-  handleClick: () => void;
+  handleClick?: () => void;
 }
 
 const NavSections: React.FC<Props> = ({handleClick}) => {
