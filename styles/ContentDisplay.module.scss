@@ -24,8 +24,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    //border-bottom: 1px solid gray;
-
     height: 100vh;
     overflow: auto;
     
@@ -42,31 +40,31 @@
         place-self: center;
         height: 100%;
         width: 100%;
-    }
 
-    .Title {
-        @include font.header-1;
-        margin: 0 18vw;
-        color: color.$secondary-color-dark;
-    }
-
-    .SubTitle {
-        @include font.header-2;
-        margin: 2rem 15vw;
-        color: color.$primary-color-dark;
-    }
-
-    .Text {
-        @include font.normal;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        
-        max-width: 80ch;
-        margin: 2rem 15vw;
-
-        overflow: auto;
-        z-index: 5;
+        .Title {
+            @include font.header-1;
+            margin: 0 18vw;
+            color: color.$secondary-color-dark;
+        }
+    
+        .SubTitle {
+            @include font.header-2;
+            margin: 2rem 15vw;
+            color: color.$primary-color-dark;
+        }
+    
+        .Text {
+            @include font.normal;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            
+            max-width: 80ch;
+            margin: 2rem 15vw;
+    
+            overflow: auto;
+            z-index: 5;
+        }
     }
 
     .Arrow {
