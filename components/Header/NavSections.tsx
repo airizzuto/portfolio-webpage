@@ -17,10 +17,18 @@ const NavSections: React.FC<Props> = ({handleClick}) => {
 
   return (
     <ul>
-      <NavButton text={home} href={"/"} handleClick={handleClick}/>
-      <NavButton text={projects} href={"/projects"} handleClick={handleClick}/>
-      <NavButton text={about} href={"/about"} handleClick={handleClick}/>
-      <NavButton text={contact} href={"/contact"} handleClick={handleClick}/>
+      <li>
+        <NavButton text={home} href={"/"} handleClick={handleClick}/>
+      </li>
+      <li>
+        <NavButton text={projects} href={"/projects"} handleClick={handleClick}/>
+      </li>
+      <li>
+        <NavButton text={about} href={"/about"} handleClick={handleClick}/>
+      </li>
+      <li>
+        <NavButton text={contact} href={"/contact"} handleClick={handleClick}/>
+      </li>
     </ul>
   )
 }
