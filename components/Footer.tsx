@@ -18,12 +18,15 @@ import styles from "../styles/Footer.module.scss"
               <NavButton
                 text={`Github`}
                 href={"https://github.com/airizzuto"}
+                icon={<FaGithub className={styles.Icon} size={"1rem"} />}
               />
-              <FaGithub className={styles.Icon} size={"1rem"} />
             </li>
             <li>
-              <NavButton text={"LinkedIn"} href={githubLink} />
-              <FaLinkedin className={styles.Icon} size={"1rem"} />
+              <NavButton 
+                text={"LinkedIn"} 
+                href={githubLink} 
+                icon={<FaLinkedin className={styles.Icon} size={"1rem"} />}
+              />
             </li>
             <li>
               <NavButton text={contactLabel} href={"/contact"} />

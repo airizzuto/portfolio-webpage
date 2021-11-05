@@ -31,24 +31,21 @@
     ul {
         display: contents;
         list-style-type: none;
-    }
+        
+        li {
+            color: $primary-color-dark;
+        }
 
-    li {
-        color: $primary-color-dark;
-    }
-
-    li:hover {
-        color: $secondary-color-dark;
-    }
-
-    .Icon:hover { // FIXME: Temporary fix
-        color: $primary-color-dark;
-    }
-
-    a {
-        @include font.footer;
-        font-family: Roboto, "SegoeUI", "Verdana";
-        text-decoration: none;
+        li:hover {
+            color: $secondary-color-dark;
+            cursor: pointer;
+        }
+    
+        a {
+            @include font.footer;
+            font-family: Roboto, "SegoeUI", "Verdana";
+            text-decoration: none;
+        }
     }
 }
 
