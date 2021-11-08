@@ -28,8 +28,8 @@
     overflow: auto;
     
     .Background {
-        padding: 12rem 2rem 14rem 2rem;
-        background-color: rgba($color: #000000, $alpha: 0.6);
+        padding: 10rem 2rem 10rem 2rem;
+        background-color: rgba($color: #000000, $alpha: 0.55);
         height: 100%;
         width: 100%;
         z-index: 2;
@@ -43,13 +43,13 @@
 
         .Title {
             @include font.header-1;
-            margin: 0 18vw;
+            margin: 0 20vw;
             color: color.$secondary-color-dark;
         }
     
         .SubTitle {
             @include font.header-2;
-            margin: 2rem 15vw;
+            margin: 2rem 18vw;
             color: color.$primary-color-dark;
         }
     
@@ -60,7 +60,7 @@
             text-align: left;
             
             max-width: 80ch;
-            margin: 2rem 15vw;
+            margin: 2rem 18vw;
     
             overflow: auto;
             z-index: 5;
