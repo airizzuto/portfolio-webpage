@@ -22,8 +22,9 @@ const Header = () => {
 
             <div className={Style.RightOptions}>
                 <LanguageSwitch />
-                <Menu />
             </div>
+            
+            <Menu />
 
         </header>
     )
