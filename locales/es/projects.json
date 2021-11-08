@@ -17,5 +17,24 @@
       "Base de datos en PostgreSQL.",
       "Frontend desarrollado con React, Typescript y Sass."
     ]
+  },
+  "fcc-fe-cert-projects": {
+    "title": "FreeCodeCamp FE Certification Projects",
+    "random-quote-generator": {
+      "description": "Peticiona frases aleatorias a la API Quotable y muestra su autor y contenido.",
+      "codepen": "https://codepen.io/Airiz/full/porrJjG"
+    },
+    "drum-machine": {
+      "description": "Launch-Pad/Drum-Pad que reproduce sonidos al activar sus botones.",
+      "codepen": "https://codepen.io/Airiz/full/RwZjoar"
+    },
+    "markdown-previewer": {
+      "description": "Programa de edición y visualización de documentos Markdown.",
+      "codepen": "https://codepen.io/Airiz/full/bGrodeL"
+    },
+    "calculator": {
+      "description": "Calculadora Javascript WIP",
+      "codepen": ""
+    }
   }
 }
