@@ -3,8 +3,7 @@
   "defaultLocale": "en",
   "pages": {
     "*": ["common", "footer"],
-    "/": ["home"],
-    "/projects": ["projects"],
+    "/": ["home", "projects"],
     "/about": ["about"],
     "/contact": ["contact"]
   }
