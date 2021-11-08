@@ -21,7 +21,6 @@
 
 .HeaderLogo {
 
-  // TODO: insert logo mixin
   grid-area: logo;
   place-content: center;
   text-align: center;
@@ -49,7 +48,7 @@
     display: flex;
     flex-flow: row wrap;
     align-content: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
     a {
         @include font.nav;
