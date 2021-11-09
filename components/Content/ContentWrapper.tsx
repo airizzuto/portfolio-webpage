@@ -2,7 +2,7 @@ import React, { ReactElement } from "react";
 import Style from "../../styles/ContentDisplay.module.scss"
 
 export type Content = {
-  image: string;
+  image?: string;
   children: ReactElement[] | undefined;
 }
 

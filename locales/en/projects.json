@@ -21,21 +21,25 @@
       "web": "Web Page"
     }
   },
-  "fcc-fe-cert-projects": {
+  "fcc-fe-cert": {
     "title": "FreeCodeCamp FE Certification Projects",
     "random-quote-generator": {
+      "title": "Random Quote Generator",
       "description": "Fetches random quotes from Quotable API and displays its contents and author.",
       "codepen": "https://codepen.io/Airiz/full/porrJjG"
     },
     "drum-machine": {
+      "title": "Drum Machine",
       "description": "Launch-Pad / Drum-Pad that plays sounds when keys are pressed.",
       "codepen": "https://codepen.io/Airiz/full/RwZjoar"
     },
     "markdown-previewer": {
+      "title": "Markdown Previewer",
       "description": "Edit and preview markdown content.",
       "codepen": "https://codepen.io/Airiz/full/bGrodeL"
     },
     "calculator": {
+      "title": "Calculator WIP",
       "description": "Javascript Calculator WIP",
       "codepen": ""
     }
