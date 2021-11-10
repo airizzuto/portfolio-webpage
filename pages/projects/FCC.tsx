@@ -5,6 +5,7 @@ import ContentWrapper from '../../components/Content/ContentWrapper';
 
 import Style from "../../styles/ContentDisplay.module.scss";
 import FCCProject from './FCCProject';
+import ContentDetailed from '../../components/Content/ContentDetailed';
 
 const FCC = () => {
   const { t, lang } = useTranslation('projects');
@@ -12,25 +13,27 @@ const FCC = () => {
 
   return (
     <ContentWrapper image={"static/christian-wiediger-WkfDrhxDMC8-unsplash.jpg"}>
-      <h1 className={Style.Title}>{title}</h1>
-      <div className={Style.Mosaic}>
-        <FCCProject
-          imagePath={'static/random-quote-generator.png'}
-          projectName={'random-quote-generator'}
-        />
-        <FCCProject 
-          imagePath={'static/drum-machine.png'}
-          projectName={'drum-machine'}
-        />
-        <FCCProject 
-          imagePath={'static/markdown-previewer.png'}
-          projectName={'markdown-previewer'}
-        />
-        <FCCProject 
-          imagePath={'static/calculator.png'}
-          projectName={'calculator'}
-        />
-      </div>
+      <ContentDetailed>
+        <h1 className={Style.Title}>{title}</h1>
+        <div className={Style.Mosaic}>
+          <FCCProject
+            imagePath={'static/random-quote-generator.png'}
+            projectName={'random-quote-generator'}
+          />
+          <FCCProject 
+            imagePath={'static/drum-machine.png'}
+            projectName={'drum-machine'}
+          />
+          <FCCProject 
+            imagePath={'static/markdown-previewer.png'}
+            projectName={'markdown-previewer'}
+          />
+          <FCCProject 
+            imagePath={'static/calculator.png'}
+            projectName={'calculator'}
+          />
+        </div>
+      </ContentDetailed>
     </ContentWrapper>
   )
 }

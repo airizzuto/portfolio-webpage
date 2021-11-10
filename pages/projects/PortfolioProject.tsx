@@ -5,6 +5,7 @@ import ContentWrapper from '../../components/Content/ContentWrapper';
 import ContentLink from '../../components/Content/ContentLinks';
 
 import Style from "../../styles/ContentDisplay.module.scss";
+import ContentDetailed from '../../components/Content/ContentDetailed';
 
 const PortfolioProject = () => {
   const { t, lang } = useTranslation('projects');
@@ -14,20 +15,22 @@ const PortfolioProject = () => {
 
   return (
     <ContentWrapper image={"static/tianyi-ma.jpg"}>
-      <h1 className={Style.Title}>{title}</h1>
+      <ContentDetailed>
+        <h1 className={Style.Title}>{title}</h1>
 
-      <div className={Style.Text}>
-        {content.map((text, idx) => {
-          return <p key={`porfolio-text-${idx}`}>{text}</p>
-        })}
-      </div>
+        <div className={Style.Text}>
+          {content.map((text, idx) => {
+            return <p key={`porfolio-text-${idx}`}>{text}</p>
+          })}
+        </div>
 
-      <div className={Style.Links}>
-        <ContentLink 
-          label={"Github"}
-          href={"https://github.com/airizzuto/portfolio-webpage-template"}
-        />
-      </div>
+        <div className={Style.Links}>
+          <ContentLink 
+            label={"Github"}
+            href={"https://github.com/airizzuto/portfolio-webpage-template"}
+          />
+        </div>
+      </ContentDetailed>
     </ContentWrapper>
   )
 }

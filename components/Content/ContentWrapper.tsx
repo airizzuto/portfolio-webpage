@@ -1,13 +1,17 @@
-import React, { ReactElement } from "react";
-import Style from "../../styles/ContentDisplay.module.scss"
+import React, { ReactComponentElement, ReactElement } from "react";
 
-export type Content = {
+import ContentCard from "./ContentCard";
+import ContentDetailed from "./ContentDetailed";
+
+import Style from "../../styles/ContentDisplay.module.scss";
+
+interface Props {
   image?: string;
-  children: ReactElement[] | undefined;
+  children: ReactElement | ReactElement[] | undefined;
 }
 
 // TODO - Content alternate style (text aligned right || contrasting theme)
-const ContentWrapper: React.FC<Content> = ({image, children}) => {
+const ContentWrapper: React.FC<Props> = ({image, children}) => {
   return (
       <div 
         className={Style.Container} 
@@ -16,9 +20,7 @@ const ContentWrapper: React.FC<Content> = ({image, children}) => {
         }}
       >
         <div className={Style.Background}>
-          <div className={Style.Content}>
             {children}
-          </div>
         </div>
       </div>
   )

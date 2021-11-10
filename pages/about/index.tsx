@@ -1,5 +1,6 @@
 
 import useTranslation from "next-translate/useTranslation";
+import ContentDetailed from "../../components/Content/ContentDetailed";
 import ContentWrapper from "../../components/Content/ContentWrapper";
 
 import Style from "../../styles/ContentDisplay.module.scss";
@@ -11,13 +12,15 @@ export default function About() {
 
   return (
     <ContentWrapper image={"static/nihon-graphy.jpg"}>
-      <h1 className={Style.Title}>{title}</h1>
+      <ContentDetailed>
+        <h1 className={Style.Title}>{title}</h1>
 
-      <div className={Style.Text}>
-        {content.map((text, idx) => {
-          return <p key={`about-text-${idx}`}>{text}</p>
-        })}
-      </div>
+        <div className={Style.Text}>
+          {content.map((text, idx) => {
+            return <p key={`about-text-${idx}`}>{text}</p>
+          })}
+        </div>
+      </ContentDetailed>
     </ContentWrapper>
   )
 }
