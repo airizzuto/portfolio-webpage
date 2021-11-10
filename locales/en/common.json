@@ -1,6 +1,5 @@
 {
-  "nav_home": "Home",
-  "nav_projects": "Projects",
-  "nav_about": "About Me",
-  "nav_contact": "Contact"
+  "nav_home": "HOME",
+  "nav_about": "ABOUT",
+  "nav_contact": "CONTACT"
 }
