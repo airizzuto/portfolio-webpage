@@ -1,7 +1,6 @@
 import React from 'react'
 import useTranslation from 'next-translate/useTranslation';
 
-import ContentWrapper from '../../components/Content/ContentWrapper';
 import ContentLink from '../../components/Content/ContentLinks';
 
 import Style from "../../styles/ContentDisplay.module.scss";
@@ -13,8 +12,9 @@ interface Props {
 
 const FCCProject: React.FC<Props> = ({projectName, imagePath}) => {
   const { t, lang } = useTranslation(`projects`);
-  const title = t(`ffc-fe-cert.${projectName}.title`);
-  const link = t(`ffc-fe-cert.${projectName}.codepen`);
+  const title = t(`${projectName}.title`);
+  const description = t(`${projectName}.description`);
+  const link = t(`${projectName}.codepen`);
 
   return (
     <div 
@@ -23,7 +23,13 @@ const FCCProject: React.FC<Props> = ({projectName, imagePath}) => {
         backgroundImage: `url(${imagePath})`,
       }}
     >
-      <h1 className={Style.ProjectTitle}>{title}</h1>
+      <h1 className={Style.ProjectTitle}>
+        {title}
+      </h1>
+
+      <p className={Style.Text}>
+        {description}
+      </p>
 
       <div className={Style.Link}>
         <ContentLink label={"Codepen"} href={link} />

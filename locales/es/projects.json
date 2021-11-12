@@ -19,26 +19,26 @@
     ]
   },
   "fcc-fe-cert": {
-    "title": "FreeCodeCamp FE Certification Projects",
-    "random-quote-generator": {
-      "title": "Random Quote Generator",
-      "description": "Peticiona frases aleatorias a la API Quotable y muestra su autor y contenido.",
-      "codepen": "https://codepen.io/Airiz/full/porrJjG"
-    },
-    "drum-machine": {
-      "title": "Drum Machine",
-      "description": "Launch-Pad/Drum-Pad que reproduce sonidos al activar sus botones.",
-      "codepen": "https://codepen.io/Airiz/full/RwZjoar"
-    },
-    "markdown-previewer": {
-      "title": "Markdown Previewer",
-      "description": "Programa de edición y visualización de documentos Markdown.",
-      "codepen": "https://codepen.io/Airiz/full/bGrodeL"
-    },
-    "calculator": {
-      "title": "Calculator WIP",
-      "description": "Calculadora Javascript WIP",
-      "codepen": ""
-    }
+    "title": "FreeCodeCamp FE Certification Projects"
+  },
+  "random-quote-generator": {
+    "title": "Random Quote Generator",
+    "description": "Peticiona frases aleatorias a la API Quotable y muestra su autor y contenido.",
+    "codepen": "https://codepen.io/Airiz/full/porrJjG"
+  },
+  "drum-machine": {
+    "title": "Drum Machine",
+    "description": "Launch-Pad/Drum-Pad que reproduce sonidos al activar sus botones.",
+    "codepen": "https://codepen.io/Airiz/full/RwZjoar"
+  },
+  "markdown-previewer": {
+    "title": "Markdown Previewer",
+    "description": "Programa de edición y visualización de documentos Markdown.",
+    "codepen": "https://codepen.io/Airiz/full/bGrodeL"
+  },
+  "calculator": {
+    "title": "Calculator WIP",
+    "description": "Calculadora Javascript WIP",
+    "codepen": "https://codepen.io/Airiz/full/bGrvGvv"
   }
 }

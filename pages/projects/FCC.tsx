@@ -9,7 +9,7 @@ import Style from "../../styles/ContentDisplay.module.scss";
 
 const FCC = () => {
   const { t, lang } = useTranslation('projects');
-  const title = t("fcc-fe-cert-projects.title");
+  const title = t("fcc-fe-cert.title");
 
   return (
     <ContentWrapper image={"static/christian-wiediger-WkfDrhxDMC8-unsplash.jpg"}>
