@@ -3,7 +3,7 @@ import useTranslation from "next-translate/useTranslation";
 import ContentDetailed from "../../components/Content/ContentDetailed";
 import ContentWrapper from "../../components/Content/ContentWrapper";
 
-import Style from "../../styles/ContentDisplay.module.scss";
+import Style from "../../styles/ContentDetailed.module.scss";
 
 export default function About() {
   const { t, lang } = useTranslation('about');

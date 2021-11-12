@@ -1,0 +1,71 @@
+@use "./fonts"as font;
+@use "./colors"as color;
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  margin: 0 20vw 0 20vw;
+  height: 100%;
+  max-width: 100ch;
+
+  .Title {
+    @include font.header-1;
+    height: fit-content;
+
+    color: color.$secondary-color-dark;
+    z-index: 3;
+  }
+
+  .SubTitle {
+    @include font.header-2;
+    text-align: left;
+    color: color.$primary-color-dark;
+  }
+
+  .Text {
+    @include font.normal;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    overflow: auto;
+    z-index: 5;
+  }
+
+  .Links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .Arrow {
+    position: absolute;
+  }
+}
+
+
+@media only screen and (max-device-width: 1366px) {
+  .Content {
+    background-attachment: scroll;
+    background-position: center center;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .Content {
+    background-attachment: scroll;
+    background-position: center center;
+
+    .Title {
+      margin: 0;
+      align-self: center;
+    }
+
+    .Text {
+      margin-left: 0;
+      align-self: center;
+    }
+  }
+}

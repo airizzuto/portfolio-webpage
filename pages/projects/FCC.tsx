@@ -2,7 +2,7 @@ import React from 'react'
 import useTranslation from "next-translate/useTranslation";
 
 import ContentWrapper from '../../components/Content/ContentWrapper';
-import ContentCard from '../../components/Content/ContentCard';
+import ContentCards from '../../components/Content/ContentCards';
 import FCCProject from './FCCProject';
 
 import Style from "../../styles/ContentDisplay.module.scss";
@@ -13,8 +13,8 @@ const FCC = () => {
 
   return (
     <ContentWrapper image={"static/christian-wiediger-WkfDrhxDMC8-unsplash.jpg"}>
-      <h1 className={Style.MosaicTitle}>{title}</h1>
-      <ContentCard>
+      <h1 className={Style.Title}>{title}</h1>
+      <ContentCards>
         <FCCProject
           imagePath={'static/random-quote-generator.png'}
           projectName={'random-quote-generator'}
@@ -31,7 +31,7 @@ const FCC = () => {
           imagePath={'static/calculator.png'}
           projectName={'calculator'}
         />
-      </ContentCard>
+      </ContentCards>
     </ContentWrapper>
   )
 }

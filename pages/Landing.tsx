@@ -4,7 +4,7 @@ import React from "react";
 import ContentDetailed from "../components/Content/ContentDetailed";
 import ContentWrapper from "../components/Content/ContentWrapper";
 
-import Style from "../styles/ContentDisplay.module.scss";
+import Style from "../styles/ContentDetailed.module.scss";
 
 export default function Landing() {
   const { t, lang } = useTranslation('home');

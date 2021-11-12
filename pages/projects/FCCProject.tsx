@@ -3,7 +3,7 @@ import useTranslation from 'next-translate/useTranslation';
 
 import ContentLink from '../../components/Content/ContentLinks';
 
-import Style from "../../styles/ContentDisplay.module.scss";
+import Style from "../../styles/ContentCard.module.scss";
 
 interface Props {
   imagePath: string;
@@ -23,16 +23,18 @@ const FCCProject: React.FC<Props> = ({projectName, imagePath}) => {
         backgroundImage: `url(${imagePath})`,
       }}
     >
-      <h1 className={Style.ProjectTitle}>
-        {title}
-      </h1>
+      <div className={Style.Background}>
+        <h1 className={Style.ProjectTitle}>
+          {title}
+        </h1>
 
-      <p className={Style.Text}>
-        {description}
-      </p>
+        <p className={Style.Text}>
+          {description}
+        </p>
 
-      <div className={Style.Link}>
-        <ContentLink label={"Codepen"} href={link} />
+        <div className={Style.Link}>
+          <ContentLink label={"Codepen"} href={link} />
+        </div>
       </div>
     </div>
   );

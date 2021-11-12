@@ -1,12 +1,12 @@
 import React, { ReactElement } from 'react';
 
-import Style from "../../styles/ContentDisplay.module.scss";
+import Style from "../../styles/ContentCard.module.scss";
 
 interface Props {
   children: ReactElement[] | undefined;
 }
 
-const ContentCard: React.FC<Props> = ({children}) => {
+const ContentCards: React.FC<Props> = ({children}) => {
   return (
     <div className={Style.Mosaic}>
       {children}
@@ -14,4 +14,4 @@ const ContentCard: React.FC<Props> = ({children}) => {
   );
 }
 
-export default ContentCard;
+export default ContentCards;

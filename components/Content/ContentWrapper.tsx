@@ -1,6 +1,6 @@
 import React, { ReactComponentElement, ReactElement } from "react";
 
-import ContentCard from "./ContentCard";
+import ContentCard from "./ContentCards";
 import ContentDetailed from "./ContentDetailed";
 
 import Style from "../../styles/ContentDisplay.module.scss";

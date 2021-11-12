@@ -3,9 +3,9 @@ import useTranslation from 'next-translate/useTranslation';
 
 import ContentWrapper from '../../components/Content/ContentWrapper';
 import ContentLink from '../../components/Content/ContentLinks';
-
-import Style from "../../styles/ContentDisplay.module.scss";
 import ContentDetailed from '../../components/Content/ContentDetailed';
+
+import Style from "../../styles/ContentDetailed.module.scss";
 
 const PortfolioProject = () => {
   const { t, lang } = useTranslation('projects');
