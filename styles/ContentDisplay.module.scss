@@ -42,7 +42,14 @@
         height: 100%;
         max-width: 100ch;
 
-    
+        .Title {
+            @include font.header-1;
+            height: fit-content;
+
+            color: color.$secondary-color-dark;
+            z-index: 3;
+        }
+
         .SubTitle {
             @include font.header-2;
             text-align: left;
@@ -70,15 +77,16 @@
         }
     }
 
-    .Title {
+    .MosaicTitle {
         @include font.header-1;
         height: fit-content;
-        padding-left: 5rem;
+        padding-top: 1rem;
+        text-align: center;
 
         color: color.$secondary-color-dark;
         z-index: 3;
     }
-    
+
     .Mosaic {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -89,15 +97,16 @@
         min-height: 85%;
         width: 100%;
         z-index: 2;
-    
+
         .Project {
             display: flex;
             flex-direction: column;
             height: 100%;
             width: 100%;
             flex: 1 1 0;
-            place-self: center;
-    
+            
+            padding: 1rem 2rem 1rem 2rem;
+
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -107,15 +116,23 @@
                 text-align: center;
                 color: color.$secondary-color-dark;
             }
-    
-            .Link {
+            
+            .Text {
+                @include font.normal;
                 display: flex;
-                row-gap: 1rem;
-                align-self: center;
+                flex-direction: column;
+                text-align: center;
+                justify-self: center;
+
+                overflow: auto;
+                z-index: 5;
+            }
+
+            .Link {
+                align-items: bottom;
             }
         }
     }
-    
 }
 
 

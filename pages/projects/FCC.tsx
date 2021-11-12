@@ -13,7 +13,7 @@ const FCC = () => {
 
   return (
     <ContentWrapper image={"static/christian-wiediger-WkfDrhxDMC8-unsplash.jpg"}>
-      <h1 className={Style.Title}>{title}</h1>
+      <h1 className={Style.MosaicTitle}>{title}</h1>
       <ContentCard>
         <FCCProject
           imagePath={'static/random-quote-generator.png'}

@@ -4,16 +4,16 @@
 .Container {
   display: flex;
   flex-direction: row;
+  column-gap: 1rem;
   width: 100%;
 
   label {
     @include font.small;
-
     color: color.$secondary-color-dark;
-    width: 10%;
   }
 
   a {
     @include font.small;
+    justify-items: flex-start;
   }
 }
