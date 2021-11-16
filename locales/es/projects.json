@@ -40,5 +40,10 @@
     "title": "Calculator WIP",
     "description": "Calculadora Javascript WIP",
     "codepen": "https://codepen.io/Airiz/full/bGrvGvv"
+  },
+  "25+5-clock": {
+    "title": "Temporizador Pomodoro",
+    "description": "Temporizador pomodoro alarma y configuración de tiempo de sesión y recreo.",
+    "codepen": "https://codepen.io/Airiz/full/GRvXpBV"
   }
 }
