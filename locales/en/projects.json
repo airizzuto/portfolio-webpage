@@ -41,13 +41,12 @@
   },
   "calculator": {
     "title": "Calculator",
-    "description": "Javascript Calculator using formula method",
+    "description": "Javascript Calculator using formula method.",
     "codepen": "https://codepen.io/Airiz/full/bGrvGvv"
   },
-  "25+5-clock": {
+  "25+5clock": {
     "title": "Pomodoro Timer",
-    "description": "Pomodoro timer with alarm adn break and session length configuration.",
+    "description": "Pomodoro timer with alarm, break length and session length configuration.",
     "codepen": "https://codepen.io/Airiz/full/GRvXpBV"
   }
-
 }

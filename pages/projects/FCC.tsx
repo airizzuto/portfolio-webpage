@@ -31,6 +31,10 @@ const FCC = () => {
           imagePath={'static/calculator.png'}
           projectName={'calculator'}
         />
+        <FCCProject
+          imagePath={'static/25+5Clock.png'}
+          projectName={"25+5clock"}
+        />
       </ContentCards>
     </ContentWrapper>
   )
