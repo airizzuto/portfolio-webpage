@@ -2,7 +2,6 @@ import { useState } from "react";
 
 import Style from "../../styles/ContactForm.module.scss" 
 
-// TODO: backend
 // https://w3collective.com/react-contact-form/
 const ContactForm = () => {
   const [status, setStatus] = useState("Submit");
@@ -18,7 +17,7 @@ const ContactForm = () => {
       message: message.value,
     };
 
-    let response = await fetch("http://localhost:5000/contact", {
+    let response = await fetch("http://localhost:5000/sendcontact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
