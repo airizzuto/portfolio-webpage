@@ -25,7 +25,7 @@ const AirRangingProject = () => {
         </div>
 
         <div className={Style.Links}>
-          <ContentLink label={"Web"} href={"https://airizzutodeveloper.vercel.app/"} />
+          <ContentLink label={"Web"} href={""} />
           <ContentLink label={"Github"} href={"https://github.com/airizzuto/AirRanging/"} />
         </div>
       </ContentDetailed>
