@@ -10,24 +10,24 @@ const ContactForm = () => {
     e.preventDefault();
     setStatus("Sending...");
 
-    const { name, email, message } = e.target.elements;
-    let details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
+    const details = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      message: e.target.message.value,
     };
 
-    let response = await fetch("http://localhost:5000/sendcontact", {
+    // FIXME: env undefined, cors
+    await fetch(process.env.EMAILER_URL!, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
+      headers: { "Content-Type": "application/json;charset=utf-8" },
       body: JSON.stringify(details),
+    }).then(response => {
+      setStatus("Submit");
+      alert(response.status);
+      return response.json();
+    }).catch(error => {
+      console.error("Error sending email: ", error);
     });
-
-    setStatus("Submit");
-    let result = await response.json();
-    alert(result.status);
   }
 
   return (
