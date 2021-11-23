@@ -16,7 +16,10 @@
       "API creada en .NET y Entity Framework.",
       "Base de datos en PostgreSQL.",
       "Frontend desarrollado con React, Typescript y Sass."
-    ]
+    ],
+    "links": {
+      "web": "Página Web"
+    }
   },
   "fcc-fe-cert": {
     "title": "FreeCodeCamp FE Certification Projects"
