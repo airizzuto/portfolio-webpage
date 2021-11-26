@@ -28,6 +28,7 @@ const ContactForm = () => {
       setStatus("Submit");
       return response.json();
     }).catch(error => {
+      alert("Something went wrong sending the email...")
       console.error("Error sending email: ", error);
     });
   }
