@@ -15,15 +15,17 @@ const ContactForm = () => {
       email: e.target.email.value,
       message: e.target.message.value,
     };
-
-    // FIXME: env undefined, cors
-    await fetch(process.env.EMAILER_URL!, {
+  
+    // TODO: form reset
+    // FIXME: url env
+    await fetch("http://localhost:5000/v1/mail/send", {
       method: "POST",
-      headers: { "Content-Type": "application/json;charset=utf-8" },
+      headers: {
+        "Content-Type": "application/json;charset=utf-8"
+      },
       body: JSON.stringify(details),
     }).then(response => {
       setStatus("Submit");
-      alert(response.status);
       return response.json();
     }).catch(error => {
       console.error("Error sending email: ", error);
