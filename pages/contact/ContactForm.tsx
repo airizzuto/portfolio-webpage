@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 
 import Style from "../../styles/ContactForm.module.scss" 
+import formSchema from "../../validators/formValidation";
 
 // https://w3collective.com/react-contact-form/
 const ContactForm = () => {
@@ -56,19 +57,7 @@ const ContactForm = () => {
 
     <Formik
       initialValues={{ name: "", email: "", message: "" }}
-      validate={(values) => {
-        const errors = {};
-
-        if (!values.email) {
-          errors.email = "Required";
-        } else if (
-          !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-        ) {
-          errors.email = "Invalid email address";
-        }
-
-        return errors;
-      }}
+      validationSchema={formSchema}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
           alert(JSON.stringify(values, null, 2));
@@ -79,13 +68,20 @@ const ContactForm = () => {
       {({ isSubmitting, handleSubmit }) => (
         <Form className={Style.Form} ref={formRef}>
           <div className={Style.Field}>
-            <Field type="text" name="name" />
+            <label>Name:</label>
+            <Field type="text" name="name"/>
             <ErrorMessage name="name" component="span" />
           </div>
-          <Field type="email" name="email" />
-          <ErrorMessage name="email" component="span" />
-          <Field type="text" name="message" />
-          <ErrorMessage name="message" component="span" />
+          <div className={Style.Field}>
+            <label>Email:</label>
+            <Field type="email" name="email" />
+            <ErrorMessage name="email" component="span" />
+          </div>
+          <div className={Style.Field}>
+            <label>Message:</label>
+            <Field as="textarea" name="message" />
+            <ErrorMessage name="message" component="span" />
+          </div>
           <button type="submit" disabled={isSubmitting}>{status}</button>
         </Form>
       )}
