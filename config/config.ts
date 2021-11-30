@@ -1,0 +1,10 @@
+
+const EMAILER_SERVICE_ID = process.env.EMAILER_SERVICE_ID;
+const EMAILER_TEMPLATE_ID = process.env.EMAILER_TEMPLATE_ID;
+const EMAILER_USER_ID = process.env.EMAILER_USER_ID;
+
+export default {
+  EMAILER_SERVICE_ID,
+  EMAILER_TEMPLATE_ID,
+  EMAILER_USER_ID,
+};
