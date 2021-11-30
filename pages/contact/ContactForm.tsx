@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { LegacyRef, MutableRefObject, useRef, useState } from "react";
 import { Formik, Form, Field, ErrorMessage, FormikHelpers } from "formik";
 import emailjs from "emailjs-com";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -17,10 +17,10 @@ interface FormValues {
 
 const ContactForm = () => {
   const [status, setStatus] = useState("Send");
-  const recaptchaRef = React.createRef();
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
 
   const handleSubmit = async (values: FormValues) => {
-    const token = await recaptchaRef.current.executeAsync();
+    const token = await recaptchaRef.current?.executeAsync();
 
     setStatus("Sending...");
 
