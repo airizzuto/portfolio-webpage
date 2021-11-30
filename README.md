@@ -1,4 +1,4 @@
-# Personal Webpage 0.2.0
+# Personal Webpage 0.2.1
 
 Personal portfolio webpage made in Typescript and Next.js used to showcase my projects and learn a bit about the stack during its development.
 
