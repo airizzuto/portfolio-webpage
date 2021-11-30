@@ -1,72 +1,77 @@
-import { useRef, useState } from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import React, { useRef, useState } from "react";
+import { Formik, Form, Field, ErrorMessage, FormikHelpers } from "formik";
+import emailjs from "emailjs-com";
+import ReCAPTCHA from "react-google-recaptcha";
+
+import formSchema from "../../validators/formValidation";
+import config from "../../config/config";
 
 import Style from "../../styles/ContactForm.module.scss" 
-import formSchema from "../../validators/formValidation";
 
-// https://w3collective.com/react-contact-form/
+interface FormValues {
+  name: string;
+  email: string;
+  message: string;
+}
+
+
 const ContactForm = () => {
-  const [status, setStatus] = useState("Submit");
-  const formRef = useRef<HTMLFormElement>();
+  const [status, setStatus] = useState("Send");
+  const recaptchaRef = React.createRef();
 
-  const handleSubmit = async (e: any) => {
-    e.preventDefault();
+  const handleSubmit = async (values: FormValues) => {
+    const token = await recaptchaRef.current.executeAsync();
+
     setStatus("Sending...");
 
-    const details = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      message: e.target.message.value,
-    };
-  
-    // FIXME: url env
-    // TODO: validation
-    await fetch("http://localhost:5000/v1/mail/send", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8"
-      },
-      body: JSON.stringify(details),
-    }).then(response => {
-      setStatus("Submit");
-      formRef.current.reset();  // TODO: test
-      return response.json();
-    }).catch(error => {
-      alert("Something went wrong sending the email...")
-      console.error("Error sending email: ", error);
+    const formValues = {
+      name: values.name,
+      email: values.email,
+      message: values.message,
+      "g-recaptcha-response": token,
+    }
+
+    // https://www.emailjs.com/docs/examples/reactjs/
+    await emailjs.send(
+      config.EMAILER_SERVICE_ID,
+      config.EMAILER_TEMPLATE_ID,
+      formValues,
+      config.EMAILER_USER_ID,
+    ).then((result) => {
+      console.log(result.text);
+    }, (error) => {
+      console.log(error.text);
+      alert("There was a problem sending the contact request...");
     });
-  }
+
+    setStatus("Send");
+  };
 
   // https://formik.org/docs/guides/validation
   return (
-    // <form className={Style.Form} id={"contactForm"} onSubmit={handleSubmit} ref={formRef} >
-    //   <div className={Style.Field}>
-    //     <label htmlFor="name">Name:</label>
-    //     <input type="text" id="name" required />
-    //   </div>
-    //   <div className={Style.Field}>
-    //     <label htmlFor="email">Email:</label>
-    //     <input type="email" id="email" required />
-    //   </div>
-    //   <div className={Style.Field}>
-    //     <label htmlFor="message">Message:</label>
-    //     <textarea id="message" required />
-    //   </div>
-    //   <button type="submit">{status}</button>
-    // </form>
-
     <Formik
       initialValues={{ name: "", email: "", message: "" }}
       validationSchema={formSchema}
-      onSubmit={(values, { setSubmitting }) => {
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
-          setSubmitting(false);
-        }, 400);
-      }}
+      onSubmit={(
+        values: FormValues,
+        { setSubmitting, resetForm }: FormikHelpers<FormValues>,
+      ) => {
+          handleSubmit(values);
+          setTimeout(() => {
+            alert(JSON.stringify(values, null, 2));
+            setSubmitting(false);
+            resetForm();
+          }, 400);
+        }
+      }
     >
-      {({ isSubmitting, handleSubmit }) => (
-        <Form className={Style.Form} ref={formRef}>
+      {({ isSubmitting }) => (
+        <Form className={Style.Form}>
+          <ReCAPTCHA
+            ref={recaptchaRef}
+            size="invisible"
+            sitekey={config.RECAPTCHA_SITE_KEY}
+          />
           <div className={Style.Field}>
             <label>Name:</label>
             <Field type="text" name="name"/>
