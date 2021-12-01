@@ -1,10 +1,8 @@
-import React, { LegacyRef, MutableRefObject, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { Formik, Form, Field, ErrorMessage, FormikHelpers } from "formik";
-import emailjs from "emailjs-com";
 import ReCAPTCHA from "react-google-recaptcha";
 
 import formSchema from "../../validators/formValidation";
-import config from "../../config/config";
 
 import Style from "../../styles/ContactForm.module.scss" 
 
@@ -13,7 +11,6 @@ interface FormValues {
   email: string;
   message: string;
 }
-
 
 const ContactForm = () => {
   const [status, setStatus] = useState("Send");
@@ -25,22 +22,22 @@ const ContactForm = () => {
     setStatus("Sending...");
 
     const formValues = {
-      name: values.name,
-      email: values.email,
-      message: values.message,
+      "name": values.name,
+      "email": values.email,
+      "message": values.message,
       "g-recaptcha-response": token,
     }
 
-    // https://www.emailjs.com/docs/examples/reactjs/
-    await emailjs.send(
-      config.EMAILER_SERVICE_ID,
-      config.EMAILER_TEMPLATE_ID,
-      formValues,
-      config.EMAILER_USER_ID,
-    ).then((result) => {
-      console.log(result.text);
-    }, (error) => {
-      console.log(error.text);
+    await fetch(
+      "api/contact",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formValues)
+      },
+    ).then((res) => {
+      console.log(res.json());
+    }).catch(error => { 
       alert("There was a problem sending the contact request...");
     });
 
@@ -56,9 +53,8 @@ const ContactForm = () => {
         values: FormValues,
         { setSubmitting, resetForm }: FormikHelpers<FormValues>,
       ) => {
-          handleSubmit(values);
           setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
+            handleSubmit(values);
             setSubmitting(false);
             resetForm();
           }, 400);
@@ -70,7 +66,7 @@ const ContactForm = () => {
           <ReCAPTCHA
             ref={recaptchaRef}
             size="invisible"
-            sitekey={config.RECAPTCHA_SITE_KEY}
+            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
           />
           <div className={Style.Field}>
             <label>Name:</label>
