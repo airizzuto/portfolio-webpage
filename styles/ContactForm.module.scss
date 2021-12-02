@@ -1,10 +1,9 @@
 @use "../styles/fonts" as font;
 @use "../styles/colors" as color;
 
-
 .Container {
   display: flex;
-  padding: 12rem 20vw;
+  padding: 5rem 20vw;
   place-content: center;
   width: 100%;
   height: 100vh;
@@ -27,13 +26,18 @@
   .Field {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: 
+      "label field"
+      "validation validation";
     align-items: center;
 
     label {
-
+      grid-area: label;
     }
   
     input {
+      grid-area: field;
       min-height: 2rem;
       color: white;
       background-color: rgba($color: #000000, $alpha: 0.7);
@@ -41,6 +45,7 @@
     }
 
     textarea {
+      grid-area: field;
       min-height: 10rem;
       color: white;
       background-color: rgba($color: #000000, $alpha: 0.7);
@@ -48,6 +53,7 @@
     }
 
     span {
+      grid-area: validation;
       color: color.$secondary-color-dark;
     }
 
