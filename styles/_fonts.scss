@@ -3,6 +3,7 @@ $large-text-size: 1.953em;
 $normal-text-size: 1.563em;
 $small-text-size: 1.25em;
 $copyright-text-size: 1em;
+$info-text-size: 0.85em;
 
 $title-font-weight: 300;
 $text-font-weight: 300;
@@ -42,4 +43,9 @@ $footer-font-weight: 500;
 @mixin footer {
   font-size: $small-text-size;
   font-weight: $footer-font-weight;
+}
+
+@mixin validations {
+  font-size: $info-text-size;
+  font-weight: $text-font-weight;
 }
