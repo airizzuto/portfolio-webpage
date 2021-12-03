@@ -1,10 +1,10 @@
-import { AppPropsType } from 'next/dist/next-server/lib/utils';
-import Layout from '../components/Layout'
+import type { AppProps /*, AppContext */ } from 'next/app'
 
+import Layout from '../components/Layout'
 import '../styles/globals.scss'
 
 
-const App = ({ Component, pageProps, router }: AppPropsType ) => {
+const App = ({ Component, pageProps, router }: AppProps) => {
   return (
     <Layout>
       <Component {...pageProps} key={router.route} />

@@ -10,6 +10,7 @@ export default function Contact() {
           backgroundImage:`url(${"static/nasa2.jpg"})`
         }}
       >
+        {/* TODO: contact info card */}
         <ContactForm />
       </div>
     )

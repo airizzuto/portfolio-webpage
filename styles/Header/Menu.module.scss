@@ -110,9 +110,10 @@
     li:hover {
       cursor: pointer;
       
-      opacity: 0.90;
+      opacity: 0.95;
       a {
         color: color.$secondary-color-dark;
+        transition: color 0.25s linear;
       }
     }
   }

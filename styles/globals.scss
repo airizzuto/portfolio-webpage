@@ -24,6 +24,7 @@ a {
 
 a:hover {
   color: $secondary-color-dark;
+  transition: color 0.25s linear;
 }
 
 * {

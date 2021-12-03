@@ -11,7 +11,7 @@ const AirRangingProject = () => {
   const { t, lang } = useTranslation('projects');
   const title = t("air-ranging.title");
   const content = [...t("air-ranging.content", {}, {returnObjects: true})];
-  const webLabel = t("links.web");
+  const webLabel = t("air-ranging.links.web");
 
   return (
     <ContentWrapper image={'static/AirRangingMap.png'}>
@@ -25,7 +25,7 @@ const AirRangingProject = () => {
         </div>
 
         <div className={Style.Links}>
-          <ContentLink label={"Web"} href={"https://airizzutodeveloper.vercel.app/"} />
+          <ContentLink label={webLabel} href={""} />
           <ContentLink label={"Github"} href={"https://github.com/airizzuto/AirRanging/"} />
         </div>
       </ContentDetailed>

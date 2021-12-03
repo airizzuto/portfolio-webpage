@@ -16,7 +16,10 @@
       "API creada en .NET y Entity Framework.",
       "Base de datos en PostgreSQL.",
       "Frontend desarrollado con React, Typescript y Sass."
-    ]
+    ],
+    "links": {
+      "web": "Página Web"
+    }
   },
   "fcc-fe-cert": {
     "title": "FreeCodeCamp FE Certification Projects"
@@ -37,8 +40,8 @@
     "codepen": "https://codepen.io/Airiz/full/bGrodeL"
   },
   "calculator": {
-    "title": "Calculator WIP",
-    "description": "Calculadora Javascript WIP",
+    "title": "Calculator",
+    "description": "Calculadora Javascript",
     "codepen": "https://codepen.io/Airiz/full/bGrvGvv"
   },
   "25+5clock": {

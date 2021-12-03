@@ -11,7 +11,7 @@ const PortfolioProject = () => {
   const { t, lang } = useTranslation('projects');
   const title = t("portfolio.title");
   const content = [...t("portfolio.content", {}, {returnObjects: true})];
-  const webLabel = t("links.web");
+  const webLabel = t("portfolio.links.web");
 
   return (
     <ContentWrapper image={"static/tianyi-ma.jpg"}>
@@ -25,7 +25,8 @@ const PortfolioProject = () => {
         </div>
 
         <div className={Style.Links}>
-          <ContentLink 
+          <ContentLink label={webLabel} href={""} />
+          <ContentLink
             label={"Github"}
             href={"https://github.com/airizzuto/portfolio-webpage-template"}
           />

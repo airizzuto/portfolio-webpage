@@ -14,23 +14,17 @@ import styles from "../styles/Footer.module.scss"
       <footer className={styles.Footer}>
         <nav className={styles.Nav}>
           <ul>
-            <li>
-              <NavButton
-                text={`Github`}
-                href={"https://github.com/airizzuto"}
-                icon={<FaGithub className={styles.Icon} size={"1rem"} />}
-              />
-            </li>
-            <li>
-              <NavButton 
-                text={"LinkedIn"} 
-                href={githubLink} 
-                icon={<FaLinkedin className={styles.Icon} size={"1rem"} />}
-              />
-            </li>
-            <li>
-              <NavButton text={contactLabel} href={"/contact"} />
-            </li>
+            <NavButton
+              text={`Github`}
+              href={"https://github.com/airizzuto"}
+              icon={<FaGithub className={styles.Icon} size={"1rem"} />}
+            />
+            <NavButton 
+              text={"LinkedIn"} 
+              href={githubLink} 
+              icon={<FaLinkedin className={styles.Icon} size={"1rem"} />}
+            />
+            <NavButton text={contactLabel} href={"/contact"} />
           </ul>
         </nav>
         <p className={styles.Copyright}>AIRIZZUTO © 2021</p>
