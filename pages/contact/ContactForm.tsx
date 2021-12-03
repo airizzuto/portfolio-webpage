@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { Formik, Form, Field, ErrorMessage, FormikHelpers } from "formik";
 import ReCAPTCHA from "react-google-recaptcha";
+import emailjs from "emailjs-com";
 
 import formSchema from "../../validators/formValidation";
 
@@ -21,30 +22,36 @@ const ContactForm = () => {
 
     setStatus("Sending...");
 
-    const formValues = {
-      "name": values.name,
-      "email": values.email,
-      "message": values.message,
+    const config = {
+      serviceID: process.env.NEXT_PUBLIC_EMAILER_SERVICE_ID!,
+      templateID: process.env.NEXT_PUBLIC_EMAILER_TEMPLATE_ID!,
+      userID: process.env.NEXT_PUBLIC_EMAILER_USER_ID!,
+    }
+
+    const templateParams = {
+      name: values.name,
+      email: values.email,
+      message: values.message,
       "g-recaptcha-response": token,
     }
 
-    await fetch(
-      "api/contact",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formValues)
-      },
-    ).then((res) => {
-      console.log(res.json());
-    }).catch(error => { 
+    // TODO: use contact api
+    await emailjs.send(
+      config.serviceID,
+      config.templateID,
+      templateParams,
+      config.userID,
+    ).then(result => {
+      console.log('SUCCESS!', result.status, result.text);
+    }).catch(error => {
+      console.error("FAILED", error);
       alert("There was a problem sending the contact request...");
-    });
+      setStatus("Send");
+  });
 
     setStatus("Send");
   };
 
-  // https://formik.org/docs/guides/validation
   return (
     <Formik
       initialValues={{ name: "", email: "", message: "" }}
@@ -83,7 +90,9 @@ const ContactForm = () => {
             <Field as="textarea" name="message" />
             <ErrorMessage name="message" component="span" />
           </div>
-          <button type="submit" disabled={isSubmitting}>{status}</button>
+          <button type="submit" disabled={isSubmitting}>
+            {status}
+          </button>
         </Form>
       )}
     </Formik>

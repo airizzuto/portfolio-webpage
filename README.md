@@ -1,6 +1,12 @@
-# Personal Webpage 0.2.1
+# Personal Webpage 0.2.2
 
 Personal portfolio webpage made in Typescript and Next.js used to showcase my projects and learn a bit about the stack during its development.
+
+---
+
+## Changes
+
+- Added emailer service for contact form
 
 ---
 
