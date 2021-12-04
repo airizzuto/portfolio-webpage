@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import Header from "./Header/Header"
 import Footer from "./Footer"
 import Meta from "./Meta"
@@ -11,11 +11,9 @@ interface Props {
 }
 
 const Layout = ({ children }: Props) => {
-
-
   return (
     <div>
-      <Meta /> {/*TODO: Additional meta */}
+      <Meta />
       <main className={Style.Container}>
         <div className={Style.Header}>
           <Header />

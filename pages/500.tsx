@@ -3,6 +3,12 @@ import Style from "../styles/ErrorPage.module.scss";
 // TODO:
 export default function Custom500() {
   return (
-    <h1 className={Style.Container}>500 - Server-side error occurred</h1>
+    <div className={Style.Container}
+      style={{
+        backgroundImage:`url(${"static/polygon-scatter-haikei-warn.svg"})`
+      }}
+    >
+      <h1>500 - Server Error</h1>
+    </div>
   );
 }
