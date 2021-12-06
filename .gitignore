@@ -37,3 +37,6 @@ yarn-error.log*
 
 .fake
 .ionide
+
+# local assets
+/assets/*
