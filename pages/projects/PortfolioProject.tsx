@@ -14,7 +14,7 @@ const PortfolioProject = () => {
   const webLabel = t("portfolio.links.web");
 
   return (
-    <ContentWrapper image={"static/christian-wiediger-WkfDrhxDMC8-unsplash.jpg"}>
+    <ContentWrapper image={"christian-wiediger-WkfDrhxDMC8-unsplash.jpg"}>
       <ContentDetailed>
         <h1 className={Style.Title}>{title}</h1>
 

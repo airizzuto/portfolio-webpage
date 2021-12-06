@@ -16,7 +16,7 @@ const ContentWrapper: React.FC<Props> = ({image, children}) => {
       <div 
         className={Style.Container} 
         style={{
-          backgroundImage: `url(${image})`,
+          backgroundImage: `url(/static/${image})`,
         }}
       >
         <div className={Style.Background}>

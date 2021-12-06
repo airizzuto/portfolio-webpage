@@ -12,27 +12,27 @@ const FCC = () => {
   const title = t("fcc-fe-cert.title");
 
   return (
-    <ContentWrapper image={"static/polygon-scatter-haikei3.svg"}>
+    <ContentWrapper image={"/polygon-scatter-haikei3.svg"}>
       <h1 className={Style.Title}>{title}</h1>
       <ContentCards>
         <FCCProject
-          imagePath={'static/random-quote-generator.png'}
+          imagePath={'/random-quote-generator.png'}
           projectName={'random-quote-generator'}
         />
         <FCCProject 
-          imagePath={'static/drum-machine.png'}
+          imagePath={'/drum-machine.png'}
           projectName={'drum-machine'}
         />
         <FCCProject 
-          imagePath={'static/markdown-previewer.png'}
+          imagePath={'/markdown-previewer.png'}
           projectName={'markdown-previewer'}
         />
         <FCCProject 
-          imagePath={'static/calculator.png'}
+          imagePath={'/calculator.png'}
           projectName={'calculator'}
         />
         <FCCProject
-          imagePath={'static/25+5Clock.png'}
+          imagePath={'/25+5Clock.png'}
           projectName={"25+5clock"}
         />
       </ContentCards>

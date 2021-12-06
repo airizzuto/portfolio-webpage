@@ -9,6 +9,7 @@
   margin: 0 20vw 0 20vw;
   min-height: 100vh;
   max-width: 100ch;
+  overflow: auto;
 
   .Title {
     @include font.header-1;

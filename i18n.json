@@ -6,6 +6,5 @@
     "/": ["home", "projects"],
     "/about": ["about"],
     "/contact": ["contact"]
-  },
-  "loader": "true"
+  }
 }

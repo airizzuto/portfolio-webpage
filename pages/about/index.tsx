@@ -11,7 +11,7 @@ export default function About() {
   const content = [...t("content_text", {}, {returnObjects: true})];
 
   return (
-    <ContentWrapper image={"static/IMG_20181226_155827.jpg"}>
+    <ContentWrapper image={"IMG_20181226_155827.jpg"}>
       <ContentDetailed>
         <h1 className={Style.Title}>{title}</h1>
 
