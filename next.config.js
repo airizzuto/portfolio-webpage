@@ -10,7 +10,7 @@ module.exports = {
   },
   future: {
     webpack5: true,
-  },
+  }
 }
 
 // ref: https://mariestarck.com/how-to-localize-your-next-js-application-with-next-translate/

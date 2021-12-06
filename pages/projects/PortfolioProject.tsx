@@ -14,7 +14,7 @@ const PortfolioProject = () => {
   const webLabel = t("portfolio.links.web");
 
   return (
-    <ContentWrapper image={"static/tianyi-ma.jpg"}>
+    <ContentWrapper image={"christian-wiediger-WkfDrhxDMC8-unsplash.jpg"}>
       <ContentDetailed>
         <h1 className={Style.Title}>{title}</h1>
 
@@ -25,7 +25,7 @@ const PortfolioProject = () => {
         </div>
 
         <div className={Style.Links}>
-          <ContentLink label={webLabel} href={""} />
+          <ContentLink label={webLabel} href={"https://airizzutodeveloper.vercel.app/"} />
           <ContentLink
             label={"Github"}
             href={"https://github.com/airizzuto/portfolio-webpage-template"}

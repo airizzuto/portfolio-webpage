@@ -20,7 +20,7 @@ const FCCProject: React.FC<Props> = ({projectName, imagePath}) => {
     <div 
       className={Style.Project}
       style={{
-        backgroundImage: `url(${imagePath})`,
+        backgroundImage: `url(/static/${imagePath})`,
       }}
     >
       <div className={Style.Background}>

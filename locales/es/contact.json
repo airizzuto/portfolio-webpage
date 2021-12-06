@@ -1,3 +1,5 @@
 {
-  
+  "contact_name": "Nombre:",
+  "contact_email": "Email:",
+  "contact_message": "Mensaje:"
 }
