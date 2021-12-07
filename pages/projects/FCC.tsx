@@ -13,6 +13,7 @@ const FCC = () => {
 
   return (
     <ContentWrapper image={"/polygon-scatter-haikei3.svg"}>
+      <p className={Style.Category}>Course</p>
       <h1 className={Style.Title}>{title}</h1>
       <ContentCards>
         <FCCProject

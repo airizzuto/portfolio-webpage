@@ -32,13 +32,18 @@
         z-index: 2;
         overflow: auto;
     }
-    
+
+    .Arrow {
+        position: absolute;
+        align-items: center;
+    }
+
     .Title {
-        @include font.header-1;
-        height: fit-content;
-        padding-top: 1rem;
-        text-align: center;
-        color: color.$secondary-color-dark;
-        z-index: 3;
+        padding-left: 10vw;
+    }
+
+    .Category {
+        @include font.category;
+        padding-left: 10vw;
     }
 }

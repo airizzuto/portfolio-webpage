@@ -3,6 +3,7 @@ import React from "react";
 
 import ContentDetailed from "../components/Content/ContentDetailed";
 import ContentWrapper from "../components/Content/ContentWrapper";
+import ScrollArrow from "../components/ScrollArrow";
 
 import Style from "../styles/ContentDetailed.module.scss";
 
@@ -23,6 +24,7 @@ export default function Landing() {
           })}
         </div>
       </ContentDetailed>
+      <ScrollArrow />
     </ContentWrapper>
   )
 }

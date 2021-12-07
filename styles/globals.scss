@@ -1,5 +1,5 @@
-
-@import "./colors.scss";
+@use "./fonts" as font;
+@use "./colors" as color;
 
 html,
 body {
@@ -7,8 +7,8 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-  color: $primary-color-dark;
-  background-color: $background-color-dark;
+  color: color.$primary-color-dark;
+  background-color: color.$background-color-dark;
   font-family:  "Roboto", Arial, Helvetica, sans-serif;
   font-size: 16px;
   text-shadow: 1px 1px 1px black; 
@@ -18,19 +18,33 @@ body {
 }
 
 a {
-  color: $primary-color-dark;
+  color: color.$primary-color-dark;
   text-decoration: none;
 }
 
 a:hover {
-  color: $secondary-color-dark;
+  color: color.$secondary-color-dark;
   transition: color 0.25s linear;
+}
+
+h1 {
+  @include font.header-1;
+  color: color.$secondary-color-dark;
+}
+
+h2 {
+  @include font.header-2;
+  color: color.$primary-color-dark;
+}
+
+p {
+  @include font.normal;
 }
 
 * {
   box-sizing: border-box;
   scrollbar-width: thin;
-  scrollbar-color: $secondary-color-dark transparent;
+  scrollbar-color: color.$secondary-color-dark transparent;
   scroll-behavior: smooth;
 }
 
@@ -46,7 +60,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: $secondary-color-dark;    /* color of the scroll thumb */
+  background-color: color.$secondary-color-dark;    /* color of the scroll thumb */
   border-radius: 3px;       /* roundness of the scroll thumb */
-  border: 2px solid $secondary-color-dark;  /* creates padding around scroll thumb */
+  border: 2px solid color.$secondary-color-dark;  /* creates padding around scroll thumb */
 }

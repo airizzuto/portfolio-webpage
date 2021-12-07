@@ -6,6 +6,7 @@ import ContentLink from '../../components/Content/ContentLinks';
 import ContentDetailed from '../../components/Content/ContentDetailed';
 
 import Style from "../../styles/ContentDetailed.module.scss";
+import ScrollArrow from '../../components/ScrollArrow';
 
 const AirRangingProject = () => {
   const { t, lang } = useTranslation('projects');
@@ -16,6 +17,7 @@ const AirRangingProject = () => {
   return (
     <ContentWrapper image={'AirRangingMap.png'}>
       <ContentDetailed>
+        <p className={Style.Category}>Project</p>
         <h1 className={Style.Title}>{title}</h1>
 
         <div className={Style.Text}>
@@ -29,6 +31,7 @@ const AirRangingProject = () => {
           <ContentLink label={"Github"} href={"https://github.com/airizzuto/AirRanging/"} />
         </div>
       </ContentDetailed>
+      <ScrollArrow />
     </ContentWrapper>
   )
 }

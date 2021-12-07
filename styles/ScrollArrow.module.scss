@@ -1,15 +1,17 @@
 @import "./colors.scss";
 
-.arrow{
-    position: absolute;
-    bottom: 4rem;
+.Arrow{
+    position: relative;
+    bottom: 3rem;
+    left: 50%;
     justify-self: center;
     height: fit-content;
     width: fit-content;
     transform: translate(-50%,-50%);
     z-index: 2;
 }
-.arrow span{
+
+.Arrow span{
     display: block;
     width: 1.0em;
     height: 1.0em;
@@ -19,12 +21,13 @@
     margin: -10px;
     animation: animate 3s infinite;
 }
-.arrow span:nth-child(2){
+.Arrow span:nth-child(2){
     animation-delay: -0.2s;
 }
-.arrow span:nth-child(3){
+.Arrow span:nth-child(3){
     animation-delay: -0.4s;
 }
+
 @keyframes animate {
     0%{
         opacity: 0;

@@ -6,6 +6,7 @@ import ContentLink from '../../components/Content/ContentLinks';
 import ContentDetailed from '../../components/Content/ContentDetailed';
 
 import Style from "../../styles/ContentDetailed.module.scss";
+import ScrollArrow from '../../components/ScrollArrow';
 
 const PortfolioProject = () => {
   const { t, lang } = useTranslation('projects');
@@ -16,14 +17,13 @@ const PortfolioProject = () => {
   return (
     <ContentWrapper image={"christian-wiediger-WkfDrhxDMC8-unsplash.jpg"}>
       <ContentDetailed>
+        <p className={Style.Category}>Project</p>
         <h1 className={Style.Title}>{title}</h1>
-
         <div className={Style.Text}>
           {content.map((text, idx) => {
             return <p key={`porfolio-text-${idx}`}>{text}</p>
           })}
         </div>
-
         <div className={Style.Links}>
           <ContentLink label={webLabel} href={"https://airizzutodeveloper.vercel.app/"} />
           <ContentLink
@@ -32,6 +32,7 @@ const PortfolioProject = () => {
           />
         </div>
       </ContentDetailed>
+      <ScrollArrow />
     </ContentWrapper>
   )
 }

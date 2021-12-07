@@ -3,7 +3,7 @@
 
 .Header {
   position: absolute;
-  padding: 0rem 3vw;
+  padding: 0rem 10vw;
   top: 0;
   left: 0;
   width: 100%;
@@ -77,10 +77,10 @@
   grid-area: menu;
   display: flex;
   flex-direction: row;
-  column-gap: 2rem;
-  align-self: center;
+  align-content: center;
   justify-self: right;
-  padding-right: 6rem;
+  column-gap: 2rem;
+  padding-right: 5vw;
 }
 
 @media only screen and (max-device-width: 1366px) {

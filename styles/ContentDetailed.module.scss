@@ -6,42 +6,26 @@
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
-  padding: 15vh 20vw;
+  padding: 15vh 10vw;
   justify-content: center;
   align-self: center;
 
-  .Title {
-    @include font.header-1;
-    height: fit-content;
-
-    color: color.$secondary-color-dark;
-    z-index: 3;
-  }
-
-  .SubTitle {
-    @include font.header-2;
-    text-align: left;
-    color: color.$primary-color-dark;
-  }
-
   .Text {
-    @include font.normal;
     display: flex;
     flex-direction: column;
     text-align: left;
-    max-width: 60ch;
+    max-width: 80ch;
+  }
 
-    z-index: 5;
+  .Category {
+    @include font.category;
+    margin: 0;
   }
 
   .Links {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-  }
-
-  .Arrow {
-    position: absolute;
   }
 }
 
@@ -59,7 +43,7 @@
 
     .Title {
       margin: 0;
-      align-self: center;
+      align-self: left;
     }
 
     .Text {
