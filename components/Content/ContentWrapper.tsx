@@ -1,7 +1,4 @@
-import React, { ReactComponentElement, ReactElement } from "react";
-
-import ContentCard from "./ContentCards";
-import ContentDetailed from "./ContentDetailed";
+import React, { ReactElement } from "react";
 
 import Style from "../../styles/ContentDisplay.module.scss";
 

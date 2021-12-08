@@ -1,8 +1,8 @@
-import styles from "../styles/ScrollArrow.module.scss"
+import Style from "../styles/ScrollArrow.module.scss"
 
 const ScrollArrow = () => {
     return (
-        <div className={styles.arrow}>
+        <div className={Style.Arrow}>
             <span></span>
             <span></span>
         </div>

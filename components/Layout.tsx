@@ -21,10 +21,6 @@ const Layout = ({ children }: Props) => {
 
         <div className={Style.ContentDisplay}>{children}</div>
 
-        <ScrollArrow />
-
-        {/*TODO: Go to top */}
-
         <div className={Style.Footer}>
           <Footer />
         </div>

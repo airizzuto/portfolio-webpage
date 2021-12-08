@@ -5,9 +5,9 @@ $small-text-size: 1.25em;
 $copyright-text-size: 1em;
 $info-text-size: 0.85em;
 
-$title-font-weight: 300;
+$title-font-weight: 400;
 $text-font-weight: 300;
-$navbutton-font-weight: 300;
+$navbutton-font-weight: 400;
 $footer-font-weight: 500;
 
 @mixin header-1 {
@@ -21,7 +21,7 @@ $footer-font-weight: 500;
 }
 
 @mixin nav {
-  font-size: $large-text-size;
+  font-size: $normal-text-size;
   font-weight: $navbutton-font-weight;
 }
 
@@ -38,6 +38,11 @@ $footer-font-weight: 500;
 @mixin button {
   font-size: $normal-text-size;
   font-weight: $navbutton-font-weight;
+}
+
+@mixin category {
+  font-size: $small-text-size;
+  font-weight: 500;
 }
 
 @mixin footer {
