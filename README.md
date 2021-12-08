@@ -1,4 +1,4 @@
-# Personal Webpage 0.2.3
+# Personal Webpage 0.2.4
 
 Personal portfolio webpage made in Typescript and Next.js used to showcase my projects and learn a bit about the stack during its development.
 
@@ -6,8 +6,8 @@ Personal portfolio webpage made in Typescript and Next.js used to showcase my pr
 
 ## Changes
 
-- Backgrounds
-- Contact page i18n
+- Fixes to: font sizes, padding, text shadow, media screen.
+- Scroll down arrows
 
 ---
 
