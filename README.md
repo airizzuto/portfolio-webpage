@@ -1,4 +1,4 @@
-# Personal Webpage 0.2.4
+# Personal Webpage 0.2.5
 
 Personal portfolio webpage made in Typescript and Next.js used to showcase my projects and learn a bit about the stack during its development.
 
@@ -6,8 +6,9 @@ Personal portfolio webpage made in Typescript and Next.js used to showcase my pr
 
 ## Changes
 
-- Fixes to: font sizes, padding, text shadow, media screen.
-- Scroll down arrows
+- Menu button size update
+- Header nav elements position update
+- Refactor to style files structure
 
 ---
 

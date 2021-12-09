@@ -5,7 +5,7 @@ import ContentDetailed from "../components/Content/ContentDetailed";
 import ContentWrapper from "../components/Content/ContentWrapper";
 import ScrollArrow from "../components/ScrollArrow";
 
-import Style from "../styles/ContentDetailed.module.scss";
+import Style from "../styles/content/ContentDetailed.module.scss";
 
 export default function Landing() {
   const { t, lang } = useTranslation('home');

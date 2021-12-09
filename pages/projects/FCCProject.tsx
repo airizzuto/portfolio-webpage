@@ -3,7 +3,7 @@ import useTranslation from 'next-translate/useTranslation';
 
 import ContentLink from '../../components/Content/ContentLinks';
 
-import Style from "../../styles/ContentCard.module.scss";
+import Style from "../../styles/content/ContentCard.module.scss";
 
 interface Props {
   imagePath: string;

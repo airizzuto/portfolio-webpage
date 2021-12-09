@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { IconType } from "react-icons/lib";
+
 interface Props {
     text: String
     href: string

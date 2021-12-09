@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import NavSections from "./NavSections";
 
-import Style from "../../styles/Header/Menu.module.scss";
 import useOnClickOutside from "../../hooks/useOnClickOutside";
+
+import Style from "../../styles/header/Menu.module.scss";
 
 const Menu = () => {
   const [showMenu, setShowMenu] = useState(false);
