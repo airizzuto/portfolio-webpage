@@ -2,7 +2,6 @@ import React from "react"
 import Header from "./Header/Header"
 import Footer from "./Footer"
 import Meta from "./Meta"
-import ScrollArrow from "./ScrollArrow"
 
 import Style from "../styles/Layout.module.scss"
 

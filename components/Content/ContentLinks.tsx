@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link';
 
-import Style from "./ContentLink.module.scss";
+import Style from "../../styles/content/ContentLink.module.scss";
 
 interface Props {
   label: string;

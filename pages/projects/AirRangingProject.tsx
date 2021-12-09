@@ -4,9 +4,9 @@ import useTranslation from 'next-translate/useTranslation';
 import ContentWrapper from '../../components/Content/ContentWrapper';
 import ContentLink from '../../components/Content/ContentLinks';
 import ContentDetailed from '../../components/Content/ContentDetailed';
-
-import Style from "../../styles/ContentDetailed.module.scss";
 import ScrollArrow from '../../components/ScrollArrow';
+
+import Style from "../../styles/content/ContentDetailed.module.scss";
 
 const AirRangingProject = () => {
   const { t, lang } = useTranslation('projects');

@@ -5,7 +5,7 @@ import ContentWrapper from '../../components/Content/ContentWrapper';
 import ContentCards from '../../components/Content/ContentCards';
 import FCCProject from './FCCProject';
 
-import Style from "../../styles/ContentDisplay.module.scss";
+import Style from "../../styles/content/ContentDisplay.module.scss";
 
 const FCC = () => {
   const { t, lang } = useTranslation('projects');

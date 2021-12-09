@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 
-import Style from "../../styles/ContentDetailed.module.scss";
+import Style from "../../styles/content/ContentDetailed.module.scss";
 
 interface Props {
   children: ReactElement[] | undefined;

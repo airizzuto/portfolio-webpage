@@ -1,8 +1,7 @@
 import React from "react";
 import useTranslation from "next-translate/useTranslation";
-import ContactForm from "./ContactForm";
 
-import Style from "../../styles/ContactForm.module.scss"
+import ContactForm from "./ContactForm";
 import ContentWrapper from "../../components/Content/ContentWrapper";
 
 export default function Contact() {
