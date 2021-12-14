@@ -5,7 +5,7 @@ module.exports = {
   sassOptions: {
     includePaths: [
       path.join(__dirname, 'styles'),
-      path.join(__dirname, "./pages/components")
+      path.join(__dirname, 'styles/*')
     ]
   },
   future: {
