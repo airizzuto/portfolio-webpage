@@ -23,9 +23,6 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "pages/_app.tsx",
-    "pages/index.tsx",
-    "components/*",
     "next.config.js"
   ],
   "exclude": [
