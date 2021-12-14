@@ -1,7 +1,7 @@
 
 import useTranslation from "next-translate/useTranslation";
-import ContentDetailed from "../../components/Content/ContentDetailed";
-import ContentWrapper from "../../components/Content/ContentWrapper";
+import ContentDetailed from "../../components/content/ContentDetailed";
+import ContentWrapper from "../../components/content/ContentWrapper";
 
 import Style from "../../styles/content/ContentDetailed.module.scss";
 

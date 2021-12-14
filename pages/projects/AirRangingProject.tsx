@@ -1,9 +1,9 @@
 import React from 'react'
 import useTranslation from 'next-translate/useTranslation';
 
-import ContentWrapper from '../../components/Content/ContentWrapper';
-import ContentLink from '../../components/Content/ContentLinks';
-import ContentDetailed from '../../components/Content/ContentDetailed';
+import ContentWrapper from '../../components/content/ContentWrapper';
+import ContentLink from '../../components/content/ContentLinks';
+import ContentDetailed from '../../components/content/ContentDetailed';
 import ScrollArrow from '../../components/ScrollArrow';
 
 import Style from "../../styles/content/ContentDetailed.module.scss";
