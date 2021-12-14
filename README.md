@@ -1,4 +1,8 @@
-# Personal Webpage 0.2.5
+# Personal Webpage 0.2.6
+
+![Licence] <https://badgen.net/badge/license/MIT/blue>
+![Release] <https://img.shields.io/github/realese/airizzuto/portfolio-webpage.svg>
+![Follow]  <https://img.shields.io/github/followers/airizzuto.svg?style=social&label=Follow&maxAge=2592000>
 
 Personal portfolio webpage made in Typescript and Next.js used to showcase my projects and learn a bit about the stack during its development.
 
@@ -6,9 +10,8 @@ Personal portfolio webpage made in Typescript and Next.js used to showcase my pr
 
 ## Changes
 
-- Menu button size update
-- Header nav elements position update
-- Refactor to style files structure
+- Readme github badges
+- SCSS Path config
 
 ---
 
