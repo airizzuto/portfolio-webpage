@@ -1,4 +1,4 @@
-import NavButton from "./header/NavButton"
+import NavButton from "./header/NavButton";
 import useTranslation from "next-translate/useTranslation";
 
 import {FaGithub, FaLinkedin} from "react-icons/fa"
