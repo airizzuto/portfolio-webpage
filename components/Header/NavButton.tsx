@@ -19,4 +19,4 @@ const NavButton: React.FC<Props> = ({text, href, handleClick, icon}) => {
     )
 }
 
-export default NavButton
+export default NavButton;

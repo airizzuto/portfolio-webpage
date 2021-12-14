@@ -2,8 +2,8 @@ import React from "react"
 import Link from "next/link"
 
 import LanguageSwitch from "./LanguageSwitch";
+import Menu from "./Menu";
 import NavSections from "./NavSections";
-import Menu from "./Menu"
 
 import Style from "./../../styles/header/Header.module.scss";
 
