@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "ES6",
     "lib": [
       "dom",
       "dom.iterable",
@@ -24,10 +24,10 @@
     "**/*.ts",
     "**/*.tsx",
     "next.config.js",
-    "components/**/*.ts",
-    "components/**/*.tsx",
-    "pages/**/*.ts",
-    "pages/**/*.tsx",
+    "./components/**/*.ts",
+    "./components/**/*.tsx",
+    "./pages/**/*.ts",
+    "./pages/**/*.tsx",
   ],
   "exclude": [
     "node_modules"
