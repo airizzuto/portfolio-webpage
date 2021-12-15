@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 
-import Style from "../../styles/content/ContentCard.module.scss";
+import Style from "../../styles/Content/ContentCard.module.scss";
 
 interface Props {
   children: ReactElement[] | undefined;
