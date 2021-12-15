@@ -1,7 +1,0 @@
-@use "../fonts" as font;
-@use "../colors" as color;
-
-.LanguageSwitch {
-  @include font.button;
-  place-self: center;
-}
