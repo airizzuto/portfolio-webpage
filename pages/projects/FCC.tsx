@@ -1,8 +1,8 @@
 import React from 'react'
 import useTranslation from "next-translate/useTranslation";
 
-import ContentWrapper from '../../components/Content/ContentWrapper';
-import ContentCards from '../../components/Content/ContentCards';
+import ContentWrapper from '../../components/content/ContentWrapper';
+import ContentCards from '../../components/content/ContentCards';
 import FCCProject from './FCCProject';
 
 import Style from "../../styles/content/ContentDisplay.module.scss";

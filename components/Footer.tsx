@@ -1,7 +1,7 @@
-import NavButton from "./Header/NavButton"
 import useTranslation from "next-translate/useTranslation";
-
 import {FaGithub, FaLinkedin} from "react-icons/fa"
+
+import NavButton from "./header/NavButton";
 
 import styles from "../styles/Footer.module.scss"
 
@@ -27,7 +27,7 @@ import styles from "../styles/Footer.module.scss"
             <NavButton text={contactLabel} href={"/contact"} />
           </ul>
         </nav>
-        <p className={styles.Copyright}>AIRIZZUTO © 2021</p>
+        <p className={styles.Copyright}> © 2020-2022 AIRIZZUTO</p>
       </footer>
     );
 }

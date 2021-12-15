@@ -12,7 +12,11 @@
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-areas: "logo nav menu";
+<<<<<<< HEAD
+  column-gap: 2vw;
+=======
   column-gap: 4vw;
+>>>>>>> development
   align-items: center;
 
   background-color: transparent;

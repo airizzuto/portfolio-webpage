@@ -1,7 +1,7 @@
 import React from 'react'
 import useTranslation from 'next-translate/useTranslation';
 
-import ContentLink from '../../components/Content/ContentLinks';
+import ContentLink from '../../components/content/ContentLinks';
 
 import Style from "../../styles/content/ContentCard.module.scss";
 

@@ -15,7 +15,11 @@
   place-self: center;
   cursor: pointer;
   user-select: none;
+<<<<<<< HEAD
+  right: 3vw;
+=======
   right: 3rem;
+>>>>>>> development
 
   span {
       @include bar;
@@ -73,7 +77,11 @@
   margin: 0;
   padding: 0;
   top: 5rem;
+<<<<<<< HEAD
+  right: 4rem;
+=======
   right: 3.75rem;
+>>>>>>> development
   height: min-content;
   min-width: 12vw;
   z-index: 9;

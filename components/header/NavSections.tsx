@@ -1,7 +1,7 @@
 import React from 'react'
-import NavButton from './NavButton';
-
 import useTranslation from 'next-translate/useTranslation'
+
+import NavButton from './NavButton';
 
 interface Props {
   handleClick?: () => void;

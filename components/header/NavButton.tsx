@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 
 interface Props {
@@ -19,4 +20,4 @@ const NavButton: React.FC<Props> = ({text, href, handleClick, icon}) => {
     )
 }
 
-export default NavButton
+export default NavButton;

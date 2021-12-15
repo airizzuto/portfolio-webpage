@@ -15,7 +15,7 @@
   place-self: center;
   cursor: pointer;
   user-select: none;
-  right: 3vw;
+  right: 3rem;
 
   span {
       @include bar;
@@ -73,7 +73,7 @@
   margin: 0;
   padding: 0;
   top: 5rem;
-  right: 4rem;
+  right: 3.75rem;
   height: min-content;
   min-width: 12vw;
   z-index: 9;
