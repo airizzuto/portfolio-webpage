@@ -1,4 +1,4 @@
-# Personal Webpage 1.0.0
+# Personal Webpage 1.0.1
 
 ![Release](<https://img.shields.io/github/release/airizzuto/portfolio-webpage.svg>)
 ![Follow](<https://img.shields.io/github/followers/airizzuto.svg?style=social&label=Follow&maxAge=2592000>)
@@ -9,7 +9,7 @@ Personal portfolio webpage made in Typescript and Next.js used to showcase my pr
 
 ## Changes
 
-- First release
+- Fixed merge conflict
 
 ---
 
