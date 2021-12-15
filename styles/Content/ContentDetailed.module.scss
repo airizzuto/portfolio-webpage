@@ -1,0 +1,54 @@
+@use "../fonts"as font;
+@use "../colors"as color;
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  padding: 15vh 10vw;
+  justify-content: center;
+  align-self: center;
+
+  .Text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 80ch;
+  }
+
+  .Category {
+    @include font.category;
+    margin: 0;
+  }
+
+  .Links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .Content {
+    background-attachment: scroll;
+    background-position: center center;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .Content {
+    background-attachment: scroll;
+    background-position: center center;
+
+    .Title {
+      margin: 0;
+      align-self: left;
+    }
+
+    .Text {
+      margin-left: 0;
+      align-self: center;
+    }
+  }
+}
