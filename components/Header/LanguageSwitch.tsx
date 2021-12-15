@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import Style from './../../styles/header/LanguageSwitch.module.scss'
+import Style from '../../styles/header/LanguageSwitch.module.scss'
 
 const LanguageSwitch = () => {
   const router = useRouter();

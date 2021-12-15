@@ -5,7 +5,7 @@ import LanguageSwitch from "./LanguageSwitch";
 import Menu from "./Menu";
 import NavSections from "./NavSections";
 
-import Style from "./../../styles/header/Header.module.scss";
+import Style from "../../styles/header/Header.module.scss";
 
 const Header = () => {
     return (

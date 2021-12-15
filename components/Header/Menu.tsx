@@ -3,7 +3,7 @@ import NavSections from "./NavSections";
 
 import useOnClickOutside from "../../hooks/useOnClickOutside";
 
-import Style from "./../../styles/header/Menu.module.scss";
+import Style from "../../styles/header/Menu.module.scss";
 
 const Menu = () => {
   const [showMenu, setShowMenu] = useState(false);
