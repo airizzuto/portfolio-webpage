@@ -1,4 +1,4 @@
-# Personal Webpage 0.2.7
+# Personal Webpage 0.2.8
 
 ![Release] <https://img.shields.io/github/realese/airizzuto/portfolio-webpage.svg>
 ![Follow]  <https://img.shields.io/github/followers/airizzuto.svg?style=social&label=Follow&maxAge=2592000>
@@ -9,8 +9,7 @@ Personal portfolio webpage made in Typescript and Next.js used to showcase my pr
 
 ## Changes
 
-- Code styling
-- Fixed component reference import
+- Folder structure and naming convention
 
 ---
 

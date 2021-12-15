@@ -1,11 +1,11 @@
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
 
-import ContentDetailed from "../components/Content/ContentDetailed";
-import ContentWrapper from "../components/Content/ContentWrapper";
+import ContentDetailed from "../components/content/ContentDetailed";
+import ContentWrapper from "../components/content/ContentWrapper";
 import ScrollArrow from "../components/ScrollArrow";
 
-import Style from "../styles/Content/ContentDetailed.module.scss";
+import Style from "../styles/content/ContentDetailed.module.scss";
 
 export default function Landing() {
   const { t, lang } = useTranslation('home');

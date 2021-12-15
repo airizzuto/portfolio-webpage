@@ -1,7 +1,7 @@
 import useTranslation from "next-translate/useTranslation";
 import {FaGithub, FaLinkedin} from "react-icons/fa"
 
-import NavButton from "./Header/NavButton";
+import NavButton from "./header/NavButton";
 
 import styles from "../styles/Footer.module.scss"
 
