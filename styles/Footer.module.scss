@@ -31,6 +31,7 @@
     ul {
         display: contents;
         list-style-type: none;
+        column-gap: 1rem;
         
         li {
             color: $primary-color-dark;

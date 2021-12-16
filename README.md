@@ -1,4 +1,4 @@
-# Personal Webpage 1.0.2
+# Personal Webpage 1.0.3
 
 Personal portfolio webpage made in Typescript and Next.js used to showcase my projects.
 
@@ -6,7 +6,10 @@ Personal portfolio webpage made in Typescript and Next.js used to showcase my pr
 
 ## Changes
 
-- Fixed git folder name casing change detection
+- Changes to header alignment
+- Changes font sizes
+- Twitter link
+- Fixed menu overlapping language switch
 
 ---
 

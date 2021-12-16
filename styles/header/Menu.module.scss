@@ -126,6 +126,11 @@
 }
 
 @media screen and (max-width: 720px) {
+  .MenuButton {
+    right: 1rem;
+
+  }
+
   .Menu {
     top: 0;
     right: 0;
@@ -137,6 +142,7 @@
       border: none;
       height: 100%;
       width: 100%;
+
       li {
         place-items: center;
         border: none;

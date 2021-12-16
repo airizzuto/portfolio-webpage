@@ -1,9 +1,9 @@
 import useTranslation from "next-translate/useTranslation";
-import {FaGithub, FaLinkedin} from "react-icons/fa"
+import {FaGithub, FaLinkedin, FaTwitter} from "react-icons/fa"
 
 import NavButton from "./header/NavButton";
 
-import styles from "../styles/Footer.module.scss"
+import Styles from "../styles/Footer.module.scss"
 
  const Footer = () => {
     const { t, lang } = useTranslation('footer');
@@ -11,23 +11,28 @@ import styles from "../styles/Footer.module.scss"
     const contactLabel = t("contact.label");
 
     return (
-      <footer className={styles.Footer}>
-        <nav className={styles.Nav}>
+      <footer className={Styles.Footer}>
+        <nav className={Styles.Nav}>
           <ul>
             <NavButton
               text={`Github`}
               href={"https://github.com/airizzuto"}
-              icon={<FaGithub className={styles.Icon} size={"1rem"} />}
+              icon={<FaGithub className={Styles.Icon} size={"1rem"} />}
             />
             <NavButton 
               text={"LinkedIn"} 
               href={githubLink} 
-              icon={<FaLinkedin className={styles.Icon} size={"1rem"} />}
+              icon={<FaLinkedin className={Styles.Icon} size={"1rem"} />}
+            />
+            <NavButton 
+              text={"Twitter"}
+              href={"https://twitter.com/airizzuto"}
+              icon={<FaTwitter className={Styles.Icon} size={"1rem"} />}
             />
             <NavButton text={contactLabel} href={"/contact"} />
           </ul>
         </nav>
-        <p className={styles.Copyright}> © 2020-2022 AIRIZZUTO</p>
+        <p className={Styles.Copyright}> © 2020-2022 AIRIZZUTO</p>
       </footer>
     );
 }
