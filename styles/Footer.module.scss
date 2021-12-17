@@ -27,11 +27,11 @@
     justify-self: stretch;
     justify-content: space-evenly;
     align-content: center;
+    column-gap: 2vw;
 
     ul {
         display: contents;
         list-style-type: none;
-        column-gap: 1rem;
         
         li {
             color: $primary-color-dark;
@@ -69,5 +69,4 @@
   .Nav {
     display: flex;
   }
-
 }
