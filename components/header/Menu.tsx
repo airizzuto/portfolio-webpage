@@ -31,7 +31,7 @@ const Menu = () => {
         onChange={handleMenuDisplay}
       ></input>
       <label htmlFor="menu-input" className={Style.MenuButton}><span></span></label>
-      <menu className={Style.Menu} style={style}>
+      <menu className={Style.Menu} style={style} ref={ref}>
         <NavSections handleClick={handleMenuClose}/>
       </menu>
     </>
