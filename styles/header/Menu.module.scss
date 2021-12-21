@@ -9,13 +9,14 @@
   box-shadow: 1px 1px black;
 }
 
+
+// TODO: button z-index, container, sliding animation
 .MenuButton {
-  position: fixed;
-  z-index: 10;
   place-self: center;
   cursor: pointer;
   user-select: none;
   right: 3rem;
+  z-index: 10;
 
   span {
       @include bar;
@@ -69,34 +70,34 @@
 
 .Menu {
   position: fixed;
-  visibility: hidden;
+  display: none;
   margin: 0;
   padding: 0;
-  top: 5rem;
-  right: 3.75rem;
-  height: min-content;
-  min-width: 12vw;
+  top: 0;
+  right: 0;
+  height: 100%;
+  min-width: 20vw;
+
+  background-color: rgba($color: #000000, $alpha: 1.0);
   z-index: 9;
 
   &.active {
-    visibility: visible;
+    display: block;
   }
 
   ul {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    border-right: 1px solid rgba($color: color.$primary-color-dark, $alpha: 0.8);
     list-style-type: none;
-    row-gap: 3rem;
-    padding: 3rem 0;
+
+    height: 100%;
+    padding: 5rem 1rem;
+    row-gap: 2rem;
     
     li {
-      display: flex;
-      height: 100%;
+      text-align: right;
       width: 100%;
-      place-content: center;
-      border-bottom: 1px solid rgba($color: color.$primary-color-dark, $alpha: 0.8);
+      border-bottom: 1px solid rgba($color: color.$primary-color-dark, $alpha: 0.5);
       
       &:active {
         .Menu {

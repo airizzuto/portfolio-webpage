@@ -19,11 +19,11 @@ const Menu = () => {
 
   useOnClickOutside(ref, handleMenuClose);
 
-  const style: React.CSSProperties = showMenu ? { visibility: "visible" } : { visibility: "hidden" };
+  const style: React.CSSProperties = showMenu ? { display: "block" } : { display: "none" };
 
   return (
     <>
-      <input 
+      <input
         className={Style.MenuInput}
         type="checkbox" 
         id="menu-input" 
