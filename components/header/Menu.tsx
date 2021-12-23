@@ -23,16 +23,17 @@ const Menu = () => {
 
   return (
     <>
+      <input
+        className={Style.MenuInput}
+        type="checkbox" 
+        id="menu-input" 
+        checked={showMenu}
+        onChange={handleMenuDisplay}
+      ></input>
       <label htmlFor="menu-input" className={Style.MenuButton}>
-        <input
-          className={Style.MenuInput}
-          type="checkbox" 
-          id="menu-input" 
-          checked={showMenu}
-          onChange={handleMenuDisplay}
-        ></input>
         <span></span>
       </label>
+
       <menu className={Style.Menu} style={style} ref={ref}>
         <NavSections handleClick={handleMenuClose}/>
       </menu>

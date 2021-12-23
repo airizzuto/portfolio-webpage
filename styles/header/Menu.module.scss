@@ -51,7 +51,6 @@ $total-height: calc(calc(calc($bar-height - calc($bar-height / 2)) + calc($bar-s
   &:hover span, &:hover span:before, &:hover span:after {
     background: color.$secondary-color-dark;
   }
-
 }
 
 /* Menu input hides generic checkbox */
