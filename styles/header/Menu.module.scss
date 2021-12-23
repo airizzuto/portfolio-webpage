@@ -107,13 +107,13 @@ $total-height: calc(calc(calc($bar-height - calc($bar-height / 2)) + calc($bar-s
     list-style-type: none;
 
     height: 100%;
-    padding: 5rem 1rem;
-    row-gap: 2rem;
+    padding: 6rem 2rem;
+    row-gap: 3rem;
     
     li {
       text-align: right;
       width: 100%;
-      border-bottom: 1px solid rgba($color: color.$primary-color-dark, $alpha: 0.5);
+      border-bottom: 1px solid rgba($color: color.$primary-color-dark, $alpha: 0.3);
       
       &:active {
         .Menu {
@@ -155,14 +155,19 @@ $total-height: calc(calc(calc($bar-height - calc($bar-height / 2)) + calc($bar-s
     width: 100%;
 
     ul {
-      background: rgba($color: color.$background-color-dark, $alpha: 0.8);
       border: none;
       height: 100%;
       width: 100%;
-
+      align-content: center;
+      justify-content: center;
+      
       li {
-        place-items: center;
+        text-align: center;
+        text-justify: center;
         border: none;
+        padding: 1rem 0;
+        border-top: 1px solid rgba($color: color.$primary-color-dark, $alpha: 0.3);
+        border-bottom: 1px solid rgba($color: color.$primary-color-dark, $alpha: 0.3);
       }
     }
   }
