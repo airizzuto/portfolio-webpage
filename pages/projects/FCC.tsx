@@ -6,7 +6,6 @@ import ContentCards from '../../components/content/ContentCards';
 import ContentDetailed from '../../components/content/ContentDetailed';
 import FCCProject from './FCCProject';
 
-import Style from "../../styles/content/ContentDisplay.module.scss";
 import Content from "../../styles/content/ContentDetailed.module.scss";
 
 const FCC = () => {

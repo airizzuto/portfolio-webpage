@@ -1,49 +1,66 @@
 @use "../fonts" as font;
 @use "../colors" as color;
 
+$bar-height: 3px;
+$bar-width: 25px;
+$bar-spacing: 7px;
+$total-height: calc(calc(calc($bar-height - calc($bar-height / 2)) + calc($bar-spacing * 2)));
+
 @mixin bar {
-  height: 3px;
-  width: 25px;
+  height: $bar-height;
+  width: $bar-width;
   border-radius: 2px;
   background-color: color.$primary-color-dark;
   box-shadow: 1px 1px black;
 }
 
+// TODO: button animation, sliding animation
 .MenuButton {
   position: fixed;
+  height: $total-height;
+  width: $bar-width;
+  top: 2.7rem;
+  right: 2vw;
   z-index: 10;
-  place-self: center;
   cursor: pointer;
-  user-select: none;
-  right: 3rem;
 
   span {
+    @include bar;
+    position: absolute;
+    top: calc(calc($bar-spacing + calc($bar-height / 2)) - $bar-height);  // Positions middle bar in the center
+    left: 0;
+    width: 100%;
+    transition: all .2s ease-in-out;
+  
+    &:before {
+      top: -$bar-spacing;
+      visibility: visible;
+    }
+    &:after {
+      top: $bar-spacing;
+    }
+    &:before, &:after {
       @include bar;
-      position: relative;
-      display: block;
+      position: absolute;
+      width: 100%;
+      content: "";
       transition: all .2s ease-in-out;
-      &:before {
-        top: -7px;
-        visibility: visible;
-      }
-      &:after {
-        top: 7px;
-      }
-      &:before, &:after {
-        @include bar;
-        position: absolute;
-        content: "";
-        transition: all .2s ease-in-out;
-      }
     }
+  }
 
-    &:hover span, &:hover span:before, &:hover span:after {
-      background: color.$secondary-color-dark;
-    }
+  &:hover span, &:hover span:before, &:hover span:after {
+    background: color.$secondary-color-dark;
+  }
 }
 
+/* Menu input hides generic checkbox */
 .MenuInput {
-  display: none;
+  visibility: hidden;
+  padding: 0;
+  margin: 0;
+  height: $total-height;
+  width: $bar-width;
+  z-index: 11;
 }
 
 .MenuInput:checked ~ .Menu {
@@ -51,52 +68,52 @@
 }
 
 .MenuInput:checked ~ .MenuButton {
-  &:hover span, span{
-    background: transparent;
-  }
-
   span {
     &:before {
       transform: rotate(45deg) translate(5px, 5px);
       opacity: 1;
     }
-
+    
     &:after {
       transform: rotate(-45deg) translate(5px, -5px);
     }
+  }
+
+  &:hover span, span{
+    background: transparent;
   }
 }
 
 .Menu {
   position: fixed;
-  visibility: hidden;
+  display: none;
   margin: 0;
   padding: 0;
-  top: 5rem;
-  right: 3.75rem;
-  height: min-content;
-  min-width: 12vw;
+  top: 0;
+  right: 0;
+  height: 100%;
+  min-width: 20vw;
+
+  background-color: rgba($color: #000000, $alpha: 1.0);
   z-index: 9;
 
   &.active {
-    visibility: visible;
+    display: block;
   }
 
   ul {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    border-right: 1px solid rgba($color: color.$primary-color-dark, $alpha: 0.8);
     list-style-type: none;
+
+    height: 100%;
+    padding: 6rem 2rem;
     row-gap: 3rem;
-    padding: 3rem 0;
     
     li {
-      display: flex;
-      height: 100%;
+      text-align: right;
       width: 100%;
-      place-content: center;
-      border-bottom: 1px solid rgba($color: color.$primary-color-dark, $alpha: 0.8);
+      border-bottom: 1px solid rgba($color: color.$primary-color-dark, $alpha: 0.3);
       
       &:active {
         .Menu {
@@ -138,14 +155,19 @@
     width: 100%;
 
     ul {
-      background: rgba($color: color.$background-color-dark, $alpha: 0.8);
       border: none;
       height: 100%;
       width: 100%;
-
+      align-content: center;
+      justify-content: center;
+      
       li {
-        place-items: center;
+        text-align: center;
+        text-justify: center;
         border: none;
+        padding: 1rem 0;
+        border-top: 1px solid rgba($color: color.$primary-color-dark, $alpha: 0.3);
+        border-bottom: 1px solid rgba($color: color.$primary-color-dark, $alpha: 0.3);
       }
     }
   }

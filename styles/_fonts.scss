@@ -25,6 +25,11 @@ $footer-font-weight: 500;
   font-weight: $navbutton-font-weight;
 }
 
+@mixin nav2 {
+  font-size: $small-text-size;
+  font-weight: $navbutton-font-weight;
+}
+
 @mixin normal {
   font-size: $normal-text-size;
   font-weight: $text-font-weight;
