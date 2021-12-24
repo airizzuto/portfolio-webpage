@@ -22,7 +22,7 @@ const Menu = () => {
   const style: React.CSSProperties = showMenu ? { display: "block" } : { display: "none" };
 
   return (
-    <>
+    <div ref={ref}>
       <input
         className={Style.MenuInput}
         type="checkbox" 
@@ -34,10 +34,10 @@ const Menu = () => {
         <span></span>
       </label>
 
-      <menu className={Style.Menu} style={style} ref={ref}>
+      <menu className={Style.Menu} style={style}>
         <NavSections handleClick={handleMenuClose}/>
       </menu>
-    </>
+    </div>
   );
 }
 
