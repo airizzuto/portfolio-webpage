@@ -6,8 +6,17 @@ Personal portfolio webpage made in Typescript and Next.js used to showcase my pr
 
 ## Changes
 
+<<<<<<< HEAD
 - Fixed menu button
 - Sliding menu animation
+=======
+<<<<<<< HEAD
+- Fixed styling padding, centering
+=======
+- Fixed menu button
+- Sliding menu animation
+>>>>>>> development
+>>>>>>> 81223617b725b2e62e278f427c2b0fcc3f4e4bae
 
 ---
 
