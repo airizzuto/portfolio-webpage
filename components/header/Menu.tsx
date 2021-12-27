@@ -19,8 +19,6 @@ const Menu = () => {
 
   useOnClickOutside(ref, handleMenuClose);
 
-  const style: React.CSSProperties = showMenu ? { display: "block" } : { display: "none" };
-
   return (
     <div ref={ref}>
       <input
@@ -34,7 +32,7 @@ const Menu = () => {
         <span></span>
       </label>
 
-      <menu className={Style.Menu} style={style}>
+      <menu className={Style.Menu}>
         <NavSections handleClick={handleMenuClose}/>
       </menu>
     </div>

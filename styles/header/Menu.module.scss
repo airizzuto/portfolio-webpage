@@ -65,6 +65,8 @@ $total-height: calc(calc(calc($bar-height - calc($bar-height / 2)) + calc($bar-s
 
 .MenuInput:checked ~ .Menu {
   visibility: visible;
+  transform: translateX(-40vw);
+  transition: 0.3s ease-in-out;
 }
 
 .MenuInput:checked ~ .MenuButton {
@@ -86,13 +88,14 @@ $total-height: calc(calc(calc($bar-height - calc($bar-height / 2)) + calc($bar-s
 
 .Menu {
   position: fixed;
-  display: none;
   margin: 0;
   padding: 0;
   top: 0;
-  right: 0;
+  left: 120vw;
   height: 100%;
   min-width: 20vw;
+  transition: 0.3s ease-in-out;
+  visibility: hidden;
 
   background-color: rgba($color: #000000, $alpha: 1.0);
   z-index: 9;
@@ -114,12 +117,7 @@ $total-height: calc(calc(calc($bar-height - calc($bar-height / 2)) + calc($bar-s
       text-align: right;
       width: 100%;
       border-bottom: 1px solid rgba($color: color.$primary-color-dark, $alpha: 0.3);
-      
-      &:active {
-        .Menu {
-          display: none;
-        }
-      }
+
       
       a {
         @include font.nav;
@@ -145,15 +143,20 @@ $total-height: calc(calc(calc($bar-height - calc($bar-height / 2)) + calc($bar-s
 @media screen and (max-width: 720px) {
   .MenuButton {
     right: 1rem;
+  }
 
+  .MenuInput:checked ~ .Menu {
+    visibility: visible;
+    transform: none;
   }
 
   .Menu {
     top: 0;
-    right: 0;
+    left: 0;
     height: 100%;
     width: 100%;
-
+    transition: none;
+  
     ul {
       border: none;
       height: 100%;
