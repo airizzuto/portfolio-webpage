@@ -6,6 +6,7 @@
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
+  row-gap: 1rem;
   padding: max(5rem, 15vh) 10vw;
   justify-content: center;
   align-self: center;
@@ -14,11 +15,17 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    max-width: 80ch;
+    max-width: 70ch;
+    row-gap: 0;
+
+    p {
+      margin: 1rem 0;
+    }
   }
 
-  // .Title {
-  // }
+  .Title {
+    margin: 1rem 0;
+  }
 
   .Category {
     @include font.category;
@@ -28,6 +35,7 @@
   .Links {
     display: flex;
     flex-direction: column;
+    margin: 1rem 0;
     row-gap: 1rem;
   }
 }

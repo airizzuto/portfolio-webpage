@@ -6,10 +6,11 @@
   flex-direction: row;
   column-gap: 1rem;
   width: 100%;
+  align-items: center;
 
   label {
-    @include font.small;
-    color: color.$secondary-color-dark;
+    @include font.normal;
+    color: color.$primary-color-dark;
   }
 
   a {

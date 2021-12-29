@@ -12,7 +12,7 @@ export default function About() {
 
   return (
     <ContentWrapper image={"IMG_20181226_155827.jpg"}>
-      <ContentDetailed>
+      <ContentDetailed backgroundOpacity="opacityLeft">
         <h1 className={Style.Title}>{title}</h1>
 
         <div className={Style.Text}>
