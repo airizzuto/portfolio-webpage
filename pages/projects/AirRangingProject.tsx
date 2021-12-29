@@ -16,7 +16,7 @@ const AirRangingProject = () => {
 
   return (
     <ContentWrapper image={'AirRangingMap.png'}>
-      <ContentDetailed>
+      <ContentDetailed backgroundOpacity={"opacityLeft"}>
         <p className={Style.Category}>Project</p>
         <h1 className={Style.Title}>{title}</h1>
 

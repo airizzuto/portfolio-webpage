@@ -18,7 +18,7 @@ const Layout = ({ children }: Props) => {
           <Header />
         </div>
 
-        <div className={Style.ContentDisplay}>{children}</div>
+        <div className={Style.ContentWrapper}>{children}</div>
 
         <div className={Style.Footer}>
           <Footer />

@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 
-import Style from "../../styles/content/ContentDisplay.module.scss";
+import Style from "../../styles/content/ContentWrapper.module.scss";
 
 interface Props {
   image?: string;

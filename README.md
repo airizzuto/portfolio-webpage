@@ -8,6 +8,7 @@ Personal portfolio webpage made in Typescript and Next.js used to showcase my pr
 
 - Better backgrounds
 - Manifest
+- Content background semi-transparency selector
 
 ---
 
