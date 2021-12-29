@@ -13,7 +13,7 @@ const FCC = () => {
   const title = t("fcc-fe-cert.title");
 
   return (
-    <ContentWrapper image={"/polygon-scatter-haikei3.svg"}>
+    <ContentWrapper image={"polygon-scatter-haikei.svg"}>
       <ContentDetailed >
         <p className={Content.Category}>Course</p>
         <h1 className={Content.Title}>{title}</h1>
