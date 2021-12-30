@@ -2,14 +2,15 @@
 @use "../colors"as color;
 
 .Content {
+  position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  justify-content: center;
+  align-self: center;
+  height: 100%;
   width: 100%;
   row-gap: 1rem;
   padding: max(5rem, 15vh) 10vw;
-  justify-content: center;
-  align-self: center;
 
   .Text {
     display: flex;
