@@ -15,8 +15,8 @@ const AirRangingProject = () => {
   const webLabel = t("air-ranging.links.web");
 
   return (
-    <ContentWrapper image={'AirRangingMap.png'}>
-      <ContentDetailed backgroundOpacity={"opacityLeft"}>
+    <ContentWrapper image={'AirRangingMap.png'} backgroundOpacity={"opacityLeft"}>
+      <ContentDetailed>
         <p className={Style.Category}>Project</p>
         <h1 className={Style.Title}>{title}</h1>
 
