@@ -3,10 +3,9 @@ import useTranslation from 'next-translate/useTranslation';
 
 import ContentWrapper from '../../components/content/ContentWrapper';
 import ContentLink from '../../components/content/ContentLinks';
-import ContentDetailed from '../../components/content/ContentDetailed';
-import ScrollArrow from '../../components/ScrollArrow';
+import ContentPage from '../../components/content/ContentPage';
 
-import Style from "../../styles/content/ContentDetailed.module.scss";
+import Style from "../../styles/content/ContentPage.module.scss";
 
 const PortfolioProject = () => {
   const { t, lang } = useTranslation('projects');
@@ -16,7 +15,7 @@ const PortfolioProject = () => {
 
   return (
     <ContentWrapper image={"polygon-scatter-haikei.svg"}>
-      <ContentDetailed>
+      <ContentPage>
         <p className={Style.Category}>Project</p>
         <h1 className={Style.Title}>{title}</h1>
         <div className={Style.Text}>
@@ -31,8 +30,7 @@ const PortfolioProject = () => {
             href={"https://github.com/airizzuto/portfolio-webpage-template"}
           />
         </div>
-      </ContentDetailed>
-      <ScrollArrow />
+      </ContentPage>
     </ContentWrapper>
   )
 }

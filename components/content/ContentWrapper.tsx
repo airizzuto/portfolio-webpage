@@ -2,10 +2,12 @@ import React, { ReactElement } from "react";
 
 import Style from "../../styles/content/ContentWrapper.module.scss";
 
+type BackgroundOpacity = "opacityLeft" | "opacityRight" | "full" | "none";
+
 interface Props {
   image?: string;
   children: ReactElement | ReactElement[] | undefined;
-  backgroundOpacity?: "opacityLeft" | "opacityRight" | "full" | "none";
+  backgroundOpacity?: BackgroundOpacity;
 }
 
 const opacityOptions = {

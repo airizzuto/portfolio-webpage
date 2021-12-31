@@ -1,11 +1,11 @@
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
 
-import ContentDetailed from "../components/content/ContentDetailed";
+import ContentPage from "../components/content/ContentPage";
 import ContentWrapper from "../components/content/ContentWrapper";
 import ScrollArrow from "../components/ScrollArrow";
 
-import Style from "../styles/content/ContentDetailed.module.scss";
+import Style from "../styles/content/ContentPage.module.scss";
 
 export default function Landing() {
   const { t, lang } = useTranslation('home');
@@ -15,15 +15,15 @@ export default function Landing() {
 
   return (
     <ContentWrapper image={"polygon-scatter-haikei.svg"}>
-      <ContentDetailed >
+      <ContentPage >
         <h1 className={Style.Title}>{title}</h1>
-        <h2 className={Style.SubTitle}>{subtitle}</h2>
+        <h2 className={Style.Subtitle}>{subtitle}</h2>
         <div className={Style.Text}>
           {content.map((text, idx) => {
             return <p key={`home--text-${idx}`}>{text}</p>
           })}
         </div>
-      </ContentDetailed>
+      </ContentPage>
       <ScrollArrow />
     </ContentWrapper>
   )

@@ -3,10 +3,9 @@ import useTranslation from 'next-translate/useTranslation';
 
 import ContentWrapper from '../../components/content/ContentWrapper';
 import ContentLink from '../../components/content/ContentLinks';
-import ContentDetailed from '../../components/content/ContentDetailed';
-import ScrollArrow from '../../components/ScrollArrow';
+import ContentPage from '../../components/content/ContentPage';
 
-import Style from "../../styles/content/ContentDetailed.module.scss";
+import Style from "../../styles/content/ContentPage.module.scss";
 
 const AirRangingProject = () => {
   const { t, lang } = useTranslation('projects');
@@ -16,7 +15,7 @@ const AirRangingProject = () => {
 
   return (
     <ContentWrapper image={'AirRangingMap.png'} backgroundOpacity={"opacityLeft"}>
-      <ContentDetailed>
+      <ContentPage>
         <p className={Style.Category}>Project</p>
         <h1 className={Style.Title}>{title}</h1>
 
@@ -30,8 +29,7 @@ const AirRangingProject = () => {
           <ContentLink label={webLabel} href={""} />
           <ContentLink label={"Github"} href={"https://github.com/airizzuto/AirRanging/"} />
         </div>
-      </ContentDetailed>
-      <ScrollArrow />
+      </ContentPage>
     </ContentWrapper>
   )
 }

@@ -1,9 +1,9 @@
 
 import useTranslation from "next-translate/useTranslation";
-import ContentDetailed from "../../components/content/ContentDetailed";
+import ContentPage from "../../components/content/ContentPage";
 import ContentWrapper from "../../components/content/ContentWrapper";
 
-import Style from "../../styles/content/ContentDetailed.module.scss";
+import Style from "../../styles/content/ContentPage.module.scss";
 
 export default function About() {
   const { t, lang } = useTranslation('about');
@@ -12,7 +12,7 @@ export default function About() {
 
   return (
     <ContentWrapper image={"IMG_20181226_155827.jpg"} backgroundOpacity={"opacityLeft"}>
-      <ContentDetailed>
+      <ContentPage>
         <h1 className={Style.Title}>{title}</h1>
 
         <div className={Style.Text}>
@@ -20,7 +20,7 @@ export default function About() {
             return <p key={`about-text-${idx}`}>{text}</p>
           })}
         </div>
-      </ContentDetailed>
+      </ContentPage>
     </ContentWrapper>
   );
 }

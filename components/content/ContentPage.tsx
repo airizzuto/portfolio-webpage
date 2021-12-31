@@ -1,12 +1,12 @@
 import React, { ReactElement } from 'react';
 
-import Style from "../../styles/content/ContentDetailed.module.scss";
+import Style from "../../styles/content/ContentPage.module.scss";
 
 interface Props {
   children: ReactElement[] | ReactElement | undefined;
 }
 
-const ContentDetailed: React.FC<Props> = ({children}) => {
+const ContentPage: React.FC<Props> = ({children}) => {
   return (
     <div className={Style.Content}>
       {children}
@@ -14,4 +14,4 @@ const ContentDetailed: React.FC<Props> = ({children}) => {
   );
 }
 
-export default ContentDetailed;
+export default ContentPage;

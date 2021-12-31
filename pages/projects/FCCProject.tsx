@@ -18,13 +18,13 @@ const FCCProject: React.FC<Props> = ({projectName, imagePath}) => {
 
   return (
     <div 
-      className={Style.Project}
+      className={Style.Container}
       style={{
         backgroundImage: `url(/static/${imagePath})`,
       }}
     >
       <div className={Style.Background}>
-        <h1 className={Style.ProjectTitle}>
+        <h1 className={Style.Title}>
           {title}
         </h1>
 

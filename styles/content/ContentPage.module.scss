@@ -28,6 +28,10 @@
     margin: 1rem 0;
   }
 
+  .Subtitle {
+    @include font.header-2;
+  }
+
   .Category {
     @include font.category;
     margin: 0;
