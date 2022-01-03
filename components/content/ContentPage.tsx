@@ -6,6 +6,7 @@ interface Props {
   children: ReactElement[] | ReactElement | undefined;
 }
 
+{/* TODO: content alignment: left | right | center*/}
 const ContentPage: React.FC<Props> = ({children}) => {
   return (
     <div className={Style.Content}>

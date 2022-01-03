@@ -3,7 +3,7 @@
 
 .Header {
   position: absolute;
-  padding: 0rem 10vw;
+  padding: 0rem 15vw;
   padding-right: 0;
   top: 0;
   left: 0;
@@ -23,8 +23,8 @@
     place-content: center;
     text-align: center;
   
-    font-size: font.$title-size;
-    font-weight: 900;
+    font-size: font.$size-5;
+    font-weight: 700;
     font-style: oblique;
     line-height: 56px;
   
@@ -48,7 +48,7 @@
       align-content: center;
       justify-content: flex-start;
       padding: 0 4vw;
-      column-gap: 2vw;
+      column-gap: 4vw;
   
       a {
           @include font.nav;
@@ -81,7 +81,7 @@
     flex-direction: row;
     align-content: center;
     justify-self: right;
-    column-gap: 2rem;
+    column-gap: 4rem;
   }
 
   .Menu {

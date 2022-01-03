@@ -7,16 +7,17 @@
   flex-direction: column;
   justify-content: center;
   align-self: center;
+  min-height: 100vh;
   height: 100%;
   width: 100%;
   row-gap: 1rem;
-  padding: max(5rem, 15vh) 10vw;
+  padding: max(5rem, 15vh) 15vw;
 
   .Text {
     display: flex;
     flex-direction: column;
     text-align: left;
-    max-width: 70ch;
+    max-width: 60ch;
     row-gap: 0;
 
     p {

@@ -1,61 +1,62 @@
-$title-size: 2.441em;
-$large-text-size: 1.953em;
-$normal-text-size: 1.563em;
-$small-text-size: 1.25em;
-$copyright-text-size: 1em;
-$info-text-size: 0.85em;
+$size-6: 3.052em;
+$size-5: 2.441em;
+$size-4: 1.953em;
+$size-3: 1.563em;
+$size-2: 1.25em;
+$size-1: 1em;
+$size-0: 0.8em;
 
 $title-font-weight: 400;
-$text-font-weight: 300;
+$text-font-weight: 400;
 $navbutton-font-weight: 400;
 $footer-font-weight: 500;
 
 @mixin header-1 {
-  font-size: $title-size;
+  font-size: $size-5;
   font-weight: $title-font-weight;
 }
 
 @mixin header-2 {
-  font-size: $large-text-size;
+  font-size: $size-4;
   font-weight: $title-font-weight;
 }
 
 @mixin nav {
-  font-size: $normal-text-size;
+  font-size: $size-3;
   font-weight: $navbutton-font-weight;
 }
 
 @mixin nav2 {
-  font-size: $small-text-size;
+  font-size: $size-2;
   font-weight: $navbutton-font-weight;
 }
 
 @mixin normal {
-  font-size: $normal-text-size;
+  font-size: $size-2;
   font-weight: $text-font-weight;
 }
 
 @mixin small {
-  font-size: $small-text-size;
+  font-size: $size-2;
   font-weight: $text-font-weight;
 }
 
 @mixin button {
-  font-size: $normal-text-size;
+  font-size: $size-3;
   font-weight: $navbutton-font-weight;
 }
 
 @mixin category {
-  font-size: $small-text-size;
+  font-size: $size-2;
   font-weight: 500;
 }
 
 @mixin footer {
-  font-size: $small-text-size;
+  font-size: $size-2;
   font-weight: $footer-font-weight;
 }
 
 @mixin validations {
-  font-size: $info-text-size;
+  font-size: $size-1;
   font-weight: $text-font-weight;
 }
