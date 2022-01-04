@@ -1,7 +1,7 @@
 
 import useTranslation from "next-translate/useTranslation";
-import ContentPage from "../../components/content/ContentPage";
-import ContentWrapper from "../../components/content/ContentWrapper";
+import ContentPage from "../../components/section/ContentPage";
+import ContentWrapper from "../../components/section/ContentWrapper";
 
 import Style from "../../styles/content/ContentPage.module.scss";
 

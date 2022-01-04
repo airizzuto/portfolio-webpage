@@ -1,29 +1,22 @@
 import React from 'react'
 import useTranslation from 'next-translate/useTranslation';
 
-import ContentLink from '../../components/content/ContentLinks';
+import LabeledLink from '../LabeledLink';
 
-import Style from "../../styles/content/ContentCard.module.scss";
+import Style from "../../styles/card/CardContent.module.scss";
 
 interface Props {
-  imagePath: string;
   projectName: string;
 }
 
-const FCCProject: React.FC<Props> = ({projectName, imagePath}) => {
+const CardContent: React.FC<Props> = ({projectName}) => {
   const { t, lang } = useTranslation(`projects`);
   const title = t(`${projectName}.title`);
   const description = t(`${projectName}.description`);
   const link = t(`${projectName}.codepen`);
 
   return (
-    <div 
-      className={Style.Container}
-      style={{
-        backgroundImage: `url(/static/${imagePath})`,
-      }}
-    >
-      <div className={Style.Background}>
+      <>
         <h1 className={Style.Title}>
           {title}
         </h1>
@@ -33,11 +26,10 @@ const FCCProject: React.FC<Props> = ({projectName, imagePath}) => {
         </p>
 
         <div className={Style.Link}>
-          <ContentLink label={"Codepen"} href={link} />
+          <LabeledLink label={"Codepen"} href={link} />
         </div>
-      </div>
-    </div>
+      </>
   );
 }
 
-export default FCCProject;
+export default CardContent;

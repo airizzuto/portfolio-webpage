@@ -1,8 +1,8 @@
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
 
-import ContentPage from "../components/content/ContentPage";
-import ContentWrapper from "../components/content/ContentWrapper";
+import ContentPage from "../components/section/ContentPage";
+import ContentWrapper from "../components/section/ContentWrapper";
 import ScrollArrow from "../components/ScrollArrow";
 
 import Style from "../styles/content/ContentPage.module.scss";

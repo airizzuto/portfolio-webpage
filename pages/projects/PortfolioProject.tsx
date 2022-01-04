@@ -1,9 +1,9 @@
 import React from 'react'
 import useTranslation from 'next-translate/useTranslation';
 
-import ContentWrapper from '../../components/content/ContentWrapper';
-import ContentLink from '../../components/content/ContentLinks';
-import ContentPage from '../../components/content/ContentPage';
+import ContentWrapper from '../../components/section/ContentWrapper';
+import LabeledLink from '../../components/LabeledLink';
+import ContentPage from '../../components/section/ContentPage';
 
 import Style from "../../styles/content/ContentPage.module.scss";
 
@@ -24,8 +24,8 @@ const PortfolioProject = () => {
           })}
         </div>
         <div className={Style.Links}>
-          <ContentLink label={webLabel} href={"https://airizzutodeveloper.vercel.app/"} />
-          <ContentLink
+          <LabeledLink label={webLabel} href={"https://airizzutodeveloper.vercel.app/"} />
+          <LabeledLink
             label={"Github"}
             href={"https://github.com/airizzuto/portfolio-webpage-template"}
           />

@@ -1,5 +1,6 @@
-@use "../fonts"as font;
-@use "../colors"as color;
+@use "../fonts" as font;
+@use "../colors" as color;
+@use "../global-vars" as global;
 
 .Content {
   position: relative;
@@ -11,7 +12,7 @@
   height: 100%;
   width: 100%;
   row-gap: 1rem;
-  padding: max(5rem, 15vh) 15vw;
+  padding: max(5rem, 15vh) global.$sides-padding;
 
   .Text {
     display: flex;
@@ -57,15 +58,5 @@
   .Content {
     background-attachment: scroll;
     background-position: center center;
-
-    .Title {
-      margin: 0;
-      align-self: left;
-    }
-
-    .Text {
-      margin-left: 0;
-      align-self: center;
-    }
   }
 }

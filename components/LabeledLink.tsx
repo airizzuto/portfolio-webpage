@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link';
 
-import Style from "../../styles/content/ContentLink.module.scss";
+import Style from "../styles/LabeledLink.module.scss";
 
 interface Props {
   label: string;
@@ -14,7 +14,7 @@ interface Props {
  * @param href 
  * @returns component with label and Link
  */
-const ContentLink: React.FC<Props> = ({label, href}) => {
+const LabeledLink: React.FC<Props> = ({label, href}) => {
   return (
     <div className={Style.Container}>
       <label>
@@ -27,4 +27,4 @@ const ContentLink: React.FC<Props> = ({label, href}) => {
   )
 }
 
-export default ContentLink
+export default LabeledLink

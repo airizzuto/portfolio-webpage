@@ -1,9 +1,12 @@
 @use "../fonts" as font;
 @use "../colors" as color;
+@use "../global-vars" as global;
+
+$col-gap: 5vw;
 
 .Header {
   position: absolute;
-  padding: 0rem 15vw;
+  padding: 0 10vw;
   padding-right: 0;
   top: 0;
   left: 0;
@@ -47,15 +50,15 @@
       flex-flow: row wrap;
       align-content: center;
       justify-content: flex-start;
-      padding: 0 4vw;
-      column-gap: 4vw;
+      padding: 0 $col-gap;
+      column-gap: $col-gap;
   
       a {
           @include font.nav;
           text-decoration: none;
         }
       
-      a:active {  // TODO: underline should stay on active current page
+      a:active {
         text-decoration: underline;
         text-decoration-thickness: 2px;
       }
@@ -81,12 +84,7 @@
     flex-direction: row;
     align-content: center;
     justify-self: right;
-    column-gap: 4rem;
-  }
-
-  .Menu {
-    grid-area: menu;
-    padding: 1rem;
+    column-gap: $col-gap;
   }
 }
 
