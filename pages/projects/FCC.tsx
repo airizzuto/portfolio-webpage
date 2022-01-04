@@ -5,7 +5,7 @@ import ContentWrapper from '../../components/section/ContentWrapper';
 import ContentMosaic from '../../components/section/ContentMosaic';
 import ContentPage from '../../components/section/ContentPage';
 import CardWrapper from '../../components/card/CardWrapper';
-import CardContent from '../../components/card/CardContent';
+import CardProject from '../../components/card/CardProject';
 
 import Content from "../../styles/content/ContentPage.module.scss";
 
@@ -20,23 +20,23 @@ const FCC = () => {
         <h1 className={Content.Title}>{title}</h1>
         <ContentMosaic>
           <CardWrapper imagePath={'/random-quote-generator.png'}>
-            <CardContent projectName={'random-quote-generator'}/>
+            <CardProject projectName={'random-quote-generator'}/>
           </CardWrapper>
 
           <CardWrapper imagePath={'/drum-machine.png'}>
-            <CardContent projectName={'drum-machine'}/>
+            <CardProject projectName={'drum-machine'}/>
           </CardWrapper>
 
           <CardWrapper imagePath={'/markdown-previewer.png'}>
-            <CardContent projectName={'markdown-previewer'}/>
+            <CardProject projectName={'markdown-previewer'}/>
           </CardWrapper>
 
           <CardWrapper imagePath={'/calculator.png'}>
-            <CardContent projectName={'calculator'}/>
+            <CardProject projectName={'calculator'}/>
           </CardWrapper>
 
           <CardWrapper imagePath={'/25+5Clock.png'}>
-            <CardContent projectName={"25+5clock"}/>
+            <CardProject projectName={"25+5clock"}/>
           </CardWrapper>
         </ContentMosaic>
       </ContentPage>

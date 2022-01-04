@@ -3,13 +3,13 @@ import useTranslation from 'next-translate/useTranslation';
 
 import LabeledLink from '../LabeledLink';
 
-import Style from "../../styles/card/CardContent.module.scss";
+import Style from "../../styles/card/CardProject.module.scss";
 
 interface Props {
   projectName: string;
 }
 
-const CardContent: React.FC<Props> = ({projectName}) => {
+const CardProject: React.FC<Props> = ({projectName}) => {
   const { t, lang } = useTranslation(`projects`);
   const title = t(`${projectName}.title`);
   const description = t(`${projectName}.description`);
@@ -32,4 +32,4 @@ const CardContent: React.FC<Props> = ({projectName}) => {
   );
 }
 
-export default CardContent;
+export default CardProject;
