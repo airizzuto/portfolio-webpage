@@ -7,7 +7,7 @@ $size-1: 1em;
 $size-0: 0.8em;
 
 $title-font-weight: 400;
-$text-font-weight: 400;
+$text-font-weight: 300;
 $navbutton-font-weight: 400;
 $footer-font-weight: 500;
 
@@ -48,7 +48,7 @@ $footer-font-weight: 500;
 
 @mixin category {
   font-size: $size-2;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 @mixin footer {
