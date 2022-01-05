@@ -7,19 +7,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-self: center;
   min-height: 100vh;
   height: 100%;
-  width: 100%;
-  row-gap: 1rem;
+  width: fit-content;
+  row-gap: 2vh;
   padding: max(5rem, 15vh) global.$sides-padding;
 
   .Text {
     display: flex;
     flex-direction: column;
-    text-align: left;
     max-width: 60ch;
-    row-gap: 0;
 
     p {
       margin: 1rem 0;

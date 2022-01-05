@@ -15,9 +15,15 @@ const FCC = () => {
 
   return (
     <ContentWrapper image={"polygon-scatter-haikei.svg"}>
+      {/* TODO: content page wrapper width 100% for mosaic */}
       <ContentPage >
         <p className={Content.Category}>Course</p>
-        <h1 className={Content.Title}>{title}</h1>
+        <h1 className={Content.Title}
+          style={{
+            textAlign: "center"
+          }}
+        >{title}</h1>
+  
         <ContentMosaic>
           <CardWrapper imagePath={'/random-quote-generator.png'}>
             <CardProject projectName={'random-quote-generator'}/>
