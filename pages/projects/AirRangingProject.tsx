@@ -15,10 +15,9 @@ const AirRangingProject = () => {
 
   return (
     <ContentWrapper image={'AirRangingMap.png'} backgroundOpacity={"opacityLeft"}>
-      <ContentPage>
+      <ContentPage contentAlignment='right'>
         <p className={Style.Category}>Project</p>
         <h1 className={Style.Title}>{title}</h1>
-
         <div className={Style.Text}>
           {content.map((text, idx) => {
             return <p key={`porfolio-text-${idx}`}>{text}</p>

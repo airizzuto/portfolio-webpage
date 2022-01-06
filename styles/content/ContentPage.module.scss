@@ -2,48 +2,53 @@
 @use "../colors" as color;
 @use "../global-vars" as global;
 
-.Content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-self: center;
-  min-height: 100vh;
-  height: 100%;
-  width: 100%;
-  row-gap: 1rem;
-  padding: max(5rem, 15vh) global.$sides-padding;
+.Container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right";
 
-  .Text {
+  .Content {
+    position: relative;
+    grid-area: 1 / 1 / 3 / 3;
     display: flex;
     flex-direction: column;
-    text-align: left;
-    max-width: 60ch;
-    row-gap: 0;
-
-    p {
+    justify-content: center;
+    align-self: center;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    row-gap: 2vh;
+    padding: max(5rem, 15vh) global.$sides-padding;
+  
+    .Text {
+      display: flex;
+      flex-direction: column;
+      max-width: 60ch;
+  
+      p {
+        margin: 1rem 0;
+      }
+    }
+  
+    .Title {
       margin: 1rem 0;
     }
-  }
-
-  .Title {
-    margin: 1rem 0;
-  }
-
-  .Subtitle {
-    @include font.header-2;
-  }
-
-  .Category {
-    @include font.category;
-    margin: 0;
-  }
-
-  .Links {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 0;
-    row-gap: 1rem;
+  
+    .Subtitle {
+      @include font.header-2;
+    }
+  
+    .Category {
+      @include font.category;
+      margin: 0;
+    }
+  
+    .Links {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem 0;
+      row-gap: 1rem;
+    }
   }
 }
 
