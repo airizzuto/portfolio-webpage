@@ -17,7 +17,6 @@ const opacityOptions = {
   none: { background: "none" }
 }
 
-// TODO - Content alternate style (text aligned right || contrasting theme)
 const ContentWrapper: React.FC<Props> = ({image, children, backgroundOpacity="none"}) => {
   return (
       <div 

@@ -1,4 +1,4 @@
-# Personal Webpage 1.0.9
+# Personal Webpage 1.0.10
 
 Personal portfolio webpage made in Typescript and Next.js used to showcase my projects.
 
@@ -6,7 +6,7 @@ Personal portfolio webpage made in Typescript and Next.js used to showcase my pr
 
 ## Changes
 
-- Refactor to content wrapper and projects structure.
+- Optional content alignment
 
 ---
 
