@@ -15,6 +15,7 @@ const FCC = () => {
 
   return (
     <ContentWrapper image={"polygon-scatter-haikei.svg"}>
+      {/* TODO: content page wrapper width 100% for mosaic */}
       <ContentPage contentAlignment='center' >
         <p className={Content.Category}>Course</p>
         <h1 className={Content.Title}
