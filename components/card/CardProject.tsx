@@ -16,7 +16,7 @@ const CardProject: React.FC<Props> = ({projectName}) => {
   const link = t(`${projectName}.codepen`);
 
   return (
-      <>
+      <div className={Style.Container}>
         <h1 className={Style.Title}>
           {title}
         </h1>
@@ -28,7 +28,7 @@ const CardProject: React.FC<Props> = ({projectName}) => {
         <div className={Style.Link}>
           <LabeledLink label={"Codepen"} href={link} />
         </div>
-      </>
+      </div>
   );
 }
 
