@@ -2,7 +2,7 @@ import React, { ReactElement } from "react";
 
 import Style from "../../styles/content/ContentWrapper.module.scss";
 
-type BackgroundOpacity = "opacityLeft" | "opacityRight" | "full" | "none";
+type BackgroundOpacity = "left" | "right" | "full" | "none";
 
 interface Props {
   image?: string;
@@ -11,8 +11,8 @@ interface Props {
 }
 
 const opacityOptions = {
-  opacityLeft: { background: "linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 90%)" },
-  opacityRight: { background: "linear-gradient(270deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 90%)"},
+  left: { background: "linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 90%)" },
+  right: { background: "linear-gradient(270deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 90%)"},
   full: { background: "rgba(0,0,0,0.5)" },
   none: { background: "none" }
 }
