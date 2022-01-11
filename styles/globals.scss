@@ -7,8 +7,8 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-  color: color.$primary-color-dark;
-  background-color: color.$background-color-dark;
+  color: color.$primary-color;
+  background-color: color.$background-color;
   font-family:  "Roboto", Arial, Helvetica, sans-serif;
   font-size: 16px;
   text-shadow: 1px 1px 1px black; 
@@ -18,23 +18,23 @@ body {
 }
 
 a {
-  color: color.$primary-color-dark;
+  color: color.$primary-color;
   text-decoration: none;
 }
 
 a:hover {
-  color: color.$secondary-color-dark;
+  color: color.$secondary-color;
   transition: color 0.25s linear;
 }
 
 h1 {
   @include font.header-1;
-  color: color.$secondary-color-dark;
+  color: color.$secondary-color;
 }
 
 h2 {
   @include font.header-2;
-  color: color.$primary-color-dark;
+  color: color.$primary-color;
 }
 
 p {
@@ -44,7 +44,7 @@ p {
 * {
   box-sizing: border-box;
   scrollbar-width: thin;
-  scrollbar-color: color.$secondary-color-dark transparent;
+  scrollbar-color: color.$secondary-color transparent;
   scroll-behavior: smooth;
 }
 
@@ -60,7 +60,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: color.$secondary-color-dark;    /* color of the scroll thumb */
+  background-color: color.$secondary-color;    /* color of the scroll thumb */
   border-radius: 3px;       /* roundness of the scroll thumb */
-  border: 2px solid color.$secondary-color-dark;  /* creates padding around scroll thumb */
+  border: 2px solid color.$secondary-color;  /* creates padding around scroll thumb */
 }
