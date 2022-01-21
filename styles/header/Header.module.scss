@@ -32,7 +32,7 @@ $col-gap: 5vw;
     line-height: 56px;
   
     label {
-      color: color.$primary-color-dark;
+      color: color.$primary-color;
   
       &:hover{
         cursor: pointer;
@@ -40,7 +40,7 @@ $col-gap: 5vw;
     }
   
     span {
-      color: color.$secondary-color-dark;
+      color: color.$secondary-color;
     }
   }
   
@@ -69,11 +69,11 @@ $col-gap: 5vw;
       }
   
       li {
-          color: color.$primary-color-dark;
+          color: color.$primary-color;
       }
   
       li:hover {
-          color: color.$secondary-color-dark;
+          color: color.$secondary-color;
       }
   }
   

@@ -10,11 +10,10 @@ $total-height: calc(calc(calc($bar-height - calc($bar-height / 2)) + calc($bar-s
   height: $bar-height;
   width: $bar-width;
   border-radius: 2px;
-  background-color: color.$primary-color-dark;
+  background-color: color.$primary-color;
   box-shadow: 1px 1px black;
 }
 
-// TODO: button animation, sliding animation
 .MenuButton {
   position: fixed;
   height: $total-height;
@@ -49,7 +48,7 @@ $total-height: calc(calc(calc($bar-height - calc($bar-height / 2)) + calc($bar-s
   }
 
   &:hover span, &:hover span:before, &:hover span:after {
-    background: color.$secondary-color-dark;
+    background: color.$secondary-color;
   }
 }
 
@@ -116,7 +115,7 @@ $total-height: calc(calc(calc($bar-height - calc($bar-height / 2)) + calc($bar-s
     li {
       text-align: right;
       width: 100%;
-      border-bottom: 1px solid rgba($color: color.$primary-color-dark, $alpha: 0.3);
+      border-bottom: 1px solid rgba($color: color.$primary-color, $alpha: 0.3);
 
       
       a {
@@ -129,7 +128,7 @@ $total-height: calc(calc(calc($bar-height - calc($bar-height / 2)) + calc($bar-s
       
       opacity: 0.95;
       a {
-        color: color.$secondary-color-dark;
+        color: color.$secondary-color;
         transition: color 0.25s linear;
       }
     }
@@ -169,8 +168,8 @@ $total-height: calc(calc(calc($bar-height - calc($bar-height / 2)) + calc($bar-s
         text-justify: center;
         border: none;
         padding: 1rem 0;
-        border-top: 1px solid rgba($color: color.$primary-color-dark, $alpha: 0.3);
-        border-bottom: 1px solid rgba($color: color.$primary-color-dark, $alpha: 0.3);
+        border-top: 1px solid rgba($color: color.$primary-color, $alpha: 0.3);
+        border-bottom: 1px solid rgba($color: color.$primary-color, $alpha: 0.3);
       }
     }
   }

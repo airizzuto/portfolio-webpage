@@ -15,8 +15,8 @@
     display: block;
     width: 1.0em;
     height: 1.0em;
-    border-bottom: 5px solid $secondary-color-dark;
-    border-right: 5px solid $secondary-color-dark-shaded;
+    border-bottom: 5px solid $secondary-color;
+    border-right: 5px solid $secondary-color-shaded;
     transform: rotate(45deg);
     margin: -10px;
     animation: animate 3s infinite;

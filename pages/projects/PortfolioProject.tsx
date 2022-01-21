@@ -14,8 +14,8 @@ const PortfolioProject = () => {
   const webLabel = t("portfolio.links.web");
 
   return (
-    <ContentWrapper image={"polygon-scatter-haikei.svg"}>
-      <ContentPage>
+    <ContentWrapper image={"portfolio.png"} backgroundOpacity='left'>
+      <ContentPage contentAlignment='left'>
         <p className={Style.Category}>Project</p>
         <h1 className={Style.Title}>{title}</h1>
         <div className={Style.Text}>
