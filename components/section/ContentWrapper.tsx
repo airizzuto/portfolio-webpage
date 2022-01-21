@@ -11,12 +11,17 @@ interface Props {
 }
 
 const opacityOptions = {
-  left: { background: "linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 90%)" },
-  right: { background: "linear-gradient(270deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 90%)"},
+  left: { background: "linear-gradient(90deg, rgba(0,0,0,0.90) 5%, rgba(0,0,0,0) 95%)" },
+  right: { background: "linear-gradient(270deg, rgba(0,0,0,0.90) 5%, rgba(0,0,0,0) 95%)"},
   full: { background: "rgba(0,0,0,0.5)" },
   none: { background: "none" }
 }
 
+/**
+ * Full page wrapper
+ * @param image image name
+ * @param {BackgroundOpacity} backgroundOpacity default="none" options="left | right | full"
+ */
 const ContentWrapper: React.FC<Props> = ({image, children, backgroundOpacity="none"}) => {
   return (
       <div 

@@ -21,6 +21,11 @@ const alignContent = {
   }
 }
 
+/**
+ * Content page wrapper
+ * @param {AlignSetting} contentAlignment default="left" options="left | center | right"
+ * @returns 
+ */
 const ContentPage: React.FC<Props> = ({children, contentAlignment="left"}) => {
   return (
     <div className={Style.Container}>
