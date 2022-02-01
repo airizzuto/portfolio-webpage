@@ -11,8 +11,8 @@ interface Props {
 }
 
 const opacityOptions = {
-  left: { background: "linear-gradient(90deg, rgba(0,0,0,0.90) 5%, rgba(0,0,0,0) 95%)" },
-  right: { background: "linear-gradient(270deg, rgba(0,0,0,0.90) 5%, rgba(0,0,0,0) 95%)"},
+  left: { background: "linear-gradient(90deg, rgba(0,0,0,0.90) 10%, rgba(0,0,0,0) 100%)" },
+  right: { background: "linear-gradient(270deg, rgba(0,0,0,0.90) 10%, rgba(0,0,0,0) 100%)"},
   full: { background: "rgba(0,0,0,0.5)" },
   none: { background: "none" }
 }
