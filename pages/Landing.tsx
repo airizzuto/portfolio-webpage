@@ -14,7 +14,7 @@ export default function Landing() {
   const content = [...t("content_text", {}, {returnObjects: true})];
 
   return (
-    <ContentWrapper image={"polygon-scatter-haikei.svg"}>
+    <ContentWrapper image={"gradienta-bKESVqfxass-unsplash-tinified.jpg"}>
       <ContentPage >
         <h1 className={Style.Title}>{title}</h1>
         <h2 className={Style.Subtitle}>{subtitle}</h2>
