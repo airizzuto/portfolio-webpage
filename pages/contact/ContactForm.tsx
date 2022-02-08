@@ -42,7 +42,6 @@ const ContactForm = () => {
       "g-recaptcha-response": token,
     }
 
-    // TODO: use contact api
     await emailjs.send(
       config.serviceID,
       config.templateID,

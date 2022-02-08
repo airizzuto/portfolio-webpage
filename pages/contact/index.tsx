@@ -10,7 +10,6 @@ export default function Contact() {
     return (
       <ContentWrapper image={`nasa2.jpg`}
       >
-        {/* TODO: contact info card */}
         <ContactForm />
       </ContentWrapper>
     )

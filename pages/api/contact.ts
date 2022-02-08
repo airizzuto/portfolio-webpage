@@ -1,6 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
 
-// FIXME
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     const body = req.body;
   

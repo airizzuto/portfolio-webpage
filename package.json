@@ -1,7 +1,8 @@
 {
   "name": "portfolio-webpage",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "private": true,
+  "description": "airizzuto portfolio webpage",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

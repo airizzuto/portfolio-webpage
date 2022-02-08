@@ -1,6 +1,5 @@
 import Style from "../styles/ErrorPage.module.scss";
 
-// TODO:
 export default function Custom500() {
   return (
     <div className={Style.Container}
