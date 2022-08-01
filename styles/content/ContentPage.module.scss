@@ -19,31 +19,31 @@
     width: 100%;
     row-gap: 2vh;
     padding: max(5rem, 15vh) global.$sides-padding;
-  
+
     .Text {
       display: flex;
       flex-direction: column;
       width: 60ch;
       max-width: 80vw;
-  
+
       p {
         margin: 1rem 0;
       }
     }
-  
+
     .Title {
       margin: 1rem 0;
     }
-  
+
     .Subtitle {
       @include font.header-2;
     }
-  
+
     .Category {
       @include font.category;
       margin: 0;
     }
-  
+
     .Links {
       display: flex;
       flex-direction: column;
