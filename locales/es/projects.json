@@ -9,6 +9,7 @@
       "web": "Página Web"
     }
   },
+
   "air-ranging": {
     "title": "Air Ranging Aplicación Web",
     "content": [
@@ -21,8 +22,9 @@
       "web": "Página Web"
     }
   },
+
   "fcc-fe-cert": {
-    "title": "FreeCodeCamp FE Certification Projects"
+    "title": "FreeCodeCamp FE Proyectos de Certificación"
   },
   "random-quote-generator": {
     "title": "Random Quote Generator",
@@ -48,5 +50,9 @@
     "title": "Temporizador Pomodoro",
     "description": "Temporizador pomodoro alarma y configuración de tiempo de sesión y recreo.",
     "codepen": "https://codepen.io/Airiz/full/GRvXpBV"
+  },
+
+  "fcc-db-cert": {
+    "title": "FreeCodeCamp Bash/DB Proyectos de Certificación"
   }
 }

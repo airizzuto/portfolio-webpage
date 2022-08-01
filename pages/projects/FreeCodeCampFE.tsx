@@ -9,7 +9,7 @@ import CardProject from '../../components/card/CardProject';
 
 import Content from "../../styles/content/ContentPage.module.scss";
 
-const FCC = () => {
+const FreeCodeCampFE = () => {
   const { t, lang } = useTranslation('projects');
   const title = t("fcc-fe-cert.title");
 
@@ -22,26 +22,26 @@ const FCC = () => {
             textAlign: "center"
           }}
         >{title}</h1>
-  
+
         <ContentMosaic>
           <CardWrapper imagePath={'/random-quote-generator.png'}>
-            <CardProject projectName={'random-quote-generator'}/>
+            <CardProject projectName={'random-quote-generator'} label={"Codepen"}/>
           </CardWrapper>
 
           <CardWrapper imagePath={'/drum-machine.png'}>
-            <CardProject projectName={'drum-machine'}/>
+            <CardProject projectName={'drum-machine'} label={"Codepen"}/>
           </CardWrapper>
 
           <CardWrapper imagePath={'/markdown-previewer.png'}>
-            <CardProject projectName={'markdown-previewer'}/>
+            <CardProject projectName={'markdown-previewer'} label={"Codepen"}/>
           </CardWrapper>
 
           <CardWrapper imagePath={'/calculator.png'}>
-            <CardProject projectName={'calculator'}/>
+            <CardProject projectName={'calculator'} label={"Codepen"}/>
           </CardWrapper>
 
           <CardWrapper imagePath={'/25+5Clock.png'}>
-            <CardProject projectName={"25+5clock"}/>
+            <CardProject projectName={"25+5clock"} label={"Codepen"}/>
           </CardWrapper>
         </ContentMosaic>
       </ContentPage>
@@ -49,4 +49,4 @@ const FCC = () => {
   )
 }
 
-export default FCC
+export default FreeCodeCampFE

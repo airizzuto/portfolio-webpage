@@ -9,6 +9,7 @@
       "web": "Web Page"
     }
   },
+
   "air-ranging": {
     "title": "Air Ranging Web Application",
     "content": [
@@ -21,6 +22,7 @@
       "web": "Web Page"
     }
   },
+
   "fcc-fe-cert": {
     "title": "FreeCodeCamp FE Certification Projects"
   },
@@ -48,5 +50,9 @@
     "title": "Pomodoro Timer",
     "description": "Pomodoro timer with alarm, break length and session length configuration.",
     "codepen": "https://codepen.io/Airiz/full/GRvXpBV"
+  },
+
+  "fcc-db-cert": {
+    "title": "FreeCodeCamp Bash/DB Certification Projects"
   }
 }
