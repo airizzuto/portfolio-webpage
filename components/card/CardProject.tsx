@@ -7,9 +7,10 @@ import Style from "../../styles/card/CardProject.module.scss";
 
 interface Props {
   projectName: string;
+  label: string;
 }
 
-const CardProject: React.FC<Props> = ({projectName}) => {
+const CardProject: React.FC<Props> = ({projectName, label}) => {
   const { t, lang } = useTranslation(`projects`);
   const title = t(`${projectName}.title`);
   const description = t(`${projectName}.description`);
@@ -26,7 +27,7 @@ const CardProject: React.FC<Props> = ({projectName}) => {
         </p>
 
         <div className={Style.Link}>
-          <LabeledLink label={"Codepen"} href={link} />
+          <LabeledLink label={label} href={link} />
         </div>
       </div>
   );
