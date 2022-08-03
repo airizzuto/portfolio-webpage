@@ -6,29 +6,26 @@
   background-color: color.$background-color;
   border: 2px solid color.$primary-color;
   border-radius: 5px;
+  height: 50vh;
   width: 70vw;
 
-  .Header {
+  th {
     height: 3rem;
-
-    th {
-      align-items: center;
-      justify-content: center;
-      width: 10%;
-      text-align: center;
-    }
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    text-align: center;
   }
 
-  .Body {
-    tr {
-      align-items: center;
-      justify-content: center;
-      height: 5rem;
+  tr {
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+  }
 
-      td {
-        border-top: 1px solid color.$primary-color;
-        padding: 0 1rem;
-      }
-    }
+  td {
+    border-top: 1px solid color.$primary-color;
+    padding: 0 1rem;
   }
 }
+

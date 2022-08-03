@@ -5,6 +5,7 @@ interface Props {
   children: ReactElement[] | undefined;
 }
 
+// TODO: REMOVE - https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics
 const ContentList: React.FC<Props> = ({children}) => {
   return (
     <table className={Style.Table}>
