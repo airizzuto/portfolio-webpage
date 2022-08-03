@@ -52,7 +52,41 @@
     "codepen": "https://codepen.io/Airiz/full/GRvXpBV"
   },
 
+  "fcc-be-api-cert": {
+    "title": "FreeCodeCamp Backend/API Proyectos de Certificación"
+  },
+  "timestamp-microservice": {
+    "name": "Microservicio Generador de Timestamps"
+  },
+  "request-header-parser-microservice": {
+    "name": "Microservicio Parseador de Request Headers"
+  },
+  "url-shortener-microservice": {
+    "name": "Microservicio Acortador de URLs"
+  },
+  "exercise-tracker": {
+    "name": "Tracker de Ejercicios"
+  },
+  "file-metadata-microservice": {
+    "name": "Microservicio Analizador de Metadata de Archivo"
+  },
+
   "fcc-db-cert": {
     "title": "FreeCodeCamp Bash/DB Proyectos de Certificación"
+  },
+  "celestial-body-db": {
+    "name": "Base de Datos de Cuerpos Celestes"
+  },
+  "world-cup-db": {
+    "name": "Base de Datos de la Copa del Mundo"
+  },
+  "salon-appointment-scheduler": {
+    "name": "Agenda de Peluquería"
+  },
+  "periodic-table": {
+    "name": "Tabla Periódica"
+  },
+  "number-guesser": {
+    "name": "Adivina el Número"
   }
 }

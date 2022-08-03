@@ -24,31 +24,31 @@ const FreeCodeCampBE_API = () => {
 
         <ContentList>
           <ListItem
-            projectName={'Timestamp Microservice'}
+            projectName={'timestamp-microservice'}
             technologies={["Node", "Express"]}
             website={'Replit'}
             link={'https://fcc-timestamp.airizzuto.repl.co/'}
           />
           <ListItem
-            projectName={'Request Header Parser Microservice'}
+            projectName={'request-header-parser-microservice'}
             technologies={["Node", "Express"]}
             website={'Replit'}
             link={'https://fcc-project-headerparser.airizzuto.repl.co/'}
           />
           <ListItem
-            projectName={'URL Shortener Microservice'}
+            projectName={'url-shortener-microservice'}
             technologies={["Node", "Express", "MongoDB", "Mongoose ORM"]}
             website={'Replit'}
             link={'https://fcc-project-urlshortener.airizzuto.repl.co/'}
           />
           <ListItem
-            projectName={'Exercise Tracker'}
+            projectName={'exercise-tracker'}
             technologies={["Node", "Express", "MongoDB", "Mongoose ORM"]}
             website={'Replit'}
             link={'https://fcc-exercisetracker.airizzuto.repl.co/'}
           />
           <ListItem
-            projectName={'File Metadata Microservice'}
+            projectName={'file-metadata-microservice'}
             technologies={["Node", "Express"]}
             website={'Replit'}
             link={'https://fcc-filemetadata-project.airizzuto.repl.co/'}

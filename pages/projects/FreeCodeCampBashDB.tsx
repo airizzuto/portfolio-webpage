@@ -24,31 +24,31 @@ const FreeCodeCampBashDB = () => {
 
         <ContentList>
           <ListItem
-            projectName={'Celestial Bodies DB'}
+            projectName={'celestial-body-db'}
             technologies={["PostgreSQL"]}
             website={'Github'}
             link={'https://github.com/airizzuto/FCC-CelestialBodiesDatabase'}
           />
           <ListItem
-            projectName={'World Cup DB'}
+            projectName={'world-cup-db'}
             technologies={["PostgreSQL"]}
             website={'Github'}
             link={'https://github.com/airizzuto/FCC-WorldCupDatabase'}
           />
           <ListItem
-            projectName={'Salon Appointment Scheduler'}
+            projectName={'salon-appointment-scheduler'}
             technologies={["Bash", "PostgreSQL"]}
             website={'Github'}
             link={'https://github.com/airizzuto/FCC-SalonAppointmentScheduler'}
           />
           <ListItem
-            projectName={'Periodic Table'}
+            projectName={'periodic-table'}
             technologies={["Bash", "PostgreSQL"]}
             website={'Github'}
             link={'https://github.com/airizzuto/FCC-PeriodicTable'}
           />
           <ListItem
-            projectName={'Number Guesser'}
+            projectName={'number-guesser'}
             technologies={["Bash", "PostgreSQL"]}
             website={'Github'}
             link={'https://github.com/airizzuto/FCC-NumberGuesser'}

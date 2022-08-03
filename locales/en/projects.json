@@ -55,8 +55,38 @@
   "fcc-be-api-cert": {
     "title": "FreeCodeCamp Backend/API Certification Projects"
   },
+  "timestamp-microservice": {
+    "name": "Timestamp Microservice"
+  },
+  "request-header-parser-microservice": {
+    "name": "Request Header Parser Microservice"
+  },
+  "url-shortener-microservice": {
+    "name": "URL Shortener Microservice"
+  },
+  "exercise-tracker": {
+    "name": "Exercise Tracker"
+  },
+  "file-metadata-microservice": {
+    "name": "File Metadata Microservice"
+  },
 
   "fcc-db-cert": {
     "title": "FreeCodeCamp Bash/DB Certification Projects"
+  },
+  "celestial-body-db": {
+    "name": "Celestial Bodies DB"
+  },
+  "world-cup-db": {
+    "name": "World Cup DB"
+  },
+  "salon-appointment-scheduler": {
+    "name": "Salon Appointment Scheduler"
+  },
+  "periodic-table": {
+    "name": "Periodic Table"
+  },
+  "number-guesser": {
+    "name": "Number Guesser"
   }
 }
