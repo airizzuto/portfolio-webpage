@@ -1,4 +1,5 @@
 import React from 'react';
+import useTranslation from 'next-translate/useTranslation';
 import LabeledLink from '../LabeledLink';
 import Style from "../../styles/content/ContentList.module.scss";
 
@@ -10,9 +11,12 @@ interface Props {
 }
 
 const ListItem: React.FC<Props> = ({projectName, technologies, website, link}) => {
+  const { t, lang } = useTranslation(`projects`);
+  const name = t(`${projectName}.name`);
+
   return (
     <tr className={Style.ItemRow} key={projectName}>
-      <td>{projectName}</td>
+      <td>{name}</td>
       <td>
         {technologies.map((tech) =>
           { return <ul key={projectName + "-" + tech}>{tech}</ul> })
