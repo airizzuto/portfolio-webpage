@@ -13,7 +13,7 @@ const FreeCodeCampBashDB = () => {
   const title = t("fcc-db-cert.title");
 
   return (
-    <ContentWrapper image={"polygon-scatter-haikei.svg"}>
+    <ContentWrapper image={"nasa1.jpg"}>
       <ContentPage contentAlignment='center' >
         <p className={Content.Category}>Course</p>
         <h1 className={Content.Title}
@@ -54,6 +54,8 @@ const FreeCodeCampBashDB = () => {
             link={'https://github.com/airizzuto/FCC-NumberGuesser'}
           />
         </ContentList>
+
+        {/* TODO: add cert */}
       </ContentPage>
     </ContentWrapper>
   )
