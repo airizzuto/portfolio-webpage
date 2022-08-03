@@ -3,7 +3,7 @@
 
 .Table {
   align-self: center;
-  background-color: color.$background-color;
+  background-color: rgba(color.$background-color, 0.8);
   border: 2px solid color.$primary-color;
   border-radius: 5px;
   height: 50vh;
