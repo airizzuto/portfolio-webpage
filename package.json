@@ -30,7 +30,7 @@
     "eslint": "7.32.0",
     "eslint-config-next": "12.0.4",
     "gh-pages": "^3.1.0",
-    "next-deploy": "^1.2.4",
+    "next-deploy": "^0.0.3",
     "typescript": "^4.5.2"
   }
 }
