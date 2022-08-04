@@ -13,7 +13,7 @@ const FreeCodeCampBE_API = () => {
   const title = t("fcc-be-api-cert.title");
 
   return (
-    <ContentWrapper image={"nasa2.jpg"}>
+    <ContentWrapper image={"polygon-scatter-haikei-5.svg"}>
       <ContentPage contentAlignment='center' >
         <p className={Content.Category}>Course</p>
         <h1 className={Content.Title}
