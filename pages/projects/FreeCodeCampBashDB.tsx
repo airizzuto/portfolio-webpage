@@ -13,7 +13,7 @@ const FreeCodeCampBashDB = () => {
   const title = t("fcc-db-cert.title");
 
   return (
-    <ContentWrapper image={"nasa1.jpg"}>
+    <ContentWrapper image={"nasa1.jpg"} backgroundOpacity="full">
       <ContentPage contentAlignment='center' >
         <p className={Content.Category}>Course</p>
         <h1 className={Content.Title}

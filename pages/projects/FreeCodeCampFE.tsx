@@ -14,7 +14,7 @@ const FreeCodeCampFE = () => {
   const title = t("fcc-fe-cert.title");
 
   return (
-    <ContentWrapper image={"circle-scatter-haikei.svg"}>
+    <ContentWrapper image={"circle-scatter-haikei.svg"} backgroundOpacity="full">
       <ContentPage contentAlignment='center' >
         <p className={Content.Category}>Course</p>
         <h1 className={Content.Title}
